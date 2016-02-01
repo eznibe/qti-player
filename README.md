@@ -1,6 +1,6 @@
 # QTI Content Player #
 
-Project Brief
+## Project Brief ##
 -- Convert a large amount of printed content to digital e-learning solution.
 -- Not to be server side - LMS Platform was and not clear. 
 -- QTI XML format - a standard for e-learning assessment data
