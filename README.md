@@ -1,19 +1,19 @@
 # QTI Content Player #
 
 ## Project Brief ##
--- Convert a large amount of printed content to digital e-learning solution.
--- Not to be server side - LMS Platform was and not clear. 
--- QTI XML format - a standard for e-learning assessment data
--- Content to be Interactive and engaging
+* Convert a large amount of printed content to digital e-learning solution.
+* Not to be server side - LMS Platform was and not clear. 
+* QTI XML format - a standard for e-learning assessment data
+* Content to be Interactive and engaging
 
 ## QTI Specification ##
 https://www.imsglobal.org/question/qtiv2p2/QTIv2p2-ASI-InformationModelv1p0/imsqtiv2p2_asi_v1p0_InfoModelv1p0.html
 
 ## Research and Development ##
--- OO Javascript - a custom framework
--- AngularJS - utilising directives
--- XSLT
--- Polymer (web components)
+* OO Javascript - a custom framework
+* AngularJS - utilising directives
+* XSLT
+* Polymer (web components)
 
 ## Challenges ##
 --
