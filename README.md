@@ -26,7 +26,7 @@ During the research phase we faced the following challenges:
 -- Polymer web components are very new and changing.
 -- A custom OO Javascript method was not transparent or easy for other developers
 
-## Solution - Polymer ##
+## Solution ##
 We decided that Polymer was an ideal solution because:
 * Its a new standard
 * We could utilise the shadowDOM
