@@ -18,13 +18,13 @@ Before we started actual production we need to find the correct technical soluti
 
 ## Challenges ##
 During the research phase we faced the following challenges:
--- AngularJS directives could only translude in one direction.
--- AngularJS and OO Javascript not elegant.
--- XSLT is an old and complicated way of converting XML
--- QTI XML although very well documented is a beast and very strict.
--- QTI XML contains more the presentation. It contains variables, event handling and response processing.
--- Polymer web components are very new and changing.
--- A custom OO Javascript method was not transparent or easy for other developers
+* AngularJS directives could only translude in one direction.
+* AngularJS and OO Javascript not elegant.
+* XSLT is an old and complicated way of converting XML
+* QTI XML although very well documented is a beast and very strict.
+* QTI XML contains more the presentation. It contains variables, event handling and response processing.
+* Polymer web components are very new and changing.
+* A custom OO Javascript method was not transparent or easy for other developers
 
 ## Solution ##
 We decided that Polymer was an ideal solution because:
