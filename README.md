@@ -22,10 +22,15 @@ https://www.imsglobal.org/question/qtiv2p2/QTIv2p2-ASI-InformationModelv1p0/imsq
 -- Using the shadowDOM
 -- Create OO Javascript components that inherit other components. This means we could have an inheritance similar to the QTI specification.
 
+## Examples ##
 Templates (T001 to T117) - Just change the link and refresh.
 
-XML Data - http://www.ewantavener.co.uk/demo/qti-player/templates/T001.xml
-Rendered example - http://www.ewantavener.co.uk/demo/qti-player/app/index.html?id=T001
+XML Data:
+http://www.ewantavener.co.uk/demo/qti-player/templates/T001.xml
+Rendered example:
+http://www.ewantavener.co.uk/demo/qti-player/app/index.html?id=T001
 
-XML Data - http://www.ewantavener.co.uk/demo/qti-player/templates/T117.xml
-Rendered example - http://www.ewantavener.co.uk/demo/qti-player/app/index.html?id=T117
+XML Data:
+http://www.ewantavener.co.uk/demo/qti-player/templates/T117.xml
+Rendered example:
+http://www.ewantavener.co.uk/demo/qti-player/app/index.html?id=T117
