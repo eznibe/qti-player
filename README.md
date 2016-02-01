@@ -6,19 +6,19 @@
 -- QTI XML format - a standard for e-learning assessment data
 -- Content to be Interactive and engaging
 
-QTI Specification
+## QTI Specification ##
 https://www.imsglobal.org/question/qtiv2p2/QTIv2p2-ASI-InformationModelv1p0/imsqtiv2p2_asi_v1p0_InfoModelv1p0.html
 
-Research and Development
+## Research and Development ##
 -- OO Javascript - a custom framework
 -- AngularJS - utilising directives
 -- XSLT
 -- Polymer (web components)
 
-Challenges
+## Challenges ##
 --
 
-Solution - Polymer
+## Solution - Polymer ##
 -- Using the shadowDOM
 -- Create OO Javascript components that inherit other components. This means we could have an inheritance similar to the QTI specification.
 
