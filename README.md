@@ -7,14 +7,15 @@
 * Content to be Interactive and engaging but quick to produce
 
 ## QTI Specification ##
+A standard in e-learning. Using this means we are not making a new standard and utilising a standard that exists and has been accepted in the industry.
 https://www.imsglobal.org/question/qtiv2p2/QTIv2p2-ASI-InformationModelv1p0/imsqtiv2p2_asi_v1p0_InfoModelv1p0.html
 
 ## Research ##
 Before we started actual production we need to find the correct technical solution. We explored the following technologies:
-* OO Javascript - a custom framework
-* AngularJS - utilising directives
+* OO Javascript - a custom framework converting XML to HTML manually.
+* AngularJS - attaching directives to xml nodes.
 * XSLT - manipulating XML
-* Polymer (web components) - Using the shadowDOM
+* Polymer - Using the shadowDOM to render the XML as HTML web components.
 
 ## Challenges ##
 During the research phase we faced the following challenges:
@@ -28,9 +29,10 @@ During the research phase we faced the following challenges:
 
 ## Solution ##
 We decided that Polymer was an ideal solution because:
+* We could use it with XSLT (to create the polymer node names)
 * Its a new standard
-* We could utilise the shadowDOM
-* We could develop OO Javascript components that inherit other components. This means we could have an inheritance similar to that in the QTI specification.
+* We could utilise the shadowDOM and keep the XML
+* We could develop OO Javascript components that inherit other components. This means we could have an component inheritance similar to that in the QTI specification.
 
 ## Examples ##
 Templates (T001 to T117) - Just change the link and refresh.
