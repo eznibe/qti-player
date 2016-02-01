@@ -24,8 +24,8 @@ Solution - Polymer
 
 Templates (T001 to T117) - Just change the link and refresh.
 
-XML - http://www.ewantavener.co.uk/demo/qti-player/templates/T001.xml
-Rendered - http://www.ewantavener.co.uk/demo/qti-player/app/index.html?id=T001
+XML Data - http://www.ewantavener.co.uk/demo/qti-player/templates/T001.xml
+Rendered example - http://www.ewantavener.co.uk/demo/qti-player/app/index.html?id=T001
 
-XML - http://www.ewantavener.co.uk/demo/qti-player/templates/T117.xml
-Rendered - http://www.ewantavener.co.uk/demo/qti-player/app/index.html?id=T117
+XML Data - http://www.ewantavener.co.uk/demo/qti-player/templates/T117.xml
+Rendered example - http://www.ewantavener.co.uk/demo/qti-player/app/index.html?id=T117
