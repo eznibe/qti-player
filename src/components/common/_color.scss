@@ -1,0 +1,124 @@
+$puke-green: #adc46f;
+$color-default-text: #2B2B2B;
+
+// Level 0
+$color-piston-blue: #2BBFE2;
+$color-cerulean: #099CC3;
+$color-blue-marguerite: #846BBF;
+$color-mulled-wine: #584872;
+
+// Level 1
+$color-wild-willow: $puke-green;
+$color-sushi: #8ba73f;
+$color-cosmic: #723b61;
+$color-don-juan: #574652;
+
+// Level 2
+$color-shiraz: #C00B2F;
+$color-tamarillo: #9F1626;
+$color-hippie-blue: #4F92A6;
+$color-casal: #2F5C66;
+
+// Level 3
+$color-chilean-fire: #F67104;
+$color-orange-roughy: #C95E19;
+$color-butterfly-bush: #565599;
+$color-mulled-purple: #404063;
+
+// Level 4
+$color-wisteria: #9E6BB2;
+$color-voodoo: #5A3B66;
+
+// Level 5
+$color-jungle-green: #23AF9E;
+$color-atoll: #0D6D61;
+
+// Neutral : Lesson screen
+$color-alabaster: #fafafa;
+$color-cararra: #edecea;
+$color-cascade: #93aaad;
+$color-sirocco: #6a8184;
+
+// Neutral: Key BG demarcation
+$color-desert-storm: #f2f1f0;
+$color-cotton-seed: #bab8b3;
+$color-quill-gray: #d0cfcc;
+$color-star-dust: #999793;
+
+// Lucid: selecting
+$color-cloud: #cccbc7;
+$color-sweet-corn: #FDE889;
+$color-bright-sun: #ffe13a;
+
+// Lucid: Feedback Phase 1
+$color-atlantis: #87c327;
+$color-crimson: #ed1c24;
+
+
+// Lucid: Feedback phase 2
+$color-chrome-white: mix($color-atlantis, white, 20%);
+$color-deco: mix($color-atlantis, white, 50%);
+
+// Muted: Notes / Checklist
+$color-tusk: #f4f4c4;
+$color-hillary: #ada787;
+$color-crocodile: #77725d;
+
+// Muted: Writing
+$color-swans-down: #daebee;
+$color-opal: #a1bdc4;
+$color-cerulean: #099cc3;
+$color-eden: #114d5e;
+
+// Selection keylines
+$color-oslo-gray: #939598;
+$color-westar: #DCDAD7;
+$stray-color-fuscous-gray: #504f4e;
+$stray-color-tbc: #808285;
+
+// Standard colours
+// avatar backgrounds
+$color-avatar-background: #b5c480;
+$color-avatar-background-blue: #a0bcc4;
+$color-avatar-background-purple: #b771a4;
+
+// Video / Audio colours
+$color-alizarin-crimson: #ec1c23;
+$color-earls-green: #b3ce41;
+$color-gray-nickel: #b9b8b3;
+$color-thunderbird: #c51318;
+
+// Quiz colours
+$color-lima: #93c019;
+
+// Drag dropzones
+$color-light-quill: #D6D5D4;
+
+// Added as sass variables just for consistency and to discourage
+// using hex colour values outside of this file
+$color-white: #fff;
+$color-black: #000;
+$color-scrollbar-track: #ffffff;
+$color-scrollbar-thumb: #c2c2c2;
+$color-scrollbar-thumb-hover: #a9a9a9;
+$color-dialog-border: #c1c0bb;
+$color-freetown-background: $color-cararra;
+$color-freetown-shadows: #323232;
+$color-pane-dark: #d3d1ce;
+$color-disabled-button: #d4d1d3;
+$color-text-highlight: #acedff;
+$color-text-highlight-alt: #e9c2df;
+
+// Component specific variables
+$selectable-default-bg: $color-white;
+$selectable-default-border: $color-cloud;
+$selectable-default-text: $color-default-text;
+$selectable-hover-bg: $color-sweet-corn;
+$selectable-selected-bg: $color-bright-sun;
+$selectable-drag-border: $stray-color-tbc;
+$selectable-color-disabled-border: $color-cloud;
+$selectable-color-disabled-bg: $color-cloud;
+
+$feedback-bubble-color-correct: $color-atlantis;
+$feedback-bubble-color-correct-border: $feedback-bubble-color-correct;
+$feedback-bubble-color-correct-bg: $color-chrome-white;

@@ -1,0 +1,14 @@
+<link rel="import" href="../qti-base.html">
+
+<polymer-element name="qti-infocontrol" extends="qti-base">
+	<template>
+		<link rel="stylesheet" href="qti-infocontrol.css">
+		<div class="{{mainClass}} {{lightClasses}}">
+			<button class="{{htmlClasses.button}} {{htmlClasses.hint_button}} {{htmlClasses.shell_hint_button}}" on-click="{{showHint}}" on-blur="{{blurHint}}" >Hint</button>
+			<div class="{{htmlClasses.shell_hint_body}}">
+				<content></content>
+			</div>
+		</div>
+	</template>
+	<script src="qti-infocontrol.js"></script>
+</polymer-element>

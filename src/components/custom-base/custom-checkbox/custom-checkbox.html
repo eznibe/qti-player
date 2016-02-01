@@ -1,0 +1,15 @@
+
+<link rel="import" href="../custom-base.html">
+
+<polymer-element name="custom-checkbox" extends="custom-base" attributes="identifier disabled status">
+	<template>
+		<link rel="stylesheet" href="custom-checkbox.css">
+		<span-interaction>
+			<input on-change="{{checkboxClicked}}" name="{{identifier}}" disabled?="{{disabled}}" id="id_{{identifier}}" type='checkbox' class="visually-hidden" />
+			<label for="id_{{identifier}}" class="selectable {{lightClasses}}" >
+				<content></content>
+			</label>
+		</span-interaction>
+	</template>
+	<script src="custom-checkbox.js"></script>
+</polymer-element>

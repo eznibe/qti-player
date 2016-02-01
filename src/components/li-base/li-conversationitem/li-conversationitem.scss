@@ -1,0 +1,159 @@
+@import "../li-base";
+@import "../../common/base";
+@import "../../common/icons";
+@import "../../common/buttons";
+
+.dialog {
+	position: relative;
+	margin: 0 0 20px;
+	min-height: 70px;
+	clear: both;
+	width: 100%;
+}
+
+.alternate {
+	direction: rtl;
+
+	.body {
+		margin: 0 90px 0 0;
+
+		&:before,
+		&:after {
+			left: 100%;
+			right: auto;
+		}
+
+		&:before {
+			border-width: 12px 0 12px 11px;
+			border-color: transparent transparent transparent $color-dialog-border;
+		}
+
+		&:after {
+			border-width: 11px 0 11px 10px;
+			border-color: transparent transparent transparent #ffffff;
+		}
+	}
+}
+
+.header {
+	width: 70px;
+	position: absolute;
+	min-height: 70px;
+}
+
+.body {
+	align-items: center;
+	display: flex;
+	background: $text-color-inverted;
+	border: 1px solid $color-dialog-border;
+	border-radius: 10px;
+	color: $text-color-default;
+	margin-left: 90px;
+	min-height: 70px;
+	padding: 12px 12px 12px 16px;
+	position: relative;
+	max-width: 60%;
+	direction: ltr;
+
+	::content p:last-child{
+		margin-bottom: 0;
+	}
+
+	p:last-child {
+		margin-bottom: 0;
+	}
+
+	p{
+		text-align: left;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+
+	&:after,
+	&:before {
+		right: 100%;
+		top: 23px;
+		border-style: solid;
+		border-width: 11px 10px 11px 0;
+		border-color: transparent white transparent transparent;
+		content: ' ';
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+	}
+
+	&:after {
+
+	}
+
+	&:before {
+		top: 22px;
+		border-width: 12px 11px 12px 0;
+		border-color: transparent $color-dialog-border transparent transparent;
+	}
+
+	textarea {
+		width: 100%;
+	}
+}
+
+
+
+.media .body {
+	max-width: 35%;
+}
+
+.quiz .body {
+		margin-right: 0;
+		max-width: 81%;
+}
+
+.wide .body {
+	margin-right: 0;
+	max-width: 85%;
+}
+
+.block {
+	display: none;
+	margin: 0;
+	width: 100%;
+}
+
+.with-block {
+	.block {
+		display: block;
+	}
+}
+
+// ==== FOR QUOTE
+.quote {
+	display: none;
+	margin: 0;
+}
+
+.with-quote {
+	.quote {
+		display: block;
+	}
+}
+
+.cue {
+	.body {
+		border-color: darken($color-dialog-border, 30);
+
+		&:before {
+			border-color: transparent darken($color-dialog-border, 30) transparent transparent;
+		}
+	}
+	&.alternate {
+		.body {
+			border-color: darken($color-dialog-border, 30);
+
+			&:before {
+				border-color: transparent transparent transparent darken($color-dialog-border, 30);
+			}
+		}
+	}
+}

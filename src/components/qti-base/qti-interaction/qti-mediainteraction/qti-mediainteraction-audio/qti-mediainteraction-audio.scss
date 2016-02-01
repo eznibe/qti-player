@@ -1,0 +1,43 @@
+@import "../qti-mediainteraction";
+
+/*
+:host-context(.selectable.audio) .audio{
+	position: absolute;
+	top: 1px;
+	left: 0px;
+	width: 32px;
+	height: 32px;
+	background: white;
+	z-index: 5;
+}
+
+:host-context(.selectable.audio) .audio .vjs-play-control{
+	width: 31px;
+	height: 31px;
+}
+
+:host-context(.selectable.audio) .audio .vjs-control-bar{
+	top: 0;
+}
+*/
+
+.audio {
+	height: 45px;
+}
+
+.relative-audio {
+	position: relative;
+	top: -45px;
+}
+/*
+&--progress {
+	margin-top: 32px;
+}
+*/
+
+:host-context(.flash-card) .audio{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1" identifier="" adaptive="false" title="" timeDependent="false">
+	<responseDeclaration identifier="gapmatch_1" cardinality="multiple" baseType="directedPair">
+		<correctResponse>
+			<value>GT1 G1</value>
+			<value>GT2 G2</value>
+			<value>GT3 G3</value>
+		</correctResponse>
+	</responseDeclaration>
+	<outcomeDeclaration identifier="outcome_1" cardinality="single" baseType="identifier" />
+	<outcomeDeclaration identifier="outcome_2" cardinality="single" baseType="identifier" />
+	<outcomeDeclaration identifier="outcome_3" cardinality="single" baseType="identifier" />
+	<itemBody>
+		<rubricBlock view="candidate">
+			<div>rubric</div>
+		</rubricBlock>
+		<infoControl title="hint">
+			<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+		</infoControl>
+		<gapMatchInteraction class="type:layout4" responseIdentifier="gapmatch_1" shuffle="false">
+			<gapText identifier="GT1" class="drag-margin audio" matchMax="1">
+				<div class="type:audioButton">
+					<mediaInteraction class="type:audio-button selectable" responseIdentifier="MI1" autostart="false">
+						<object data="/content/media/audio/placeholder-short.mp3" type="audio/mp3"/>
+					</mediaInteraction>
+				</div>
+				Attention: button audio in Gaptext is invalid like it is now.
+			</gapText>
+			<gapText identifier="GT2" class="drag-margin audio" matchMax="1">
+				<div class="type:audioButton">
+					<mediaInteraction class="type:audio-button selectable" responseIdentifier="MI1" autostart="false">
+						<object data="/content/media/audio/placeholder-short.mp3" type="audio/mp3"/>
+					</mediaInteraction>
+				</div>
+				word2
+			</gapText>
+			<gapText identifier="GT3" class="drag-margin audio" matchMax="1">
+				<div class="type:audioButton">
+					<mediaInteraction class="type:audio-button selectable" responseIdentifier="MI1" autostart="false">
+						<object data="/content/media/audio/placeholder-short.mp3" type="audio/mp3"/>
+					</mediaInteraction>
+				</div>
+				word3
+			</gapText>
+			<gapText identifier="GT6" class="drag-margin audio" matchMax="1">
+				<div class="type:audioButton">
+					<mediaInteraction class="type:audio-button selectable" responseIdentifier="MI1" autostart="false">
+						<object data="/content/media/audio/placeholder-short.mp3" type="audio/mp3"/>
+					</mediaInteraction>
+				</div>
+				word6
+			</gapText>
+			<div class="type:freetownpane width-1-third">
+				<div class="type:container no-padding padding-32-right full-height">
+					<div class="type:dropzonetitle has-audio">Title 1</div>
+					<gap class="well dark" identifier="G1" />
+					<feedbackInline class="type:correct" outcomeIdentifier="outcome_1" identifier="TRUE" showHide="show">correct</feedbackInline>
+					<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="FALSE" showHide="show">incorrect</feedbackInline>
+				</div>
+			</div>
+			<div class="type:freetownpane width-1-third">
+				<div class="type:container no-padding padding-16-left padding-16-right full-height">
+					<div class="type:dropzonetitle has-audio">Title 2</div>
+					<gap class="well dark" identifier="G2" />
+					<feedbackInline class="type:correct" outcomeIdentifier="outcome_2" identifier="TRUE" showHide="show">correct</feedbackInline>
+					<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_2" identifier="FALSE" showHide="show">incorrect</feedbackInline>
+				</div>
+			</div>
+			<div class="type:freetownpane width-1-third">
+				<div class="type:container no-padding padding-32-left full-height">
+					<div class="type:dropzonetitle has-audio">Title 3</div>
+					<gap class="well dark" identifier="G3" />
+					<feedbackInline class="type:correct" outcomeIdentifier="outcome_3" identifier="TRUE" showHide="show">correct</feedbackInline>
+					<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_3" identifier="FALSE" showHide="show">incorrect</feedbackInline>
+				</div>
+			</div>
+		</gapMatchInteraction>
+	</itemBody>
+	<responseProcessing>
+		<!--
+			SL:
+
+			Response processing strategy for Gap Match Interactions with feedback per gap:
+			One outcome per feedback per gap, with a condition block as below for each.
+
+		-->
+		<responseCondition>
+			<responseIf>
+				<contains>
+					<variable identifier="gapmatch_1" />
+					<multiple>
+						<baseValue baseType="directedPair">GT1 G1</baseValue>
+					</multiple>
+				</contains>
+				<setOutcomeValue identifier="outcome_1">
+					<baseValue baseType="identifier">TRUE</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_1">
+					<baseValue baseType="identifier">FALSE</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+		<responseCondition>
+			<responseIf>
+				<contains>
+					<variable identifier="gapmatch_1" />
+					<multiple>
+						<baseValue baseType="directedPair">GT2 G2</baseValue>
+					</multiple>
+				</contains>
+				<setOutcomeValue identifier="outcome_2">
+					<baseValue baseType="identifier">TRUE</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_2">
+					<baseValue baseType="identifier">FALSE</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+		<responseCondition>
+			<responseIf>
+				<contains>
+					<variable identifier="gapmatch_1" />
+					<multiple>
+						<baseValue baseType="directedPair">GT3 G3</baseValue>
+					</multiple>
+				</contains>
+				<setOutcomeValue identifier="outcome_3">
+					<baseValue baseType="identifier">TRUE</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_3">
+					<baseValue baseType="identifier">FALSE</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+	</responseProcessing>
+</assessmentItem>

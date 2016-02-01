@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem identifier="8" adaptive="false" title="" timeDependent="false" xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1">
+  <responseDeclaration identifier="interaction_1" cardinality="multiple" baseType="identifier">
+    <correctResponse>
+      <value>interaction_1_choice_1</value>
+	  <value>interaction_1_choice_3</value>
+    </correctResponse>
+  </responseDeclaration>
+
+
+  <outcomeDeclaration identifier="outcome_1" cardinality="multiple" baseType="identifier"/>
+
+
+  <itemBody class="T008">
+    <rubricBlock view="candidate">
+      <div>Look at Jackie's weekly routine and answer the question.</div>
+    </rubricBlock>
+    <infoControl title="hint">
+      <div>Think about the kind of information you write on your calendar.</div>
+    </infoControl>
+    <div class="type:freetownpane width-50 background-dark">
+      <img class="type:cover" src="../content/media/21.jpg" alt=""/>
+    </div>
+    <div class="type:freetownpane width-50 shadow">
+      <ol class="type:questionlist">
+        <li class="type:questionitem">
+          <choiceInteraction class="type:questionlist" responseIdentifier="interaction_1" maxChoices="2" shuffle="false">
+            <prompt>What kind of information do you need to complete Jackie’s calendar?</prompt>
+            <simpleChoice class="type:questionlistitem" identifier="interaction_1_choice_1">
+              <span class="type:label">days of the week</span>
+              <feedbackInline class="type:correct" outcomeIdentifier="outcome_1" identifier="interaction_1_choice_1" showHide="show">
+                <span>correct</span>
+              </feedbackInline>
+            </simpleChoice>
+            <simpleChoice class="type:questionlistitem" identifier="interaction_1_choice_2">
+              <span class="type:label">occupations</span>
+              <feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="interaction_1_choice_2" showHide="show">
+                <span>incorrect</span>
+              </feedbackInline>
+            </simpleChoice>
+			 <simpleChoice class="type:questionlistitem" identifier="interaction_1_choice_3">
+              <span class="type:label">activities</span>
+              <feedbackInline class="type:correct" outcomeIdentifier="outcome_1" identifier="interaction_1_choice_3" showHide="show">
+                <span>correct</span>
+              </feedbackInline>
+            </simpleChoice>
+            <simpleChoice class="type:questionlistitem" identifier="interaction_1_choice_4">
+              <span class="type:label">opinions</span>
+              <feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="interaction_1_choice_4" showHide="show">
+                <span>incorrect</span>
+              </feedbackInline>
+            </simpleChoice>
+          </choiceInteraction>
+        </li>
+
+      </ol>
+    </div>
+  </itemBody>
+  <responseProcessing>
+    <setOutcomeValue identifier="outcome_1">
+      <variable identifier="interaction_1"></variable>
+    </setOutcomeValue>
+      </responseProcessing>
+</assessmentItem>

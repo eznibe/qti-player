@@ -1,0 +1,16 @@
+<link rel="import" href="../qti-mediainteraction-audio.html">
+
+<polymer-element name="qti-mediainteraction-audio-waveform" extends="qti-mediainteraction-audio">
+	<template>
+		<link rel="stylesheet" href="qti-mediainteraction-audio-waveform.css">
+		<figure class="{{mainClass}}">
+			<audio class="contain-media video-js vjs-mindtree-skin" width="auto" height="auto">
+				<source src="{{data}}" type="{{type}}" />
+			</audio>
+		</figure>
+	</template>
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="//vjs.zencdn.net/4.10/video.js"></script>
+	<script src="//wavesurfer.fm/build/wavesurfer.min.js"></script>
+	<script src="qti-mediainteraction-audio-waveform.js"></script>
+</polymer-element>

@@ -1,0 +1,61 @@
+<assessmentItem identifier="" adaptive="false" title="" timeDependent="false" xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1">
+	<responseDeclaration identifier="gapmatch_1" cardinality="multiple" baseType="directedPair">
+		<correctResponse>
+			<value>GT1 G1</value>
+		</correctResponse>
+	</responseDeclaration>
+	<outcomeDeclaration identifier="outcome_1" cardinality="single" baseType="identifier"/>
+	<itemBody>
+		<rubricBlock view="candidate">
+			<div>rubric</div>
+		</rubricBlock>
+		<infoControl title="hint">
+			<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+		</infoControl>
+		<gapMatchInteraction class="type:layout5" responseIdentifier="gapmatch_1" shuffle="false">
+			<gapText identifier="GT1" matchMax="1">laoreetipsum</gapText>
+			<gapText identifier="GT2" matchMax="1">euismod</gapText>
+			<gapText identifier="GT3" matchMax="1">laoreet</gapText>
+			<gapText identifier="GT4" matchMax="1">sodales</gapText>
+			<gapText identifier="GT5" matchMax="1">euismod</gapText>
+			<gapText identifier="GT6" matchMax="1">pulvinar</gapText>
+			<gapText identifier="GT7" matchMax="1">lorem</gapText>
+			<div class="type:carousel fullscreen">
+				<div class="type:carouselitem">
+					<div class="type:carouselmedia">
+						<div class="type:mediaunit base dark media-container">
+							<div class="type:overlay">
+								<span class="type:nowrap">
+									<gap identifier="G1" class="drawer contrast" />
+									 <feedbackInline class="type:correct" outcomeIdentifier="outcome_1" identifier="TRUE" showHide="show">correct</feedbackInline>
+									<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="FALSE" showHide="show">incorrect</feedbackInline>
+								</span>
+							</div>
+							<img src="http://placeimg.com/1600/900/any" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</gapMatchInteraction>
+	</itemBody>
+	<responseProcessing>
+		<responseCondition>
+			<responseIf>
+				<contains>
+					<variable identifier="gapmatch_1" />
+					<multiple>
+						<baseValue baseType="directedPair">GT1 G1</baseValue>
+					</multiple>
+				</contains>
+				<setOutcomeValue identifier="outcome_1">
+					<baseValue baseType="identifier">TRUE</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_1">
+					<baseValue baseType="identifier">FALSE</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+	</responseProcessing>
+</assessmentItem>

@@ -1,0 +1,17 @@
+<link rel="import" href="../qti-simplechoice-selectlistitem.html">
+
+<polymer-element name="qti-simplechoice-selectlistitem-audio" extends="qti-simplechoice-selectlistitem">
+	<template>
+		<link rel="stylesheet" href="qti-simplechoice-selectlistitem-audio.css">
+		<li class="list-item {{lightClasses}}">
+			<span-nowrap>
+                <custom-checkbox-audio identifier="{{identifier}}" disabled="{{disabled}}" status="{{choice_status}}">
+                    <content select="div-audioButton"></content>
+                    <content select="span-label"></content>
+                </custom-checkbox-audio>
+				<content></content>
+			</span-nowrap>
+		</li>
+	</template>
+	<script src="qti-simplechoice-selectlistitem-audio.js"></script>
+</polymer-element>

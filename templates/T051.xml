@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- http://5qx5fs.axshare.com/#p=t051_-_carousel__audio_image___type_in -->
+<!-- http://codebeautify.org/xmlviewer/052c6f -->
+<assessmentItem identifier="" adaptive="false" title="" timeDependent="false" xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1">
+	<responseDeclaration identifier="interaction_1_1" cardinality="single" baseType="string">
+		<correctResponse>
+			<value>a</value>
+		</correctResponse>
+		<mapping defaultValue="0">
+			<mapEntry mapKey="a" mappedValue="1"/>
+		</mapping>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_1_2" cardinality="single" baseType="string">
+		<correctResponse>
+			<value>random</value>
+		</correctResponse>
+		<mapping defaultValue="0">
+			<mapEntry mapKey="random" mappedValue="1"/>
+		</mapping>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_2_1" cardinality="single" baseType="string">
+		<correctResponse>
+			<value>b</value>
+		</correctResponse>
+		<mapping defaultValue="0">
+			<mapEntry mapKey="b" mappedValue="1"/>
+		</mapping>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_2_2" cardinality="single" baseType="string">
+		<correctResponse>
+			<value>answer</value>
+		</correctResponse>
+		<mapping defaultValue="0">
+			<mapEntry mapKey="answer" mappedValue="1"/>
+		</mapping>
+	</responseDeclaration>
+	<outcomeDeclaration identifier="outcome_1_1" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_1_2" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_2_1" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_2_2" cardinality="single" baseType="identifier"/>
+	<itemBody>
+		<rubricBlock view="candidate">
+			<div>Rubric</div>
+		</rubricBlock>
+		<infoControl title="hint">
+			<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+		</infoControl>
+		<div class="type:column width-100 shadow spill background-darker">
+			<div class="type:freetownpane shadow spill width-100">
+				<div class="type:carousel fullscreen horizontal">
+					<div class="type:carouselitem">
+						<div class="type:carouselmedia">
+							<img src="http://placeimg.com/1600/900/any" alt="" />
+							<div class="type:container align-left">
+								<p>
+									Progressively maintain unique values with
+									<span class="type:nowrap">
+										<textEntryInteraction class="text inline" responseIdentifier="interaction_1_1" expectedLength="11"/>
+										<feedbackInline class="type:correct" outcomeIdentifier="outcome_1_1" identifier="correct" showHide="show">
+											<span>correct</span>
+										</feedbackInline>
+										<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1_1" identifier="incorrect" showHide="show">
+											<span>incorrect</span>
+										</feedbackInline>
+									</span>
+									methodologies. Cras lacinia eros eu rhoncus pretium.
+									<span class="type:nowrap">
+										<textEntryInteraction class="text inline" responseIdentifier="interaction_1_2" expectedLength="10"/>
+										<feedbackInline class="type:correct" outcomeIdentifier="outcome_1_2" identifier="correct" showHide="show">
+											<span>correct</span>
+										</feedbackInline>
+										<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1_2" identifier="incorrect" showHide="show">
+											<span>incorrect</span>
+										</feedbackInline>
+									</span>
+									vestibulum pellentesque ante sed massa lobortis.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="type:carouselitem">
+						<div class="type:carouselmedia">
+							<img src="http://placeimg.com/1600/900/any" alt="" />
+							<div class="type:container align-left">
+								<p>
+									Progressively maintain unique values with
+									<span class="type:nowrap">
+										<textEntryInteraction class="text inline" responseIdentifier="interaction_1_1" expectedLength="11"/>
+										<feedbackInline class="type:correct" outcomeIdentifier="outcome_1_1" identifier="correct" showHide="show">
+											<span>correct</span>
+										</feedbackInline>
+										<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1_1" identifier="incorrect" showHide="show">
+											<span>incorrect</span>
+										</feedbackInline>
+									</span>
+									methodologies. Cras lacinia eros eu rhoncus pretium.
+									<span class="type:nowrap">
+										<textEntryInteraction class="text inline" responseIdentifier="interaction_1_2" expectedLength="10"/>
+										<feedbackInline class="type:correct" outcomeIdentifier="outcome_1_2" identifier="correct" showHide="show">
+											<span>correct</span>
+										</feedbackInline>
+										<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1_2" identifier="incorrect" showHide="show">
+											<span>incorrect</span>
+										</feedbackInline>
+									</span>
+									vestibulum pellentesque ante sed massa lobortis.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</itemBody>
+	<responseProcessing>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<mapResponse identifier="interaction_1_1"/>
+					<baseValue baseType="float">1</baseValue>
+				</match>
+				<setOutcomeValue identifier="outcome_1_1">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_1_1">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<mapResponse identifier="interaction_1_2"/>
+					<baseValue baseType="float">1</baseValue>
+				</match>
+				<setOutcomeValue identifier="outcome_1_2">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_1_2">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<mapResponse identifier="interaction_2_1"/>
+					<baseValue baseType="float">1</baseValue>
+				</match>
+				<setOutcomeValue identifier="outcome_2_1">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_2_1">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<mapResponse identifier="interaction_2_2"/>
+					<baseValue baseType="float">1</baseValue>
+				</match>
+				<setOutcomeValue identifier="outcome_2_2">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_2_2">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+	</responseProcessing>
+</assessmentItem>

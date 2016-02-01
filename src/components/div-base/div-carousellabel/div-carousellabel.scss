@@ -1,0 +1,12 @@
+@import "../div-base";
+
+.label {
+	text-align: center;
+	font-size: $text-font-size-ex-large;
+	padding: 0.25em 0;
+
+	&.xl {
+		font-size: 3.2rem;
+		padding: 0.5em 0;
+	}
+}

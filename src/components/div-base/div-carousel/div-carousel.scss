@@ -1,0 +1,172 @@
+@import "../div-base";
+@import "../../common/base";
+@import "../../common/icons";
+
+.carousel {
+	height: auto;
+	overflow: auto;
+	position: relative;
+	z-index: 2;
+}
+
+.fullscreen {
+	height: 100%;
+	background: none;
+}
+
+.ready {
+	overflow: visible;
+}
+
+.vertical {
+	height: 100%;
+	overflow: hidden;
+	margin-right: 8%;
+}
+
+.nonav {
+	margin-right: 0;
+
+	& + .carousel-nav {
+		display: none;
+	}
+}
+
+.carousel-nav {
+	z-index: 10;
+
+	.button {
+		background: transparent;
+		border: 0;
+		pointer-events: none;
+		position: absolute;
+		opacity: 0;
+		transition: opacity 600ms ease-in-out, background 400ms ease-in-out;
+
+		.icon {
+			fill: $color-disabled-button;
+		}
+
+		&.active {
+			cursor: pointer;
+			pointer-events: auto;
+			opacity: 1;
+
+			.icon {
+				fill: $color-don-juan;
+				transition: fill 400ms ease-in-out;
+			}
+
+			&:hover,
+			&:focus {
+				.icon {
+					fill: $color-sushi;
+				}
+			}
+		}
+	}
+
+	.nav-item {
+		background: $color-cotton-seed;
+		border: 0 none;
+		border-radius: 5px;
+		display: inline-block;
+		height: 10px;
+		margin: 0 2px;
+		min-width: 0;
+		padding: 0;
+		position: relative;
+		text-indent: -9999px;
+		width: 10px;
+		box-shadow: inset 5px 5px 5px -5px rgba(50, 50, 50, 0.1);
+
+		// Touch target aid
+		&:before {
+			content: '';
+			height: 44px;
+			left: -2px;
+			position: absolute;
+			top: -18px;
+			width: 15px;
+		}
+	}
+
+	input[type="radio"]:checked + .nav-item {
+		background: #ffe13a;
+	}
+
+	&.horizontal {
+
+		.button {
+			background: rgba($text-color-inverted,0.4);
+			top: 0;
+			left: 0;
+			width: 8%;
+			height: 100%;
+			padding: 0;
+			text-align: center;
+			background: rgba($text-color-inverted,0.4);
+
+			&.active {
+
+				&:hover,
+				&:focus {
+					background: rgba($color-white, 0.7);
+					box-shadow: none;
+				}
+			}
+
+			&.next {
+				left: auto;
+				right: 0;
+			}
+		}
+
+		.list-container {
+			position: absolute;
+			text-align: center;
+			top: 100%;
+			z-index: 1;
+			transform: translate(-50%, 0);
+			left: 50%;
+
+			&.is-fixed {
+				position: fixed;
+			}
+		}
+
+		.list {
+			border-radius: 0 0 7px 7px;
+			display: inline-block;
+			font-size: 0;
+			padding: 20px 7px;
+			vertical-align: top;
+		}
+
+		.list-item {
+			display: inline-block;
+			font-size: 0;
+			vertical-align: middle;
+
+			&:only-child {
+				display: none;
+			}
+
+			& + .carousel-nav__list-item {
+				margin-left: 4px;
+			}
+
+		}
+
+		.nav-item {
+			.dark &,
+			.darker & {
+				background: $color-desert-storm;
+			}
+
+			.fullscreen & {
+				background: $color-cotton-seed;
+			}
+		}
+	}
+}

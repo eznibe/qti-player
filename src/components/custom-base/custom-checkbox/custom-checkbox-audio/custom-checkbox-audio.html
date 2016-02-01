@@ -1,0 +1,20 @@
+<link rel="import" href="../custom-checkbox.html">
+
+<polymer-element name="custom-checkbox-audio" extends="custom-checkbox" attributes="identifier disabled status">
+	<template>
+		<link rel="stylesheet" href="custom-checkbox-audio.css">
+		<style>
+
+		</style>
+		<span-interaction>
+			<div class="selectable-container selectable-audio">
+				<content select="div-audioButton"></content>
+				<input on-change="{{checkboxClicked}}" name="{{identifier}}" disabled?="{{disabled}}" id="id_{{identifier}}" type='checkbox' class="visually-hidden" />
+				<label for="id_{{identifier}}" class="{{mainClass}}" >
+					<content />
+				</label>
+			</div>
+		</span-interaction>
+	</template>
+	<script src="custom-checkbox-audio.js"></script>
+</polymer-element>

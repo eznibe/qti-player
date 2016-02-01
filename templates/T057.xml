@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- http://5qx5fs.axshare.com/#p=t003_-_video_full_screen -->
+<!-- http://codebeautify.org/xmlviewer/a6af6e -->
+
+<assessmentItem identifier="" adaptive="false" title="" timeDependent="false" xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1">
+	<responseDeclaration identifier="MI1" cardinality="single" baseType="integer"/>
+	<itemBody>
+		<rubricBlock view="candidate">
+			<div>rubric</div>
+		</rubricBlock>
+		<infoControl title="hint">
+			<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+		</infoControl>
+		<div class="type:freetownpane width-30 background-white">
+			<div class="type:container scrollable">
+				<div class="type:static-text">
+					<p><strong>Quick Lentil &amp; Tomato Dahl </strong></p>
+					<p>The recipe uses storecupboard ingredients - serve on its own with a little rice and salad for a simple, satisfying lunch or as part of a curry meal.</p>
+					<p>Options:</p>
+					<p>The recipe uses storecupboard ingredients - serve on its own with a little rice and salad for a simple, satisfying lunch or as part of a curry meal.</p>
+				</div>
+			</div>
+		</div>
+		<div class="type:freetownpane width-70 shadow">
+			<mediaInteraction class="type:record-small" responseIdentifier="MI1" autostart="false">
+				<object data="/content/media/audio/placeholder-short.mp3" type="audio/mp3"/>
+			</mediaInteraction>
+		</div>
+	</itemBody>
+</assessmentItem>

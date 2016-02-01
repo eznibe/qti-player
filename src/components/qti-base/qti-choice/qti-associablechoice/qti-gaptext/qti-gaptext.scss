@@ -1,0 +1,171 @@
+@import "../qti-associablechoice";
+
+.draggable {	
+	margin: 0 16px 16px 0;
+	&.erase-margin{
+		margin: 0;
+	}
+}
+
+
+.draggable {
+	font-size: 0;
+	display: inline-block;
+
+	.token {
+		display: inline-block;
+		border-style: dashed;
+		background-color: white;
+		border: 1px dashed $selectable-drag-border;
+		border-radius: 3px;
+		cursor: move;
+		user-select: none;
+		padding: 7px 9px 6px 9px;
+		font-size: $text-font-size-small;
+		line-height: 1;
+		transition: padding 0.3s ease;
+		font-size: initial;
+
+		&:hover {
+			background-color: $color-sweet-corn;
+		}
+
+		&.inline {
+			padding-top: 4px;
+			padding-bottom: 3px;
+		}
+
+		&.correct {
+			border-style: solid;
+		}
+
+		&.empty {
+			border: 1px solid $color-westar;
+			background: $color-westar;
+			min-width: 144px
+		}
+
+		&.audio {
+			padding: 8px 10px 8px 44px;
+			position: relative;
+
+			.audio {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 32px;
+				height: 32px;
+				background: #fff;
+				border-radius: 3px 0 0 3px;
+				overflow: hidden;
+
+				.vjs-control-bar {
+					top: 0;
+				}
+
+				.vjs-play-control {
+					width: 32px;
+					height: 32px;
+				}
+			}
+		}
+	}
+
+
+	&.dropped {
+
+		.token {
+			background: $selectable-selected-bg;
+			border: 1px solid $selectable-selected-bg;
+
+			&:hover {
+				background-color: $color-sweet-corn;
+				border: 1px dashed $selectable-drag-border;
+			}
+		}
+	}
+
+	&.returning {
+		transition: all 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+	}
+
+	&.dragging {
+		position: absolute;
+		z-index: 10;
+
+		.token,
+		.token:hover {
+			border-style: solid;
+			border-color: $color-bright-sun;
+			background: $color-bright-sun;
+		}
+	}
+
+	&.ghost {
+		// the overflow is breaking the float
+		//overflow: hidden;
+
+		.token,
+		.token:hover {
+			border: 1px solid $color-westar;
+			background: $color-westar;
+			cursor: default;
+			color: transparent;
+
+			&:after {
+				//content: '\0000a0';
+			}
+		}
+
+		.token.audio {
+
+			.audio {
+				display: none;
+			}
+		}
+	}
+}
+
+:host-context(.inline){
+	.draggable {
+		.token {
+			padding: 4px 5px 3px 5px;
+		}
+	}
+}
+
+:host-context(.audio){
+	//margin: 16px 16px 0 0;
+	.draggable {
+		position: relative;
+		.token {
+			padding: 8px 10px 8px 44px;
+			margin: 0;
+		}
+	}
+}
+
+:host-context(.well){
+	.draggable {
+		.token {
+			margin: 0 16px 16px 0;
+		}
+	}
+}
+
+:host-context(.dropped){
+	.draggable {
+		.token {
+			background-color: $selectable-selected-bg;
+			border: 1px solid $selectable-selected-bg;
+
+			&:hover {
+				background-color: $color-sweet-corn;
+				border: 1px dashed $selectable-drag-border;
+			}
+		}
+	}
+}
+
+
+

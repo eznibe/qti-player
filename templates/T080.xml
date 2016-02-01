@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1" identifier="" adaptive="false" title="" timeDependent="false">
+	<itemBody>
+		<rubricBlock view="candidate">
+			<div>Reorder the words to have a good time.</div>
+		</rubricBlock>
+		<infoControl title="hint">
+			<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+		</infoControl>
+		<div class="type:freetownpane width-100 shadow container">
+			<div class="type:quiz">
+				<div class="type:quiz-card start">
+					<div class="title">Quick quiz</div>
+					<div class="intro">
+						See how quickly you can answer the questions.<br/>
+						Click start when you are ready
+					</div>
+					<button class="button-start">Start</button>
+				</div>
+			</div>
+		</div>
+	</itemBody>
+</assessmentItem>

@@ -1,0 +1,21 @@
+
+<link rel="import" href="../qti-gapmatchinteraction.html">
+
+<polymer-element name="qti-gapmatchinteraction-layout7" extends="qti-gapmatchinteraction">
+	<template>
+		<content select="div-freetownpane"></content>
+		<div-freetownpane class="width-30 background-darker">
+			<ul-selectableslist class="padding-32 drag-zone">
+                <content select="qti-gaptext"></content>
+<!--
+                <template repeat="{{gaptext in gapTexts}}">
+                    <li-selectablesitem>
+                        <qti-gaptext>{{gaptext}}</qti-gaptext>
+                    </li-selectablesitem>
+                </template>
+-->
+			</ul-selectableslist>
+		</div-freetownpane>
+	</template>
+	<script src="qti-gapmatchinteraction-layout7.js"></script>
+</polymer-element>

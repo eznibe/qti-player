@@ -1,0 +1,29 @@
+<link rel="import" href="../qti-base.html">
+
+<polymer-element name="qti-itembody" extends="qti-base">
+	<template>
+		<link rel="stylesheet" href="qti-itembody.css">
+		<header class="shell-header">
+			<div class="shell-rubric">
+				<content select="qti-rubricblock" />
+			</div>
+		</header>
+		<section class="freetown">
+			<content></content>
+			<footer class="shell-footer">
+				<ul class="shell-secondary-buttons">
+					<li class="shell-footer-button">
+						<button class="button button-secondary">Secondary</button>
+					</li>
+				</ul>
+				<ul class="shell-primary-buttons">
+					<li class="shell-footer-button">
+						<button class="button button-primary" on-click="{{submitClicked}}">Submit</button>
+					</li>
+				</ul>
+			</footer>
+			<content select="qti-infocontrol"></content>
+		</section>
+	</template>
+	<script src="qti-itembody.js"></script>
+</polymer-element>

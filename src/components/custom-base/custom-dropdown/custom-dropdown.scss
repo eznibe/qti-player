@@ -1,0 +1,42 @@
+@import "../custom-base";
+@import "../../common/icons";
+@import "../../common/typography";
+@import "../../common/interaction";
+
+.drop-down {
+	position: relative;
+	overflow: hidden;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	font-size: 100%;
+	box-shadow: 0 1px 2px rgba($color-black, 0.25);
+
+	&.inline {
+		box-shadow: 0 1px 5px rgba($color-black, 0.25);
+		padding: 0;
+		top: 7px;
+		display: inline-block;
+	}
+
+	select {
+		position: relative;
+		z-index: 1;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		outline: none;
+		border: none;
+		padding: 4px 26px 4px 4px;
+		background: transparent;
+
+		&::-ms-expand {
+			display: none;
+		}
+	}
+
+	.icon {
+		position: absolute;
+		z-index: 0;
+	}
+}

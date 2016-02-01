@@ -1,0 +1,80 @@
+.container {
+	padding: 24px 32px;
+
+	&.quiz {
+		padding: 24px 48px;
+	}
+
+	&.keyword {
+		text-align: center;
+		font-size: $text-font-size-ex-ex-large;
+		font-weight: $text-font-weight-bold;
+		padding: 2em 0;
+
+		&.small {
+			padding: 0 24px 32px;
+			text-align: left;
+		}
+	}
+}
+
+
+.token-panel{
+	background: $color-quill-gray;
+}
+
+.align-left {
+	text-align: left;
+}
+
+.full-height {
+	height: 100%;
+}
+
+.no-padding {
+	padding: 0;
+}
+
+.padding-16 {
+	padding: 24px 16px;
+
+	&-right {
+		padding-right: 16px;
+	}
+
+	&-left {
+		padding-left: 16px;
+	}
+}
+
+.padding-32 {
+	padding: 32px;
+
+	&-right {
+		padding-right: 32px;
+	}
+
+	&-left {
+		padding-left: 32px;
+	}
+}
+
+.padding-64 {
+	padding: 64px;
+
+	&-right {
+		padding-right: 64px;
+	}
+}
+
+.padding-128 {
+	padding: 128px;
+
+	&-left {
+		padding-left: 128px;
+	}
+}
+
+.no-padding-bottom {
+	padding-bottom: 0;
+}

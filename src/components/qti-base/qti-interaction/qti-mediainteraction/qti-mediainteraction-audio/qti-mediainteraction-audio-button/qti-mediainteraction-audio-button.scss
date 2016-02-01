@@ -1,0 +1,64 @@
+@import "../qti-mediainteraction-audio";
+
+.button {
+	height: 40px;
+	overflow: hidden;
+	width: 40px;
+
+	&.selectable {
+		background: #fff;
+		border-radius: 2px 0 0 2px;
+		height: 32px;
+		left: 1px;
+		position: absolute;
+		top: 1px;
+		width: 32px;
+
+		.vjs-mindtree-skin .vjs-play-control {
+			height: 32px;
+			width: 32px;
+		}
+
+		.vjs-mindtree-skin .vjs-control-bar {
+			height: 32px;
+			width: 32px;
+		}
+	}
+
+	.vjs-mindtree-skin .vjs-play-control {
+		border: 0;
+	}
+}
+
+.large {
+	height: 74px;
+	width: 74px;
+
+	.vjs-play-control {
+		height: 74px;
+		width: 74px;
+	}
+
+	.vjs-control-bar {
+		height: 74px;
+	}
+
+	.vjs-mute-control,
+	.vjs-progress-control {
+		display: none
+	}
+}
+
+:host-context(.media-unit) .large {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -37px;
+	margin-top: -37px;
+}
+
+:host-context(.ghost) {
+	.button{
+		visibility: hidden;
+	}
+}

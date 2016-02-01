@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1" identifier="" adaptive="false" title="" timeDependent="false">
+	<itemBody>
+		<rubricBlock view="candidate">
+			<div>Reorder the words to have a good time.</div>
+		</rubricBlock>
+		<infoControl title="hint">
+			<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+		</infoControl>
+		<div class="type:freetownpane width-100 shadow container">
+			<div class="type:quiz">
+				<div class="type:quiz-card">
+					<div class="type:header">Which phrase matches this picture?</div>
+					<ul class="type:conversation container">
+						<li class="type:conversationitem quiz with-block">
+							<img class="type:avatar blue" alt="" src="../content/media/avatars/kate.png" />
+							<div class="type:block">
+								<mediaInteraction class="type:audio" responseIdentifier="MI1" autostart="false">
+									<object data="/content/media/audio/placeholder-short.mp3" type="audio/mp3" />
+								</mediaInteraction>
+							</div>
+						</li>
+					</ul>
+					<choiceInteraction class="type:selectlist horizontal container" responseIdentifier="interaction_1" maxChoices="4" shuffle="false">
+						<simpleChoice class="type:selectlistitem inline" identifier="interaction_1_choice_1">
+							<span class="type:label">Interdum</span>
+						</simpleChoice>
+						<simpleChoice class="type:selectlistitem inline" identifier="interaction_1_choice_2">
+							<span class="type:label">Dolare</span>
+						</simpleChoice>
+						<simpleChoice class="type:selectlistitem inline" identifier="interaction_1_choice_3">
+							<span class="type:label">Duisem</span>
+						</simpleChoice>
+						<simpleChoice class="type:selectlistitem inline" identifier="interaction_1_choice_4">
+							<span class="type:label">Dominarum</span>
+						</simpleChoice>
+					</choiceInteraction>
+				</div>
+			</div>
+		</div>
+	</itemBody>
+</assessmentItem>

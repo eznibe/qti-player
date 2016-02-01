@@ -1,0 +1,16 @@
+<link rel="import" href="../qti-choiceinteraction.html">
+
+<polymer-element name="qti-choiceinteraction-dropdown" extends="qti-choiceinteraction">
+	<template>
+		<link rel="stylesheet" href="qti-choiceinteraction-dropdown.css">
+		<div class="prompt">
+			<content select="qti-prompt" />
+		</div>
+		<div class="{{mainClass}} {{lightClasses}}">
+			<custom-dropdown options="{{options}}" disabled?="{{disabled}}" identifier="{{responseIdentifier}}" status="{{interaction_status}}" >
+				<content></content>
+			</custom-dropdown>
+		</div>
+	</template>
+	<script src="qti-choiceinteraction-dropdown.js"></script>
+</polymer-element>

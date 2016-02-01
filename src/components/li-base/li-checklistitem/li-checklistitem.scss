@@ -1,0 +1,36 @@
+@import "../li-base";
+
+.checklist-item {
+	margin: 10px 0;
+}
+
+.checkbox {
+	background: #fff;
+	border: 0;
+	border-radius: 3px;
+	box-shadow: 0 -1px 1px -1px #000;
+	margin: 0 10px 0 0;
+	position: relative;
+	top: 3px;
+	color: #2B2B2B;
+	cursor: pointer;
+	display: inline-block;
+	line-height: 1;
+	padding: 9px 9px 8px 9px;
+	text-align: left;
+	user-select: none;
+	font-size: 1.5rem;
+}
+
+input[type="checkbox"]:checked + .checkbox {
+	background-image: url(/svg/icon-ticked.svg);
+	background-color: #87c327;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 75%;
+	box-shadow: none;
+}
+
+label {
+	cursor: pointer;
+}

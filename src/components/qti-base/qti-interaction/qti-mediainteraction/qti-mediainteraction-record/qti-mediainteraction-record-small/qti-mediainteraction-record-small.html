@@ -1,0 +1,78 @@
+<link rel="import" href="../qti-mediainteraction-record.html">
+
+<polymer-element name="qti-mediainteraction-record-small" extends="qti-mediainteraction-record">
+	<template>
+		<link rel="stylesheet" href="qti-mediainteraction-record-small.css">
+		<div class="record small">
+			<div class="header">
+				<h1><span>Word</span> or phrase</h1>
+			</div>
+			<div class="main">
+				<div class="wrapper wrapper-playback">
+					<div class="avatar">
+						<img-avatar class="large blue" alt="" src="/content/media/avatars/ben.png"/>
+					</div>
+					<div class="body">
+						<figure class="audio">
+							<audio class="contain-media video-js vjs-mindtree-skin" width="auto" height="auto">
+								<source src="{{data}}" type="{{type}}" />
+							</audio>
+						</figure>
+					</div>
+				</div>
+				<div class="wrapper wrapper-record">
+					<div class="avatar">
+						<img-avatar class="large green" alt="" src="/content/media/avatars/ben.png"/>
+					</div>
+					<div class="body">
+						<div class="align-audio"></div>
+						<a class="icon icon-start"></a>
+						<canvas class="analyser" id="analyser" width="420" height="120"></canvas>
+						<div class="icon icon-allow-mic"></div>
+						<div class="icon icon-no-mic"></div>
+						<div class="icon icon-get-ready"></div>
+						<div class="icon icon-recording"></div>
+					</div>
+				</div>
+				<div class="button-wrapper">
+					<div class="record-button record-button-record">
+						<button class="button button-audio button-record-red button-record-start">
+							<svg class="button-icon"></svg>
+							Record
+						</button>
+					</div>
+					<div class="record-button record-button-no-mic">
+						<button class="button button-audio button-microphone button-no-mic">
+							<svg class="button-icon"></svg>
+							No microphone
+						</button>
+					</div>
+					<div class="record-button record-button-stop">
+						<button class="button button-audio button-stop">
+							<svg class="button-icon"></svg>
+							Stop
+						</button>
+					</div>
+					<div class="record-button record-button-record-again">
+						<button class="button button-audio button-record-red record-button-restart">
+							<svg class="button-icon"></svg>
+							Record again
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="bar">
+					<p>Did you stress the first syllable of chocolate?</p>
+					<div class="buttons">
+						<button class="button button-freetown">Yes</button>
+						<button class="button button-freetown">No</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</template>
+	<script src="//vjs.zencdn.net/4.10/video.js"></script>
+	<script src="//wavesurfer.fm/build/wavesurfer.min.js"></script>
+	<script src="qti-mediainteraction-record-small.js"></script>
+</polymer-element>

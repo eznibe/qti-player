@@ -1,0 +1,15 @@
+<link rel="import" href="../qti-interaction.html">
+
+<polymer-element name="qti-orderinteraction" extends="qti-interaction">
+	<template>
+		<link rel="stylesheet" href="qti-orderinteraction.css">
+        <ul class="drag-target {{lightClasses}}">
+            <template repeat="{{sortItem in sortables}}">
+                <li data-identifier="{{sortItem.identifier}}" >
+                    <span class="sortable"><span class="token">{{sortItem.label}}</span></span>
+                </li>
+            </template>
+        </ul>
+	</template>
+	<script src="qti-orderinteraction.js"></script>
+</polymer-element>

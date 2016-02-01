@@ -1,0 +1,23 @@
+@import "../div-base";
+
+::content .highlight {
+	line-height: 1;
+	border-radius: 3px;
+	padding: 1px 1px 2px 1px;
+	margin: 0 -1px;
+	background-color: #acedff;
+}
+
+::content .highlight.alt {
+	background-color: #e9c2df;
+}
+
+::content p.label{
+	font-weight: 500;
+	margin-bottom: 0;
+}
+
+
+::content textarea, ::content .text-input{
+	margin: 0 0 20px;
+}

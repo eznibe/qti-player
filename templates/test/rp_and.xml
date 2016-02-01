@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- http://5qx5fs.axshare.com/#p=t001_-_drag_and_drop_to_chat -->
+<!-- http://codebeautify.org/xmlviewer/1a6a87 -->
+
+<assessmentItem identifier="" adaptive="false" title="" timeDependent="false" xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1">
+
+    <responseDeclaration identifier="r1" cardinality="single" baseType="identifier">
+        <defaultValue>
+            <value>TRUE</value>
+        </defaultValue>
+    </responseDeclaration>
+    
+    <responseDeclaration identifier="r2" cardinality="single" baseType="identifier">
+        <defaultValue>
+            <value>TRUE</value>
+        </defaultValue>
+    </responseDeclaration>
+    
+	<outcomeDeclaration identifier="OUTCOME" cardinality="single" baseType="identifier"/>
+
+
+	<itemBody>
+		<rubricBlock view="candidate">
+			<div>rubric</div>
+		</rubricBlock>
+	</itemBody>
+
+	<responseProcessing>
+		<responseCondition>
+			<responseIf>
+				<contains>
+					<variable identifier="r1" />
+					<multiple>
+						<baseValue baseType="identifier">GT1</baseValue>
+					</multiple>
+				</contains>
+				<setOutcomeValue identifier="OUTCOME">
+					<baseValue baseType="identifier">TRUE</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+
+			<responseElse>
+				<setOutcomeValue identifier="OUTCOME">
+					<baseValue baseType="identifier">FALSE</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+	</responseProcessing>
+    
+</assessmentItem>

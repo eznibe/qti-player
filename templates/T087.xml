@@ -1,0 +1,39 @@
+<assessmentItem identifier="" adaptive="false" title="" timeDependent="false" xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1">
+	<responseDeclaration identifier="gapmatch_1" cardinality="multiple" baseType="directedPair">
+		<correctResponse>
+			<value>GT1 G1</value>
+		</correctResponse>
+	</responseDeclaration>
+	<itemBody>
+		<rubricBlock view="candidate">
+			<div>rubric</div>
+		</rubricBlock>
+		<infoControl title="hint">
+			<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+		</infoControl>
+		<div class="type:freetownpane width-100 shadow container">
+			<div class="type:quiz">
+				<div class="type:quiz-card with-columns">
+					<div class="type:header">Complete the question.</div>
+					<gapMatchInteraction class="type:layout10" responseIdentifier="gapmatch_1" shuffle="false">
+						<gapText identifier="GT1" matchMax="1">euisdom</gapText>
+						<gapText identifier="GT2" matchMax="1">euismod</gapText>
+						<gapText identifier="GT3" matchMax="1">laoreet</gapText>
+						<gapText identifier="GT4" matchMax="1">sodales</gapText>
+						<gapText identifier="GT5" matchMax="1">euismod</gapText>
+						<gapText identifier="GT6" matchMax="1">pulvinar</gapText>
+						<gapText identifier="GT7" matchMax="1">lorem</gapText>
+						<div class="type:content-left">
+							<p>A. lipdum dolare navadot dilor
+							<span class="type:nowrap">
+								<gap identifier="G1" class="" />
+							</span>
+							</p>
+							<p>B. Yes, no problem.</p>
+						</div>
+					</gapMatchInteraction>
+				</div>
+			</div>
+		</div>
+	</itemBody>
+</assessmentItem>

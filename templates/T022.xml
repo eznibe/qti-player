@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- http://5qx5fs.axshare.com/#p=t020_-_roleplay_prompted_reply -->
+<!-- http://codebeautify.org/xmlviewer/c8556f -->
+<assessmentItem identifier="" xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1" adaptive="false" title="" timeDependent="false">
+	<responseDeclaration identifier="MI1" cardinality="single" baseType="integer"/>
+	<responseDeclaration identifier="MI2" cardinality="single" baseType="integer"/>
+	<responseDeclaration identifier="interaction_1" cardinality="single" baseType="string">
+		<correctResponse>
+			<value>a</value>
+		</correctResponse>
+		<mapping defaultValue="0">
+			<mapEntry mapKey="a" mappedValue="1"/>
+		</mapping>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_2" cardinality="single" baseType="string">
+		<correctResponse>
+			<value>b</value>
+		</correctResponse>
+		<mapping defaultValue="0">
+			<mapEntry mapKey="b" mappedValue="1"/>
+		</mapping>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_3" cardinality="single" baseType="string">
+		<correctResponse>
+			<value>c</value>
+		</correctResponse>
+		<mapping defaultValue="0">
+			<mapEntry mapKey="c" mappedValue="1"/>
+		</mapping>
+	</responseDeclaration>
+	<outcomeDeclaration identifier="outcome_1" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_2" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_3" cardinality="single" baseType="identifier"/>
+	<itemBody>
+		<rubricBlock view="candidate">
+			<div>Listen to Nina and record your lines in the conversation.</div>
+		</rubricBlock>
+		<infoControl title="hint">
+			<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+		</infoControl>
+		<div class="type:freetownpane width-100 spill shadow">
+			<div class="type:carousel-vertical">
+				<div class="type:carouselitem">
+					<ul class="type:conversation role-play container scrollable">
+						<li class="type:conversationitem media">
+							<img class="type:avatar" alt="" src="../content/media/avatars/tom.png" />
+							<mediaInteraction class="type:video dialog" responseIdentifier="MI1" autostart="false">
+								<object data="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4" />
+							</mediaInteraction>
+						</li>
+						<li class="type:conversationitem alternate">
+							<img class="type:avatar blue" alt="" src="../content/media/avatars/kate.png" />
+							<p>
+								Crud much and a indecisively
+								<span class="type:nowrap">
+									<textEntryInteraction class="inline" responseIdentifier="interaction_2" expectedLength="10"/>
+									<feedbackInline class="type:correct" outcomeIdentifier="outcome_2" identifier="correct" showHide="show">
+										<span>correct</span>
+									</feedbackInline>
+									<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_2" identifier="incorrect" showHide="show">
+										<span>incorrect</span>
+									</feedbackInline>
+								</span>, crud much and a indecisively lipsum dolame ratirum
+								<span class="type:nowrap">
+									<textEntryInteraction class="inline" responseIdentifier="interaction_2" expectedLength="14"/>
+									<feedbackInline class="type:correct" outcomeIdentifier="outcome_2" identifier="correct" showHide="show">
+										<span>correct</span>
+									</feedbackInline>
+									<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_2" identifier="incorrect" showHide="show">
+										<span>incorrect</span>
+									</feedbackInline>
+								</span>.
+							</p>
+						</li>
+					</ul>
+				</div>
+				<div class="type:carouselitem">
+					<ul class="type:conversation role-play container scrollable">
+						<li class="type:conversationitem media">
+							<img class="type:avatar" alt="" src="../content/media/avatars/tom.png" />
+							<mediaInteraction class="type:video dialog" responseIdentifier="MI2" autostart="false">
+								<object data="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4" />
+							</mediaInteraction>
+						</li>
+						<li class="type:conversationitem alternate">
+							<img class="type:avatar blue" alt="" src="../content/media/avatars/kate.png" />
+							<p>
+								Crud much and a indecisively
+								<span class="type:nowrap">
+									<textEntryInteraction class="inline" responseIdentifier="interaction_3" expectedLength="10"/>
+									<feedbackInline class="type:correct" outcomeIdentifier="outcome_3" identifier="correct" showHide="show">
+										<span>correct</span>
+									</feedbackInline>
+									<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_3" identifier="incorrect" showHide="show">
+										<span>incorrect</span>
+									</feedbackInline>
+								</span>, crud much and a indecisively lipsum dolame ratirum.
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</itemBody>
+	<responseProcessing>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<mapResponse identifier="interaction_1"/>
+					<baseValue baseType="float">1</baseValue>
+				</match>
+				<setOutcomeValue identifier="outcome_1">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_1">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<mapResponse identifier="interaction_2"/>
+					<baseValue baseType="float">1</baseValue>
+				</match>
+				<setOutcomeValue identifier="outcome_2">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_2">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<mapResponse identifier="interaction_3"/>
+					<baseValue baseType="float">1</baseValue>
+				</match>
+				<setOutcomeValue identifier="outcome_3">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_3">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+	</responseProcessing>
+</assessmentItem>

@@ -1,0 +1,11 @@
+<link rel="import" href="../qti-textentryinteraction.html">
+
+<polymer-element name="qti-textentryinteraction-textarea" extends="qti-textentryinteraction">
+	<template>
+		<link rel="stylesheet" href="qti-textentryinteraction-textarea.css">
+		<span-interaction class="block">
+			<textarea on-keyup="{{textChanged}}" on-change="{{textChanged}}" class="{{lightClasses}} form__input" rows="5"></textarea>
+		</span-interaction>
+	</template>
+	<script src="qti-textentryinteraction-textarea.js"></script>
+</polymer-element>

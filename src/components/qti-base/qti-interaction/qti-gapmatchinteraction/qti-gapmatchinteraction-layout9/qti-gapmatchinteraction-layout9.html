@@ -1,0 +1,33 @@
+<link rel="import" href="../qti-gapmatchinteraction.html">
+
+<polymer-element name="qti-gapmatchinteraction-layout9" extends="qti-gapmatchinteraction">
+	<template>
+        <link rel="stylesheet" href="/app/components/div-base/div-mediaunit/div-mediaunit.css">
+        <core-style ref="defaultCSS"></core-style>
+
+        <div-carouselmedia>
+            
+            <div class="media-unit {{lightClasses}}">
+                <div class="position">
+                    <div class="drawer">
+                        <content select="qti-gaptext"></content>
+                    </div>
+                    <div class="overlay">
+                        <a href="#" class="drawer-trigger"></a>
+                        <content select="div-overlay"></content>
+                    </div>
+                    <div class="overlay-audio">
+                        <content select="div-overlay-audio"></content>
+                    </div>
+                </div>
+                <div-mediacontainer>
+                    <content></content>
+                </div-mediacontainer>
+            </div>
+
+        </div-carouselmedia>
+       
+	</template>
+	<script src="qti-gapmatchinteraction-layout9.js"></script>
+    
+</polymer-element>

@@ -1,0 +1,188 @@
+$buttons: (
+	primary: (
+		bgcolor: (#a4d231, #6eb71f),
+		bgcolor-hover: #87c327,
+		bgcolor-active: (#6eb71f, #afd231),
+		bgcolor-disabled: #e0e5cb,
+		box-shadow-active: inset 0 1px 0 0 #5D9C1A,
+		box-shadow-hit: 0 1px 0 0 #a4d231,
+		box-shadow: 0 1px 0 0 #5D9C1A,
+		text-transform: uppercase,
+		padding: 7px 10px 6px 10px
+	),
+	secondary: (
+		bgcolor: (#B1AFAA, #837F77),
+		bgcolor-hover: #97948D,
+		bgcolor-active: (#837F77, #B1AFAA),
+		bgcolor-disabled: #E3E1DE,
+		font-size: $text-font-size-small,
+		box-shadow-active: inset 0 1px 0 0 #6e6b63,
+		box-shadow-hit: 0 1px 0 0 #B1AFAA,
+		box-shadow: 0 1px 0 0 #6e6b63,
+		touch-target-pad-top: -9px,
+		touch-target-pad-bottom: -9px
+	),
+	freetown: (
+		bgcolor: (#8F4A79, #5C304F),
+		bgcolor-hover: #723B61,
+		bgcolor-active: (#5C304F, #8F4A79),
+		bgcolor-disabled: #E1D7DE,
+		font-size: $text-font-size-small,
+		box-shadow-active: inset 0 1px 0 0 #4D2842,
+		box-shadow-hit: 0 1px 0 0 #8F4A79,
+		box-shadow: 0 1px 0 0 #4D2842,
+		touch-target-pad-top: -9px,
+		touch-target-pad-bottom: -9px
+	),
+	writing: (
+		bgcolor: (#0BB5D2, #0789B8),
+		bgcolor-hover: #099CC3,
+		bgcolor-active: (#0789B8, #0BB5D2),
+		bgcolor-disabled: #EDF5F7,
+		box-shadow-active: inset 0 1px 0 0 #06749C,
+		box-shadow-hit: 0 1px 0 0 #0BB5D2,
+		box-shadow: 0 1px 0 0 #06749C
+	),
+	hint: (
+		color: #63615B,
+		color-hover: #63615B,
+		bgcolor-hover: #F1F2F2,
+		bgcolor-disabled: none,
+		border: 1px solid #CCCBC7,
+		padding: 8px 9px 6px 9px,
+		font-size: $text-font-size-small,
+		text-transform: uppercase,
+		touch-target-pad-top: -4px,
+		touch-target-pad-bottom: -4px
+	),
+	hint-open: (
+		bgcolor: #F1F2F2,
+		color: #63615B
+	),
+	audio: (
+		text-transform: uppercase,
+	),
+	record: (
+		bgcolor: (#A4D231, #6EB71F),
+		bgcolor-hover: #87C327,
+		bgcolor-active: (#6EB71F, #AFD231),
+		bgcolor-disabled: #E0E5CB,
+		box-shadow-active: inset 0 1px 0 0 #5D9C1A,
+		box-shadow-hit: 0 1px 0 0 #AFD231,
+		box-shadow: 0 1px 0 0 #5D9C1A
+	),
+	record-red: (
+		bgcolor: (#E0001B, #DE0018),
+		bgcolor-hover: #DF001A,
+		bgcolor-active: (#E0001B, #DE0018),
+		bgcolor-disabled: #FBC6C8,
+		box-shadow-active: inset 0 1px 0 0 #C61219,
+		box-shadow-hit: 0 1px 0 0 #E0001B,
+		box-shadow: 0 1px 0 0 #C61219
+	),
+	stop: (
+		bgcolor: (#E0001B, #DE0018),
+		bgcolor-hover: #DF001A,
+		bgcolor-disabled: #FBC6C8,
+		bgcolor-active: (#E0001B, #DE0018),
+		box-shadow-active: inset 0 1px 0 0 #C61219,
+		box-shadow-hit: 0 1px 0 0 #E0001B,
+		box-shadow: 0 1px 0 0 #C61219
+	),
+	microphone: (
+		bgcolor: (#B1AFAA, #837F77),
+		bgcolor-disabled: #E3E1DE,
+		bgcolor-hover: #97948D,
+		bgcolor-active: (#837F77, #B1AFAA),
+		box-shadow-hit: 0 1px 0 0 #B1AFAA,
+		box-shadow: 0 1px 0 0 #837F77
+	)
+);
+
+.button {
+	display: inline-block;
+	user-select: none;
+	position: relative;
+	vertical-align: middle;
+	z-index: 1;
+	border: 0 none;
+	border-radius: 3px;
+	margin: 0;
+	padding: 5px 7px 3px 7px;
+	background: #fff;
+	color: $text-color-inverted;
+	cursor: pointer;
+	line-height: normal;
+	font-weight: $text-font-weight-default;
+	text-align: center;
+
+	&:before {
+		position: absolute;
+		content: '';
+		top: -5px;
+		right: 0;
+		left: 0;
+		bottom: -5px;
+		z-index: 0;
+	}
+
+	&:disabled,
+	&.disabled {
+		cursor: default;
+		box-shadow: none!important;
+	}
+
+	&-icon{
+		display: inline-block;
+		float: left;
+		vertical-align: text-top;
+		margin: 0 5px 0 0;
+		height: 17px;
+		width: 14px;
+		fill: #fff;
+	}
+}
+
+@each $button, $type in $buttons {
+		.button-#{$button} {
+			padding: map-get($type, padding);
+			@if length(map-get($type, bgcolor)) > 1 {
+				background: nth(map-get($type, bgcolor),1);
+				background: linear-gradient(nth(map-get($type, bgcolor),1), nth(map-get($type, bgcolor),2));
+			}
+			text-transform: map-get($type, text-transform);
+			color: map-get($type, color);
+			border: map-get($type, border);
+			font-size: map-get($type, font-size);
+			font-weight: map-get($type, font-weight);
+			box-shadow: map-get($type, box-shadow);
+
+			&:before {
+				top: map-get($type, touch-target-pad-top);
+				bottom: map-get($type, touch-target-pad-bottom);
+			}
+
+			&.hover,
+			&:hover,
+			&:focus {
+				color: map-get($type, color-hover);
+				background: map-get($type, bgcolor-hover);
+				box-shadow: 0 1px 0 0 map-get($type, bgcolor-hover);
+			}
+
+			&.active,
+			&:active {
+				@if length(map-get($type, bgcolor)) > 1 {
+					background-image: linear-gradient(nth(map-get($type, bgcolor-active),1), nth(map-get($type, bgcolor-active),2));
+				}
+				box-shadow: map-get($type, box-shadow-active), map-get($type, box-shadow-hit);
+			}
+
+			&:disabled,
+			&.disabled,
+			&.disabled:active,
+			&.disabled:hover {
+				background: map-get($type, bgcolor-disabled);
+			}
+		}
+}

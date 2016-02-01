@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem identifier="11" adaptive="false" title="" timeDependent="false" xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1">
+  <responseDeclaration identifier="interaction_1" cardinality="multiple" baseType="identifier">
+    <correctResponse>
+      <value>hottext_6</value>
+      <value>hottext_7</value>
+	  <value>hottext_9</value>
+      <value>hottext_11</value>
+
+    </correctResponse>
+  </responseDeclaration>
+
+  <outcomeDeclaration identifier="outcome_1" cardinality="multiple" baseType="identifier"/>
+
+  <itemBody class="T011">
+    <rubricBlock view="candidate">
+      <div>Read the conversation again. Select the information that Norbert gives about himself. There are four answers.</div>
+    </rubricBlock>
+    <infoControl title="hint">
+      <div>Look for names, countries, towns and jobs.</div>
+    </infoControl>
+    <div class="type:freetownpane width-70 shadow">
+      <hottextInteraction responseIdentifier="interaction_1" maxChoices="2">
+        <ul class="type:conversation">
+          <li class="type:conversationitem">
+            <img class="type:avatar" alt="" src="../content/media/27.png"/>
+            <p>
+              <hottext identifier="hottext_1">
+                <span class="type:label">Hi, everyone. Welcome to the elementary class.</span>
+                <feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="hottext_1" showHide="show">
+                  <span>incorrect</span>
+                </feedbackInline>
+              </hottext> <hottext identifier="hottext_2">
+                <span class="type:label">I’m Jenny.</span>
+                <feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="hottext_2" showHide="show">
+                  <span>incorrect</span>
+                </feedbackInline>
+             </hottext><hottext identifier="hottext_3">
+                <span class="type:label">I’m your teacher.</span>
+                <feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="hottext_3" showHide="show">
+                  <span>incorrect</span>
+                </feedbackInline>
+              </hottext><hottext identifier="hottext_4">
+                <span class="type:label">Please tell the class a little about yourself.</span>
+                <feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="hottext_4" showHide="show">
+                  <span>incorrect</span>
+                </feedbackInline>
+              </hottext>
+            </p>
+          </li>
+          <li class="type:conversationitem alternate">
+            <img class="type:avatar blue" alt="" src="../content/media/28.png"/>
+            <p>
+              <hottext identifier="hottext_5">
+                <span class="type:label">Hi,</span>
+                <feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="hottext_5" showHide="show">
+                  <span>incorrect</span>
+                </feedbackInline>
+              </hottext> <hottext identifier="hottext_6">
+                <span class="type:label">I’m Norbert.</span>
+                <feedbackInline class="type:correct" outcomeIdentifier="outcome_1" identifier="hottext_6" showHide="show">
+                  <span>correct</span>
+                </feedbackInline>
+              </hottext> <hottext identifier="hottext_7">
+                <span class="type:label">I’m from Hungary</span>
+                <feedbackInline class="type:correct" outcomeIdentifier="outcome_1" identifier="hottext_7" showHide="show">
+                  <span>correct</span>
+                </feedbackInline>
+              </hottext><hottext identifier="hottext_8">
+                <span class="type:label">and</span>
+                <feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="hottext_8" showHide="show">
+                  <span>incorrect</span>
+                </feedbackInline>
+              </hottext><hottext identifier="hottext_9">
+                <span class="type:label">I'm an art student.</span>
+                <feedbackInline class="type:correct" outcomeIdentifier="outcome_1" identifier="hottext_9" showHide="show">
+                  <span>correct</span>
+                </feedbackInline>
+              </hottext>
+            </p>
+          </li>
+          <li class="type:conversationitem">
+            <img class="type:avatar" alt="" src="../content/media/27.png"/>
+            <p>
+              <hottext identifier="hottext_10">
+                <span class="type:label">Are you from Budapest, Norbert?</span>
+                <feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="hottext_10" showHide="show">
+                  <span>incorrect</span>
+                </feedbackInline>
+              </hottext>
+            </p>
+          </li>
+		   <li class="type:conversationitem alternate">
+            <img class="type:avatar blue" alt="" src="../content/media/28.png"/>
+            <p>
+              <hottext identifier="hottext_11">
+                <span class="type:label">No, I’m not. I’m from Halimba.</span>
+                <feedbackInline class="type:correct" outcomeIdentifier="outcome_1" identifier="hottext_11" showHide="show">
+                  <span>correct</span>
+                </feedbackInline>
+              </hottext>
+            </p>
+          </li>
+		  <li class="type:conversationitem">
+            <img class="type:avatar" alt="" src="../content/media/27.png"/>
+            <p>
+              <hottext identifier="hottext_12">
+                <span class="type:label">Is Halimba a small town?</span>
+                <feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="hottext_12" showHide="show">
+                  <span>incorrect</span>
+                </feedbackInline>
+              </hottext>
+            </p>
+          </li>
+		  <li class="type:conversationitem alternate">
+            <img class="type:avatar blue" alt="" src="../content/media/28.png"/>
+            <p>
+              <hottext identifier="hottext_13">
+                <span class="type:label">Yes, it is! It’s very small!</span>
+                <feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="hottext_13" showHide="show">
+                  <span>incorrect</span>
+                </feedbackInline>
+              </hottext>
+            </p>
+          </li>
+		   <li class="type:conversationitem">
+            <img class="type:avatar" alt="" src="../content/media/27.png"/>
+            <p>
+              <hottext identifier="hottext_14">
+                <span class="type:label">Thanks, Norbert.</span>
+                <feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="hottext_14" showHide="show">
+                  <span>incorrect</span>
+                </feedbackInline>
+              </hottext><hottext identifier="hottext_15">
+                <span class="type:label">Next?</span>
+                <feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="hottext_15" showHide="show">
+                  <span>incorrect</span>
+                </feedbackInline>
+              </hottext>
+            </p>
+          </li>
+		          </ul>
+      </hottextInteraction>
+    </div>
+    <div class="type:freetownpane width-30">
+      <img class="type:cover" src="../content/media/22.jpg" alt="" />
+    </div>
+  </itemBody>
+  <responseProcessing>
+    <setOutcomeValue identifier="outcome_1">
+      <variable identifier="interaction_1"></variable>
+    </setOutcomeValue>
+  </responseProcessing>
+</assessmentItem>

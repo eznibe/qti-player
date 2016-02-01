@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem identifier="12" adaptive="false" title="" timeDependent="false" xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1">
+    <responseDeclaration identifier="interaction_1_1" cardinality="single" baseType="string">
+        <correctResponse>
+            <value>yours</value>
+        </correctResponse>
+        <mapping defaultValue="0">
+            <mapEntry mapKey="yours" mappedValue="1"/>
+        </mapping>
+    </responseDeclaration>
+    <responseDeclaration identifier="interaction_2_1" cardinality="single" baseType="string">
+        <correctResponse>
+            <value>mine</value>
+        </correctResponse>
+        <mapping defaultValue="0">
+            <mapEntry mapKey="mine" mappedValue="1"/>
+        </mapping>
+    </responseDeclaration>
+    <responseDeclaration identifier="interaction_2_2" cardinality="single" baseType="string">
+        <correctResponse>
+            <value>his</value>
+        </correctResponse>
+        <mapping defaultValue="0">
+            <mapEntry mapKey="his" mappedValue="1"/>
+        </mapping>
+    </responseDeclaration>
+    <responseDeclaration identifier="interaction_3_1" cardinality="single" baseType="string">
+        <correctResponse>
+            <value>hers</value>
+        </correctResponse>
+        <mapping defaultValue="0">
+            <mapEntry mapKey="hers" mappedValue="1"/>
+        </mapping>
+    </responseDeclaration>
+    <responseDeclaration identifier="interaction_3_2" cardinality="single" baseType="string">
+        <correctResponse>
+            <value>yours</value>
+        </correctResponse>
+        <mapping defaultValue="0">
+            <mapEntry mapKey="yours" mappedValue="1"/>
+        </mapping>
+    </responseDeclaration>
+    <responseDeclaration identifier="interaction_4_1" cardinality="single" baseType="string">
+        <correctResponse>
+            <value>ours</value>
+        </correctResponse>
+        <mapping defaultValue="0">
+            <mapEntry mapKey="ours" mappedValue="1"/>
+        </mapping>
+    </responseDeclaration>
+    <responseDeclaration identifier="interaction_6_1" cardinality="single" baseType="string">
+        <correctResponse>
+            <value>theirs</value>
+        </correctResponse>
+        <mapping defaultValue="0">
+            <mapEntry mapKey="theirs" mappedValue="1"/>
+        </mapping>
+    </responseDeclaration>
+
+  <outcomeDeclaration identifier="outcome_1_1" cardinality="single" baseType="identifier"/>
+  <outcomeDeclaration identifier="outcome_2_1" cardinality="single" baseType="identifier"/>
+  <outcomeDeclaration identifier="outcome_2_2" cardinality="single" baseType="identifier"/>
+  <outcomeDeclaration identifier="outcome_3_1" cardinality="single" baseType="identifier"/>
+  <outcomeDeclaration identifier="outcome_3_2" cardinality="single" baseType="identifier"/>
+  <outcomeDeclaration identifier="outcome_4_1" cardinality="single" baseType="identifier"/>
+  <outcomeDeclaration identifier="outcome_6_1" cardinality="single" baseType="identifier"/>
+
+  <itemBody class="T012">
+    <rubricBlock view="candidate">
+      <div>Complete the conversations using the correct possessive pronouns.</div>
+    </rubricBlock>
+    <infoControl title="hint">
+      <div></div>
+    </infoControl>
+    <div class="type:freetownpane width-70 shadow">
+      <ul class="type:conversation">
+        <li class="type:conversationitem">
+          <img class="type:avatar" alt="" src="../content/media/24.png"/>
+          <p>
+            I have an exam on Monday and I need to study, but my computer is broken! Can I borrow <textEntryInteraction class="modifier:reversed" responseIdentifier="interaction_1_1"/> <feedbackInline class="type:correct" outcomeIdentifier="outcome_1_1" identifier="correct" showHide="show">
+              <span>correct</span>
+            </feedbackInline> <feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1_1" identifier="incorrect" showHide="show">
+              <span>incorrect</span>
+            </feedbackInline>?
+          </p>
+        </li>
+         <li class="type:conversationitem alternate">
+          <img class="type:avatar blue" alt="" src="../content/media/25.png"/>
+          <p>
+            Oh, no! Sorry, I left <textEntryInteraction class="modifier:reversed" responseIdentifier="interaction_2_1"/> <feedbackInline class="type:correct" outcomeIdentifier="outcome_2_1" identifier="correct" showHide="show">
+              <span>correct</span>
+            </feedbackInline> <feedbackInline class="type:incorrect" outcomeIdentifier="outcome_2_1" identifier="incorrect" showHide="show">
+              <span>incorrect</span>
+            </feedbackInline> at college. Ask Tom if you can borrow <textEntryInteraction class="modifier:reversed" responseIdentifier="interaction_2_2"/> <feedbackInline class="type:correct" outcomeIdentifier="outcome_2_2" identifier="correct" showHide="show">
+              <span>correct</span>
+            </feedbackInline> <feedbackInline class="type:incorrect" outcomeIdentifier="outcome_2_2" identifier="incorrect" showHide="show">
+              <span>incorrect</span>
+            </feedbackInline>.
+          </p>
+        </li>
+        <li class="type:conversationitem">
+          <img class="type:avatar" alt="" src="../content/media/24.png"/>
+          <p>
+            Hi, Tom. I have an exam on Monday, but my computer is broken. Emma has left <textEntryInteraction class="modifier:reversed" responseIdentifier="interaction_3_1"/> <feedbackInline class="type:correct" outcomeIdentifier="outcome_3_1" identifier="correct" showHide="show">
+              <span>correct</span>
+            </feedbackInline> <feedbackInline class="type:incorrect" outcomeIdentifier="outcome_3_1" identifier="incorrect" showHide="show">
+              <span>incorrect</span>
+            </feedbackInline> at college. Can I borrow <textEntryInteraction class="modifier:reversed" responseIdentifier="interaction_3_2"/> <feedbackInline class="type:correct" outcomeIdentifier="outcome_3_2" identifier="correct" showHide="show">
+              <span>correct</span>
+            </feedbackInline> <feedbackInline class="type:incorrect" outcomeIdentifier="outcome_3_2" identifier="incorrect" showHide="show">
+              <span>incorrect</span>
+            </feedbackInline>?
+          </p>
+        </li>
+       <li class="type:conversationitem alternate">
+          <img class="type:avatar blue" alt="" src="../content/media/25.png"/>
+          <p>
+            I share my computer with my brother; it is  <textEntryInteraction class="modifier:reversed" responseIdentifier="interaction_4_1"/> <feedbackInline class="type:correct" outcomeIdentifier="outcome_4_1" identifier="correct" showHide="show">
+              <span>correct</span>
+            </feedbackInline> <feedbackInline class="type:incorrect" outcomeIdentifier="outcome_4_1" identifier="incorrect" showHide="show">
+              <span>incorrect</span>
+            </feedbackInline>. You can borrow it until Monday.
+          </p>
+        </li>
+		<li class="type:conversationitem">
+          <img class="type:avatar" alt="" src="../content/media/24.png"/>
+          <p>
+            Hi, Sarah. Did you find a computer to study for the exam?
+          </p>
+        </li>
+		<li class="type:conversationitem alternate">
+          <img class="type:avatar blue" alt="" src="../content/media/25.png"/>
+          <p>
+           Yes, Tom and his brother let me borrow <textEntryInteraction class="modifier:reversed" responseIdentifier="interaction_6_1"/> <feedbackInline class="type:correct" outcomeIdentifier="outcome_6_1" identifier="correct" showHide="show">
+              <span>correct</span>
+            </feedbackInline> <feedbackInline class="type:incorrect" outcomeIdentifier="outcome_6_1" identifier="incorrect" showHide="show">
+              <span>incorrect</span>
+            </feedbackInline>. I passed the exam!
+          </p>
+        </li>
+
+      </ul>
+    </div>
+    <div class="type:freetownpane width-30 background-dark">
+      <img src="../content/media/23.jpg" alt="" />
+      <div class="type:wordpool">
+        <h2 class="type:title">Choose the word from below</h2>
+        <ul class="type:wordpoollist">
+          <li class="type:wordpoolitem">yours</li>
+          <li class="type:wordpoolitem">mine</li>
+          <li class="type:wordpoolitem">hers</li>
+          <li class="type:wordpoolitem">his</li>
+          <li class="type:wordpoolitem">ours</li>
+		  <li class="type:wordpoolitem">theirs</li>
+        </ul>
+      </div>
+    </div>
+  </itemBody>
+  <responseProcessing>
+
+    <responseCondition>
+        <responseIf>
+            <match>
+                <mapResponse identifier="interaction_1_1"/>
+                <baseValue baseType="float">1</baseValue>
+            </match>
+            <setOutcomeValue identifier="outcome_1_1">
+                <baseValue baseType="identifier">correct</baseValue>
+            </setOutcomeValue>
+        </responseIf>
+        <responseElse>
+            <setOutcomeValue identifier="outcome_1_1">
+                <baseValue baseType="identifier">incorrect</baseValue>
+            </setOutcomeValue>
+        </responseElse>
+    </responseCondition>
+      <responseCondition>
+        <responseIf>
+            <match>
+                <mapResponse identifier="interaction_2_1"/>
+                <baseValue baseType="float">1</baseValue>
+            </match>
+            <setOutcomeValue identifier="outcome_2_1">
+                <baseValue baseType="identifier">correct</baseValue>
+            </setOutcomeValue>
+        </responseIf>
+        <responseElse>
+            <setOutcomeValue identifier="outcome_2_1">
+                <baseValue baseType="identifier">incorrect</baseValue>
+            </setOutcomeValue>
+        </responseElse>
+    </responseCondition>
+      <responseCondition>
+        <responseIf>
+            <match>
+                <mapResponse identifier="interaction_2_2"/>
+                <baseValue baseType="float">1</baseValue>
+            </match>
+            <setOutcomeValue identifier="outcome_2_2">
+                <baseValue baseType="identifier">correct</baseValue>
+            </setOutcomeValue>
+        </responseIf>
+        <responseElse>
+            <setOutcomeValue identifier="outcome_2_2">
+                <baseValue baseType="identifier">incorrect</baseValue>
+            </setOutcomeValue>
+        </responseElse>
+    </responseCondition>
+      <responseCondition>
+        <responseIf>
+            <match>
+                <mapResponse identifier="interaction_3_1"/>
+                <baseValue baseType="float">1</baseValue>
+            </match>
+            <setOutcomeValue identifier="outcome_3_1">
+                <baseValue baseType="identifier">correct</baseValue>
+            </setOutcomeValue>
+        </responseIf>
+        <responseElse>
+            <setOutcomeValue identifier="outcome_3_1">
+                <baseValue baseType="identifier">incorrect</baseValue>
+            </setOutcomeValue>
+        </responseElse>
+    </responseCondition>
+      <responseCondition>
+        <responseIf>
+            <match>
+                <mapResponse identifier="interaction_3_2"/>
+                <baseValue baseType="float">1</baseValue>
+            </match>
+            <setOutcomeValue identifier="outcome_3_2">
+                <baseValue baseType="identifier">correct</baseValue>
+            </setOutcomeValue>
+        </responseIf>
+        <responseElse>
+            <setOutcomeValue identifier="outcome_3_2">
+                <baseValue baseType="identifier">incorrect</baseValue>
+            </setOutcomeValue>
+        </responseElse>
+    </responseCondition>
+            <responseCondition>
+        <responseIf>
+            <match>
+                <mapResponse identifier="interaction_4_1"/>
+                <baseValue baseType="float">1</baseValue>
+            </match>
+            <setOutcomeValue identifier="outcome_4_1">
+                <baseValue baseType="identifier">correct</baseValue>
+            </setOutcomeValue>
+        </responseIf>
+        <responseElse>
+            <setOutcomeValue identifier="outcome_4_1">
+                <baseValue baseType="identifier">incorrect</baseValue>
+            </setOutcomeValue>
+        </responseElse>
+    </responseCondition>
+      <responseCondition>
+        <responseIf>
+            <match>
+                <mapResponse identifier="interaction_6_1"/>
+                <baseValue baseType="float">1</baseValue>
+            </match>
+            <setOutcomeValue identifier="outcome_6_1">
+                <baseValue baseType="identifier">correct</baseValue>
+            </setOutcomeValue>
+        </responseIf>
+        <responseElse>
+            <setOutcomeValue identifier="outcome_6_1">
+                <baseValue baseType="identifier">incorrect</baseValue>
+            </setOutcomeValue>
+        </responseElse>
+    </responseCondition>
+
+  </responseProcessing>
+</assessmentItem>

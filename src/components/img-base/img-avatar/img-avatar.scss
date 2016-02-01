@@ -1,0 +1,21 @@
+@import "../img-base";
+
+.avatar {
+	width: 70px;
+	height: 70px;
+	border-radius: 10px;
+	background: $color-avatar-background;
+}
+
+.large {
+	height: 120px;
+	width: 120px;
+}
+
+.blue {
+	background: $color-avatar-background-blue;
+}
+
+.purple {
+	background: $color-avatar-background-purple;
+}

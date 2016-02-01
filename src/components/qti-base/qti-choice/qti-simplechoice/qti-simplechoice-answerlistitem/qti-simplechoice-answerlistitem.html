@@ -1,0 +1,17 @@
+
+<link rel="import" href="../qti-simplechoice.html">
+
+<polymer-element name="qti-simplechoice-answerlistitem" extends="qti-simplechoice">
+	<template>
+		<link rel="stylesheet" href="qti-simplechoice-answerlistitem.css">
+		<li-answeritem>
+			<span-nowrap>
+				<custom-checkbox identifier="{{identifier}}" disabled="{{disabled}}" status="{{choice_status}}">
+					<content select="span-label"></content>
+				</custom-checkbox>
+				<content></content>
+			</span-nowrap>
+		</li-answeritem>
+	</template>
+	<script src="qti-simplechoice-answerlistitem.js"></script>
+</polymer-element>

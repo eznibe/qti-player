@@ -1,0 +1,9 @@
+@import "../span-base";
+
+.dialog-label{
+	color: #504f4e;
+	display: block;
+}
+:host-context(.alternate) .dialog-label{
+	text-align: right;
+}

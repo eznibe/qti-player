@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- http://5qx5fs.axshare.com/#p=t062_-_video___type_in -->
+<!-- http://codebeautify.org/xmlviewer/a91d06 -->
+<assessmentItem identifier="" adaptive="false" title="" timeDependent="false" xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1">
+	<responseDeclaration identifier="MI1" cardinality="single" baseType="integer" />
+	<responseDeclaration identifier="interaction_1" cardinality="single" baseType="identifier">
+		<correctResponse>
+			<value>interaction_1_choice_1</value>
+		</correctResponse>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_2" cardinality="single" baseType="identifier">
+		<correctResponse>
+			<value>interaction_2_choice_2</value>
+		</correctResponse>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_3_1" cardinality="single" baseType="identifier">
+		<correctResponse>
+			<value>interaction_3_1_choice_1</value>
+		</correctResponse>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_3_2" cardinality="single" baseType="identifier">
+		<correctResponse>
+			<value>interaction_3_2_choice_2</value>
+		</correctResponse>
+	</responseDeclaration>
+	<outcomeDeclaration identifier="outcome_1" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_2" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_3_1" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_3_2" cardinality="single" baseType="identifier"/>
+	<itemBody>
+		<rubricBlock view="candidate">
+			<div>Watch the video again and complete the sentences.</div>
+		</rubricBlock>
+		<infoControl title="hint">
+			<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+		</infoControl>
+		<div class="type:freetownpane width-50 shadow with-audio">
+			<ul class="type:conversation with-audio container scrollable">
+				<li class="type:conversationitem alternate cuepoint cue-start:0 cue-end:1">
+					<img class="type:avatar" alt="" src="../content/media/avatars/carlos.png"/>
+					<p>Veggies es bonus proinde vos postulo essum magis kohlrabi welsh onion.</p>
+				</li>
+				<li class="type:conversationitem cuepoint cue-start:1 cue-end:2">
+					<img class="type:avatar blue" alt="" src="../content/media/avatars/ben.png"/>
+					<p>Pea horseradish azuki bean lettuce avocado asparagus okra.</p>
+				</li>
+				<li class="type:conversationitem alternate cuepoint cue-start:2 cue-end:3">
+					<img class="type:avatar" alt="" src="../content/media/avatars/carlos.png"/>
+					<p>Soko radicchio bunya nuts gram dulse silver beet parsnip cabbage lotus.</p>
+				</li>
+				<li class="type:conversationitem cuepoint cue-start:3 cue-end:4">
+					<img class="type:avatar blue" alt="" src="../content/media/avatars/ben.png"/>
+					<p>Pea horseradish azuki bean lettuce avocado asparagus okra.</p>
+				</li>
+				<li class="type:conversationitem alternate cuepoint cue-start:4 cue-end:5">
+					<img class="type:avatar" alt="" src="../content/media/avatars/carlos.png"/>
+					<p>Veggies es bonus proinde vos postulo essum magis kohlrabi welsh onion.</p>
+				</li>
+				<li class="type:conversationitem cuepoint cue-start:5 cue-end:9">
+					<img class="type:avatar blue" alt="" src="../content/media/avatars/ben.png"/>
+					<p>Pea horseradish azuki bean lettuce avocado asparagus okra.</p>
+				</li>
+			</ul>
+			<mediaInteraction class="type:audio relative-audio" responseIdentifier="MI1" autostart="false">
+				<object data="/content/media/audio/placeholder-short.mp3" type="audio/mp3"/>
+			</mediaInteraction>
+		</div>
+		<div class="type:freetownpane width-50 background-dark">
+			<ol class="type:questionlist padding-16 scrollable">
+				<li class="type:questionitem">
+					This is a question with a dropdown at the end
+					<span class="type:nowrap">
+						<inlineChoiceInteraction responseIdentifier="interaction_1" shuffle="false">
+							<inlineChoice identifier="interaction_1_choice_1">option 1</inlineChoice>
+							<inlineChoice identifier="interaction_1_choice_2">option 2</inlineChoice>
+						</inlineChoiceInteraction>
+						<feedbackInline class="type:correct" outcomeIdentifier="outcome_1" identifier="correct" showHide="show">
+							<span>correct</span>
+						</feedbackInline>
+						<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="incorrect" showHide="show">
+							<span>incorrect</span>
+						</feedbackInline>.
+					</span>
+				</li>
+				<li class="type:questionitem">
+					His email address is
+					<span class="type:nowrap">
+						<inlineChoiceInteraction responseIdentifier="interaction_2" shuffle="false">
+							<inlineChoice identifier="interaction_2_choice_1">option 1</inlineChoice>
+							<inlineChoice identifier="interaction_2_choice_2">option 2</inlineChoice>
+						</inlineChoiceInteraction>
+						<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_2" identifier="incorrect" showHide="show">
+							<span>incorrect</span>
+						</feedbackInline>
+						<feedbackInline class="type:correct" outcomeIdentifier="outcome_2" identifier="correct" showHide="show">
+							<span>correct</span>
+						</feedbackInline>
+					</span>
+			        @gmail.com.
+				</li>
+				<li class="type:questionitem">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae aut repellat
+					<span class="type:nowrap">
+						<inlineChoiceInteraction responseIdentifier="interaction_3_1" shuffle="false">
+							<inlineChoice identifier="interaction_3_1_choice_1">option 1</inlineChoice>
+							<inlineChoice identifier="interaction_3_1_choice_2">option 2</inlineChoice>
+						</inlineChoiceInteraction>
+						<feedbackInline class="type:correct" outcomeIdentifier="outcome_3_1" identifier="correct" showHide="show">
+							<span>correct</span>
+						</feedbackInline>
+						<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_3_1" identifier="incorrect" showHide="show">
+							<span>incorrect</span>
+						</feedbackInline>
+					</span>
+			        quaerat eligendi est rerum tempora nulla vel quis illo tempore obcaecati odit, itaque
+			        <span class="type:nowrap">
+				        <inlineChoiceInteraction responseIdentifier="interaction_3_2" shuffle="false">
+							<inlineChoice identifier="interaction_3_2_choice_1">option 1</inlineChoice>
+							<inlineChoice identifier="interaction_3_2_choice_2">option 2</inlineChoice>
+						</inlineChoiceInteraction>
+						<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_3_2" identifier="incorrect" showHide="show">
+							<span>incorrect</span>
+						</feedbackInline>
+						<feedbackInline class="type:correct" outcomeIdentifier="outcome_3_2" identifier="correct" showHide="show">
+							<span>correct</span>
+						</feedbackInline>
+					</span>
+					voluptates nesciunt exercitationem, autem sequi, nisi!
+				</li>
+			</ol>
+		</div>
+	</itemBody>
+	<responseProcessing>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<variable identifier="interaction_1"/>
+					<correct identifier="interaction_1"/>
+				</match>
+				<setOutcomeValue identifier="outcome_1">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_1">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<variable identifier="interaction_2"/>
+					<correct identifier="interaction_2"/>
+				</match>
+				<setOutcomeValue identifier="outcome_2">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_2">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<variable identifier="interaction_3_1"/>
+					<correct identifier="interaction_3_1"/>
+				</match>
+				<setOutcomeValue identifier="outcome_3_1">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_3_1">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<variable identifier="interaction_3_2"/>
+					<correct identifier="interaction_3_2"/>
+				</match>
+				<setOutcomeValue identifier="outcome_3_2">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_3_2">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+	</responseProcessing>
+</assessmentItem>

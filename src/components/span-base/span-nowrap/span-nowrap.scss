@@ -1,0 +1,12 @@
+@import "../span-base";
+
+.no-wrap {
+	display: inline-block;
+	white-space: nowrap;
+//    commentend this out because it was breaking the dropzone size (was appearing as a line).
+//	font-size: 0;
+}
+
+:host-context(.static-text) .no-wrap{
+	margin-bottom: 15px;
+}

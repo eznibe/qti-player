@@ -1,0 +1,63 @@
+@import "../div-base";
+
+.media-container {
+	background: gray;
+	display: block;
+	height: 0;
+	padding-bottom: 56.25%;
+	overflow: hidden;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+
+	img,
+	video {
+		max-width: 100%;
+	}
+}
+
+:host-context(.media-unit.flashcard) .media-container {
+	background: none;
+}
+
+:host-context(.media-unit.static) .media-container {
+	left: 0;
+	background-color: $color-white;
+	bottom: 0;
+	box-shadow: 0 0 10px rgba($color-freetown-shadows, 0.3);
+	display: block;
+	overflow: visible;
+	padding-bottom: 56.25%;
+	position: relative;
+	right: 0;
+	text-align: center;
+	top: 0;
+
+	::content p.text-centered{
+		height: auto;
+		left: 10%;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 80%;
+	}
+	
+}
+
+:host-context(.media-unit.dialog) .media-container {
+	height: 450px;
+	padding: 0;
+
+	::content p {
+		left: 0;
+		text-align: left;
+		width: auto;
+	}
+}
+
+:host-context(.media-unit.static.small) .media-container {
+	::content p {
+		font-size: $text-font-size-default;
+		text-align: left;
+	}
+}

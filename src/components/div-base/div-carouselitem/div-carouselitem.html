@@ -1,0 +1,11 @@
+<link rel="import" href="../div-base.html">
+
+<polymer-element name="div-carouselitem" extends="div-base">
+	<template>
+		<link rel="stylesheet" href="div-carouselitem.css">
+		<div class="carousel-item {{lightClasses}} {{carousel_status}} {{orientation}}" >
+			<content></content>
+		</div>
+	</template>
+	<script src="div-carouselitem.js"></script>
+</polymer-element>

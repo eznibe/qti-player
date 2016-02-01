@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1" identifier="" adaptive="false" title="" timeDependent="false">
+	<itemBody>
+		<rubricBlock view="candidate">
+			<div>Reorder the words to have a good time.</div>
+		</rubricBlock>
+		<infoControl title="hint">
+			<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+		</infoControl>
+		<div class="type:freetownpane width-100 shadow container">
+			<div class="type:quiz">
+				<div class="type:quiz-card">
+					<div class="type:header">Which phrase matches this picture?</div>
+					<ul class="type:conversation container padding-16">
+						<li class="type:conversationitem quiz with-block">
+							<img class="type:avatar blue" alt="" src="../content/media/avatars/kate.png" />
+							<div class="type:block">
+								<mediaInteraction class="type:audio" responseIdentifier="MI1" autostart="false">
+									<object data="/content/media/audio/placeholder-short.mp3" type="audio/mp3" />
+								</mediaInteraction>
+							</div>
+						</li>
+					</ul>
+					<p>
+							Static text and
+							<textEntryInteraction class="text inline reversed" responseIdentifier="TEI1" expectedLength="20" />
+							more static text in any combination or order.
+						</p>
+				</div>
+			</div>
+		</div>
+	</itemBody>
+</assessmentItem>

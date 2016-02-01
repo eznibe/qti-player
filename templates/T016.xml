@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- http://5qx5fs.axshare.com/#p=t016_-_large_image_radio_buttons -->
+<!-- http://codebeautify.org/xmlviewer/ecefa8 -->
+
+<assessmentItem identifier="" adaptive="false" title="" timeDependent="false" xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1">
+	<responseDeclaration identifier="CI1" cardinality="single" baseType="identifier"/>
+	<itemBody>
+		<rubricBlock view="candidate">
+			<div>Choose who you want to speak to.</div>
+		</rubricBlock>
+		<infoControl title="hint">
+			<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+		</infoControl>
+		<choiceInteraction class="" responseIdentifier="CI1" maxChoices="1" shuffle="false">
+			<simpleChoice class="type:freetownpane width-50" identifier="C1">
+				<img class="type:cover" src="http://lorempixel.com/1000/1000/" alt="" />
+				<span class="type:label">Name</span>
+			</simpleChoice>
+			<simpleChoice class="type:freetownpane width-50" identifier="C2">
+				<img class="type:cover" src="http://lorempixel.com/1000/1000/" alt="" />
+				<span class="type:label">Name</span>
+			</simpleChoice>
+		</choiceInteraction>
+	</itemBody>
+</assessmentItem>

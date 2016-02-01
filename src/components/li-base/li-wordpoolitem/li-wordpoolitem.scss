@@ -1,0 +1,39 @@
+@import "../li-base";
+
+.word-pool-list-item {
+	position: relative;
+	float: left;
+	width: 50%;
+	margin-bottom: 1em;
+	padding-left: 1em;
+
+	&:before{
+		content: '';
+		display: block;
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		background: $color-cotton-seed;
+		position: absolute;
+		left: 0;
+		top: 50%;
+		margin-top: -4px;
+
+	}
+}
+
+.inline {
+	display: inline-block;
+	float: none;
+	width: auto;
+	margin-left: 2em;
+}
+
+.light {
+	.word-pool-list-item {
+
+		&:before{
+			background-color: $color-pane-dark;
+		}
+	}
+}

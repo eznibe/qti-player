@@ -1,0 +1,25 @@
+<link rel="import" href="../div-base.html">
+
+<polymer-element name="div-mediaunit" extends="div-base">
+<template>
+	<link rel="stylesheet" href="div-mediaunit.css">
+	<div class="media-unit {{lightClasses}}">
+		<div class="position">
+			<div class="drawer">
+				<content select="div-drawer"></content>
+			</div>
+			<div class="overlay">
+				<a hidden?="{{!querySelector('.drawer')}}" href="#" class="drawer-trigger"></a>
+				<content select="div-overlay"></content>
+			</div>
+			<div class="overlay-audio">
+				<content select="div-overlay-audio"></content>
+			</div>
+		</div>
+		<div-mediacontainer>
+			<content></content>
+		</div-mediacontainer>
+	</div>
+</template>
+<script src="div-mediaunit.js"></script>
+</polymer-element>

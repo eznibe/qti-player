@@ -1,0 +1,156 @@
+@import "../qti-base";
+@import "../../common/icons";
+
+$shell-padding: 16px;
+
+.wrap {
+	position: relative;
+	height: 100%;
+	padding: 0 20px;
+}
+
+.shell {
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	min-width: 960px;
+	max-width: 1280px;
+	min-height: 600px;
+	max-height: 768px;
+}
+
+.title-bar {
+	position: relative;
+	z-index: 1;
+	background: #53434f;
+	color: white;
+	font-size: 1.4rem;
+	line-height: 1;
+	margin-bottom: 3px;
+	padding: 8px 0 7px;
+	position: relative;
+	text-align: center;
+
+	a {
+		&:hover,
+		&:focus {
+			color: darken($text-color-inverted, 20%);
+
+			.icon {
+				fill: darken($text-color-inverted, 20%);
+			}
+		}
+	}
+
+	&:before {
+		background: linear-gradient($color-wild-willow, $color-sushi);
+		content: '';
+		height: 3px;
+		left: 0;
+		position: absolute;
+		top: 100%;
+		width: 100%;
+	}
+}
+
+.title-bar-menu {
+	color: white;
+	left: 0;
+	margin-left: $shell-padding;
+	padding-left: 20px;
+	position: absolute;
+	text-transform: uppercase;
+}
+
+.title-bar-burger {
+	fill: $text-color-inverted;
+	left: 0;
+	margin-top: -6px;
+	position: absolute;
+	top: 50%;
+}
+
+.title-bar-chevron {
+	display: inline-block;
+	fill: rgba($color-white, 0.4);
+	height: 9px;
+	margin-left: 5px;
+	width: 6px;
+}
+
+.title-bar-breadcrumb-item {
+	display: inline-block;
+	padding-left: 5px;
+
+	&:first-child {
+		padding-left: 0;
+	}
+}
+
+.title-bar-tools {
+	color: white;
+	right: $shell-padding;
+	padding-left: 22px;
+	position: absolute;
+	text-transform: uppercase;
+	top: 8px;
+
+	&:hover,
+	&:focus {
+		color: darken($text-color-inverted, 20%);
+	}
+}
+
+.title-bar-tools-icon {
+	fill: $text-color-inverted;
+	left: 0;
+	margin-top: -9px;
+	position: absolute;
+	top: 50%;
+}
+
+.header {
+	position: relative;
+	z-index: 1;
+	background: rgba($text-color-inverted, 0.9);
+	min-height: 80px;
+	overflow: hidden;
+	padding: 15px $shell-padding 15px $shell-padding*2;
+}
+
+.rubric {
+	font-size: $text-font-size-large;
+	float: left;
+	max-width: 70%;
+	line-height: 1.4;
+}
+
+.footer {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	background: $text-color-inverted;
+	overflow: hidden;
+	padding: 0 $shell-padding;
+	vertical-align: middle;
+}
+
+.footer-button {
+	float: left;
+	margin-left: 5px;
+
+	&:first-child {
+		margin: 0;
+	}
+}
+
+.primary-buttons {
+	float: right;
+	padding: 10px 0 0;
+}
+
+.secondary-buttons {
+	float: left;
+	padding: 12px 0;
+}

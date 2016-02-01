@@ -1,0 +1,18 @@
+@import "../../../../div-base/div-base";
+
+.left {
+	float: left;
+	margin-right: 16px;
+	width: 384px;
+}
+
+.right {
+	float: left;
+	width: 256px;
+}
+
+.word-pool {
+	background: $color-freetown-background;
+	border-radius: 5px;
+	padding: 12px 18px;
+}

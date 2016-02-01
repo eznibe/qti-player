@@ -1,0 +1,17 @@
+<link rel="import" href="../li-base.html">
+
+<polymer-element name="li-questionitem" extends="li-base">
+	<template>
+		<link rel="stylesheet" href="li-questionitem.css">
+		<li class="question-item {{lightClasses}}" >
+			<p hidden?="{{ plineExists === false }}" class="question-line">
+				<content select="p-line"></content>
+			</p>
+			<p hidden?="{{ panswerExists === false }}" class="question-answer">
+				<content select="p-answer"></content>
+			</p>
+			<content></content>
+        </li>
+	</template>
+	<script src="li-questionitem.js"></script>
+</polymer-element>

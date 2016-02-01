@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- http://5qx5fs.axshare.com/#p=t052_-_carousel__audio_image___type_in -->
+<!-- http://codebeautify.org/xmlviewer/052c6f -->
+<assessmentItem identifier="" xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1" adaptive="false" title="" timeDependent="false">
+	<responseDeclaration identifier="interaction_1_1" cardinality="single" baseType="identifier">
+		<correctResponse>
+			<value>interaction_1_1_choice_1</value>
+		</correctResponse>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_1_2" cardinality="single" baseType="identifier">
+		<correctResponse>
+			<value>interaction_1_2_choice_1</value>
+		</correctResponse>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_2_1" cardinality="single" baseType="identifier">
+		<correctResponse>
+			<value>interaction_2_1_choice_1</value>
+		</correctResponse>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_2_2" cardinality="single" baseType="identifier">
+		<correctResponse>
+			<value>interaction_2_2_choice_1</value>
+		</correctResponse>
+	</responseDeclaration>
+	<outcomeDeclaration identifier="outcome_1_1" cardinality="single" baseType="identifier" />
+	<outcomeDeclaration identifier="outcome_1_2" cardinality="single" baseType="identifier" />
+	<outcomeDeclaration identifier="outcome_2_1" cardinality="single" baseType="identifier" />
+	<outcomeDeclaration identifier="outcome_2_2" cardinality="single" baseType="identifier" />
+	<itemBody>
+		<rubricBlock view="candidate">
+			<div>Rubric</div>
+		</rubricBlock>
+		<infoControl title="hint">
+			<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+		</infoControl>
+		<div class="type:freetownpane shadow spill width-100">
+			<div class="type:carousel fullscreen horizontal">
+				<div class="type:carouselitem">
+					<div class="type:carouselmedia">
+						<img src="http://placeimg.com/1600/900/any" alt="" />
+						<div class="type:container align-left">
+							<p>
+								Progressively
+								<span class="type:nowrap">
+									<inlineChoiceInteraction responseIdentifier="interaction_1_1" shuffle="false">
+										<inlineChoice identifier="interaction_1_1_choice_1">option 1</inlineChoice>
+										<inlineChoice identifier="interaction_1_1_choice_2">option 2</inlineChoice>
+									</inlineChoiceInteraction>
+									<feedbackInline class="type:correct" outcomeIdentifier="outcome_1_1" identifier="correct" showHide="show">
+										<span>correct</span>
+									</feedbackInline>
+									<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1_1" identifier="incorrect" showHide="show">
+										<span>incorrect</span>
+									</feedbackInline>
+								</span>
+								maintain unique value
+								<span class="type:nowrap">
+									<inlineChoiceInteraction responseIdentifier="interaction_1_2" shuffle="false">
+										<inlineChoice identifier="interaction_1_2_choice_1">option 1</inlineChoice>
+										<inlineChoice identifier="interaction_1_2_choice_2">option 2</inlineChoice>
+									</inlineChoiceInteraction>
+									<feedbackInline class="type:correct" outcomeIdentifier="outcome_1_2" identifier="correct" showHide="show">
+										<span>incorrect</span>
+									</feedbackInline>
+									<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1_2" identifier="incorrect" showHide="show">
+										<span>correct</span>
+									</feedbackInline>
+								</span>
+								.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="type:carouselitem">
+					<div class="type:carouselmedia">
+						<img src="http://placeimg.com/1600/900/any" alt="" />
+						<div class="type:container align-left">
+							<p>
+								Progressively
+								<span class="type:nowrap">
+									<inlineChoiceInteraction responseIdentifier="interaction_2_1" shuffle="false">
+										<inlineChoice identifier="interaction_2_1_choice_1">option 1</inlineChoice>
+										<inlineChoice identifier="interaction_2_1_choice_2">option 2</inlineChoice>
+									</inlineChoiceInteraction>
+									<feedbackInline class="type:correct" outcomeIdentifier="outcome_2_1" identifier="correct" showHide="show">
+										<span>correct</span>
+									</feedbackInline>
+									<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_2_1" identifier="incorrect" showHide="show">
+										<span>incorrect</span>
+									</feedbackInline>
+								</span>
+								maintain unique value
+								<span class="type:nowrap">
+									<inlineChoiceInteraction responseIdentifier="interaction_2_2" shuffle="false">
+										<inlineChoice identifier="interaction_2_2_choice_1">option 1</inlineChoice>
+										<inlineChoice identifier="interaction_2_2_choice_2">option 2</inlineChoice>
+									</inlineChoiceInteraction>
+									<feedbackInline class="type:correct" outcomeIdentifier="outcome_2_2" identifier="correct" showHide="show">
+										<span>incorrect</span>
+									</feedbackInline>
+									<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_2_2" identifier="incorrect" showHide="show">
+										<span>correct</span>
+									</feedbackInline>
+								</span>
+								.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</itemBody>
+	<responseProcessing>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<variable identifier="interaction_1_1" />
+					<correct identifier="interaction_1_1" />
+				</match>
+				<setOutcomeValue identifier="outcome_1_1">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_1_1">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<variable identifier="interaction_1_2" />
+					<correct identifier="interaction_1_2" />
+				</match>
+				<setOutcomeValue identifier="outcome_1_2">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_1_2">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<variable identifier="interaction_2_1" />
+					<correct identifier="interaction_2_1" />
+				</match>
+				<setOutcomeValue identifier="outcome_2_1">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_2_1">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<variable identifier="interaction_2_2" />
+					<correct identifier="interaction_2_2" />
+				</match>
+				<setOutcomeValue identifier="outcome_2_2">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_2_2">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+	</responseProcessing>
+</assessmentItem>

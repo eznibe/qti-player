@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- http://5qx5fs.axshare.com/#p=t033_-_type_in_sentences_letters -->
+<!-- http://codebeautify.org/xmlviewer/7a52b9 -->
+<assessmentItem identifier="" adaptive="false" title="" timeDependent="false" xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1">
+	<responseDeclaration identifier="interaction_1" cardinality="single" baseType="string">
+		<correctResponse>
+			<value>a</value>
+		</correctResponse>
+		<mapping defaultValue="0">
+			<mapEntry mapKey="a" mappedValue="1"/>
+		</mapping>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_2" cardinality="single" baseType="string">
+		<correctResponse>
+			<value>b</value>
+		</correctResponse>
+		<mapping defaultValue="0">
+			<mapEntry mapKey="b" mappedValue="1"/>
+		</mapping>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_3" cardinality="single" baseType="string">
+		<correctResponse>
+			<value>c</value>
+		</correctResponse>
+		<mapping defaultValue="0">
+			<mapEntry mapKey="c" mappedValue="1"/>
+		</mapping>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_4" cardinality="single" baseType="string">
+		<correctResponse>
+			<value>d</value>
+		</correctResponse>
+		<mapping defaultValue="0">
+			<mapEntry mapKey="d" mappedValue="1"/>
+		</mapping>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_5" cardinality="single" baseType="string">
+		<correctResponse>
+			<value>e</value>
+		</correctResponse>
+		<mapping defaultValue="0">
+			<mapEntry mapKey="e" mappedValue="1"/>
+		</mapping>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_6" cardinality="single" baseType="string">
+		<correctResponse>
+			<value>f</value>
+		</correctResponse>
+		<mapping defaultValue="0">
+			<mapEntry mapKey="f" mappedValue="1"/>
+		</mapping>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_7" cardinality="single" baseType="string">
+		<correctResponse>
+			<value>o</value>
+		</correctResponse>
+		<mapping defaultValue="0">
+			<mapEntry mapKey="o" mappedValue="1"/>
+		</mapping>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_8" cardinality="single" baseType="string">
+		<correctResponse>
+			<value>h</value>
+		</correctResponse>
+		<mapping defaultValue="0">
+			<mapEntry mapKey="h" mappedValue="1"/>
+		</mapping>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_9" cardinality="single" baseType="string">
+		<correctResponse>
+			<value>u</value>
+		</correctResponse>
+		<mapping defaultValue="0">
+			<mapEntry mapKey="u" mappedValue="1"/>
+		</mapping>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_10" cardinality="single" baseType="string">
+		<correctResponse>
+			<value>j</value>
+		</correctResponse>
+		<mapping defaultValue="0">
+			<mapEntry mapKey="j" mappedValue="1"/>
+		</mapping>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_11" cardinality="single" baseType="string">
+		<correctResponse>
+			<value>k</value>
+		</correctResponse>
+		<mapping defaultValue="0">
+			<mapEntry mapKey="k" mappedValue="1"/>
+		</mapping>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_12" cardinality="single" baseType="string">
+		<correctResponse>
+			<value>l</value>
+		</correctResponse>
+		<mapping defaultValue="0">
+			<mapEntry mapKey="l" mappedValue="1"/>
+		</mapping>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_13" cardinality="single" baseType="string">
+		<correctResponse>
+			<value>m</value>
+		</correctResponse>
+		<mapping defaultValue="0">
+			<mapEntry mapKey="m" mappedValue="1"/>
+		</mapping>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_14" cardinality="single" baseType="string">
+		<correctResponse>
+			<value>m</value>
+		</correctResponse>
+		<mapping defaultValue="0">
+			<mapEntry mapKey="m" mappedValue="1"/>
+		</mapping>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_15" cardinality="single" baseType="string">
+		<correctResponse>
+			<value>m</value>
+		</correctResponse>
+		<mapping defaultValue="0">
+			<mapEntry mapKey="m" mappedValue="1"/>
+		</mapping>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_16" cardinality="single" baseType="string">
+		<correctResponse>
+			<value>m</value>
+		</correctResponse>
+		<mapping defaultValue="0">
+			<mapEntry mapKey="m" mappedValue="1"/>
+		</mapping>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_17" cardinality="single" baseType="string">
+		<correctResponse>
+			<value>m</value>
+		</correctResponse>
+		<mapping defaultValue="0">
+			<mapEntry mapKey="m" mappedValue="1"/>
+		</mapping>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_18" cardinality="single" baseType="string">
+		<correctResponse>
+			<value>m</value>
+		</correctResponse>
+		<mapping defaultValue="0">
+			<mapEntry mapKey="m" mappedValue="1"/>
+		</mapping>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_19" cardinality="single" baseType="string">
+		<correctResponse>
+			<value>t</value>
+		</correctResponse>
+		<mapping defaultValue="0">
+			<mapEntry mapKey="t" mappedValue="1"/>
+		</mapping>
+	</responseDeclaration>
+	<outcomeDeclaration identifier="outcome_1" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_2" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_3" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_4" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_5" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_6" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_7" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_8" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_9" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_10" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_11" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_12" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_13" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_14" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_15" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_16" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_17" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_18" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_19" cardinality="single" baseType="identifier"/>
+	<itemBody>
+		<rubricBlock view="candidate">
+			<div>Complete the conversation with the correct letters. Use a capital letter at the start of a sentence.</div>
+		</rubricBlock>
+		<infoControl title="hint">
+			<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+		</infoControl>
+		<div class="type:freetownpane width-70 shadow">
+			<div class="type:container scrollable">
+			<ol class="type:questionlist">
+				<li class="type:questionitem">
+					Distinctively g<span class="type:nowrap">
+						<textEntryInteraction responseIdentifier="interaction_1" expectedLength="1" class="text inline single-char"/>
+						<feedbackInline class="type:correct" outcomeIdentifier="outcome_1" identifier="correct" showHide="show">
+						  <span>correct</span>
+						</feedbackInline>
+						<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="incorrect" showHide="show">
+						  <span>incorrect</span>
+						</feedbackInline>
+					</span><span class="type:nowrap">
+						<textEntryInteraction responseIdentifier="interaction_2" expectedLength="1" class="text inline single-char"/>
+						<feedbackInline class="type:correct" outcomeIdentifier="outcome_2" identifier="correct" showHide="show">
+						  <span>correct</span>
+						</feedbackInline>
+						<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_2" identifier="incorrect" showHide="show">
+						  <span>incorrect</span>
+						</feedbackInline>
+					</span><span class="type:nowrap">
+						<textEntryInteraction responseIdentifier="interaction_3" expectedLength="1" class="text inline single-char"/>
+						<feedbackInline class="type:correct" outcomeIdentifier="outcome_3" identifier="correct" showHide="show">
+						  <span>correct</span>
+						</feedbackInline>
+						<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_3" identifier="incorrect" showHide="show">
+						  <span>incorrect</span>
+						</feedbackInline>
+					</span><span class="type:nowrap">
+						<textEntryInteraction responseIdentifier="interaction_4" expectedLength="1" class="text inline single-char"/>
+						<feedbackInline class="type:correct" outcomeIdentifier="outcome_4" identifier="correct" showHide="show">
+						  <span>correct</span>
+						</feedbackInline>
+						<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_4" identifier="incorrect" showHide="show">
+						  <span>incorrect</span>
+						</feedbackInline>
+					</span>e future-pr<span class="type:nowrap">
+						<textEntryInteraction responseIdentifier="interaction_5" expectedLength="1" class="text inline single-char"/>
+						<feedbackInline class="type:correct" outcomeIdentifier="outcome_5" identifier="correct" showHide="show">
+						  <span>correct</span>
+						</feedbackInline>
+						<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_5" identifier="incorrect" showHide="show">
+						  <span>incorrect</span>
+						</feedbackInline>
+					</span>of alignm<span class="type:nowrap">
+						<textEntryInteraction responseIdentifier="interaction_6" expectedLength="1" class="text inline single-char"/>
+						<feedbackInline class="type:correct" outcomeIdentifier="outcome_6" identifier="correct" showHide="show">
+						  <span>correct</span>
+						</feedbackInline>
+						<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_6" identifier="incorrect" showHide="show">
+						  <span>incorrect</span>
+						</feedbackInline>
+					</span>nts with market-driven processes.
+				</li>
+				<li class="type:questionitem">
+					Gl<span class="type:nowrap">
+						<textEntryInteraction responseIdentifier="interaction_7" expectedLength="1" class="text inline single-char"/>
+						<feedbackInline class="type:correct" outcomeIdentifier="outcome_7" identifier="correct" showHide="show">
+						  <span>correct</span>
+						</feedbackInline>
+						<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_7" identifier="incorrect" showHide="show">
+						  <span>incorrect</span>
+						</feedbackInline>
+					</span>bally rep<span class="type:nowrap">
+						<textEntryInteraction responseIdentifier="interaction_8" expectedLength="1" class="text inline single-char"/>
+						<feedbackInline class="type:correct" outcomeIdentifier="outcome_8" identifier="correct" showHide="show">
+						  <span>correct</span>
+						</feedbackInline>
+						<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_8" identifier="incorrect" showHide="show">
+						  <span>incorrect</span>
+						</feedbackInline>
+					</span>rpose superior infomediaries b<span class="type:nowrap">
+						<textEntryInteraction responseIdentifier="interaction_9" expectedLength="1" class="text inline single-char"/>
+						<feedbackInline class="type:correct" outcomeIdentifier="outcome_9" identifier="correct" showHide="show">
+						  <span>correct</span>
+						</feedbackInline>
+						<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_9" identifier="incorrect" showHide="show">
+						  <span>incorrect</span>
+						</feedbackInline>
+					</span><span class="type:nowrap">
+						<textEntryInteraction responseIdentifier="interaction_10" expectedLength="1" class="text inline single-char"/>
+						<feedbackInline class="type:correct" outcomeIdentifier="outcome_10" identifier="correct" showHide="show">
+						  <span>correct</span>
+						</feedbackInline>
+						<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_10" identifier="incorrect" showHide="show">
+						  <span>incorrect</span>
+						</feedbackInline>
+					</span><span class="type:nowrap">
+						<textEntryInteraction responseIdentifier="interaction_11" expectedLength="1" class="text inline single-char"/>
+						<feedbackInline class="type:correct" outcomeIdentifier="outcome_11" identifier="correct" showHide="show">
+						  <span>correct</span>
+						</feedbackInline>
+						<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_11" identifier="incorrect" showHide="show">
+						  <span>incorrect</span>
+						</feedbackInline>
+					</span><span class="type:nowrap">
+						<textEntryInteraction responseIdentifier="interaction_12" expectedLength="1" class="text inline single-char"/>
+						<feedbackInline class="type:correct" outcomeIdentifier="outcome_12" identifier="correct" showHide="show">
+						  <span>correct</span>
+						</feedbackInline>
+						<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_12" identifier="incorrect" showHide="show">
+						  <span>incorrect</span>
+						</feedbackInline>
+					</span>re B2C solutions.
+				</li>
+				<li class="type:questionitem">
+					Quickly embrace funct<span class="type:nowrap">
+						<textEntryInteraction responseIdentifier="interaction_13" expectedLength="1" class="text inline single-char"/>
+						<feedbackInline class="type:correct" outcomeIdentifier="outcome_13" identifier="correct" showHide="show">
+						  <span>correct</span>
+						</feedbackInline>
+						<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_13" identifier="incorrect" showHide="show">
+						  <span>incorrect</span>
+						</feedbackInline>
+					</span>onalized applications a<span class="type:nowrap">
+						<textEntryInteraction responseIdentifier="interaction_14" expectedLength="1" class="text inline single-char"/>
+						<feedbackInline class="type:correct" outcomeIdentifier="outcome_14" identifier="correct" showHide="show">
+						  <span>correct</span>
+						</feedbackInline>
+						<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_14" identifier="incorrect" showHide="show">
+						  <span>incorrect</span>
+						</feedbackInline>
+					</span>d go forward architectures.
+				</li>
+				<li class="type:questionitem">
+					<span class="type:nowrap">
+						<textEntryInteraction responseIdentifier="interaction_15" expectedLength="1" class="text inline single-char"/>
+						<feedbackInline class="type:correct" outcomeIdentifier="outcome_15" identifier="correct" showHide="show">
+						  <span>correct</span>
+						</feedbackInline>
+						<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_15" identifier="incorrect" showHide="show">
+						  <span>incorrect</span>
+						</feedbackInline>
+					</span><span class="type:nowrap">
+						<textEntryInteraction responseIdentifier="interaction_16" expectedLength="1" class="text inline single-char"/>
+						<feedbackInline class="type:correct" outcomeIdentifier="outcome_16" identifier="correct" showHide="show">
+						  <span>correct</span>
+						</feedbackInline>
+						<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_16" identifier="incorrect" showHide="show">
+						  <span>incorrect</span>
+						</feedbackInline>
+					</span><span class="type:nowrap">
+						<textEntryInteraction responseIdentifier="interaction_17" expectedLength="1" class="text inline single-char"/>
+						<feedbackInline class="type:correct" outcomeIdentifier="outcome_17" identifier="correct" showHide="show">
+						  <span>correct</span>
+						</feedbackInline>
+						<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_17" identifier="incorrect" showHide="show">
+						  <span>incorrect</span>
+						</feedbackInline>
+					</span>ive
+					<span class="type:nowrap">
+						<textEntryInteraction responseIdentifier="interaction_18" expectedLength="1" class="text inline single-char"/>
+						<feedbackInline class="type:correct" outcomeIdentifier="outcome_18" identifier="correct" showHide="show">
+						  <span>correct</span>
+						</feedbackInline>
+						<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_18" identifier="incorrect" showHide="show">
+						  <span>incorrect</span>
+						</feedbackInline>
+					</span>y customise diverse imperatives before extensible markets.
+				</li>
+				<li class="type:questionitem">
+					Credibly benchmark effective grow<span class="type:nowrap">
+						<textEntryInteraction responseIdentifier="interaction_19" expectedLength="1" class="text inline single-char"/>
+						<feedbackInline class="type:correct" outcomeIdentifier="outcome_19" identifier="correct" showHide="show">
+						  <span>correct</span>
+						</feedbackInline>
+						<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_19" identifier="incorrect" showHide="show">
+						  <span>incorrect</span>
+						</feedbackInline>
+					</span>h strategies and efficient imperatives.
+				</li>
+			</ol>
+		</div>
+		</div>
+		<div class="type:freetownpane width-30 background-dark">
+			<img class="type:cover" src="http://lorempixel.com/1000/1000/" alt="" />
+		</div>
+	</itemBody>
+	<responseProcessing>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<mapResponse identifier="interaction_1"/>
+					<baseValue baseType="float">1</baseValue>
+				</match>
+				<setOutcomeValue identifier="outcome_1">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_1">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<mapResponse identifier="interaction_2"/>
+					<baseValue baseType="float">1</baseValue>
+				</match>
+				<setOutcomeValue identifier="outcome_2">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_2">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<mapResponse identifier="interaction_3"/>
+					<baseValue baseType="float">1</baseValue>
+				</match>
+				<setOutcomeValue identifier="outcome_3">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_3">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<mapResponse identifier="interaction_4"/>
+					<baseValue baseType="float">1</baseValue>
+				</match>
+				<setOutcomeValue identifier="outcome_4">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_4">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<mapResponse identifier="interaction_5"/>
+					<baseValue baseType="float">1</baseValue>
+				</match>
+				<setOutcomeValue identifier="outcome_5">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_5">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<mapResponse identifier="interaction_6"/>
+					<baseValue baseType="float">1</baseValue>
+				</match>
+				<setOutcomeValue identifier="outcome_6">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_6">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<mapResponse identifier="interaction_7"/>
+					<baseValue baseType="float">1</baseValue>
+				</match>
+				<setOutcomeValue identifier="outcome_7">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_7">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<mapResponse identifier="interaction_8"/>
+					<baseValue baseType="float">1</baseValue>
+				</match>
+				<setOutcomeValue identifier="outcome_8">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_8">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<mapResponse identifier="interaction_9"/>
+					<baseValue baseType="float">1</baseValue>
+				</match>
+				<setOutcomeValue identifier="outcome_9">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_9">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<mapResponse identifier="interaction_10"/>
+					<baseValue baseType="float">1</baseValue>
+				</match>
+				<setOutcomeValue identifier="outcome_10">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_10">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<mapResponse identifier="interaction_11"/>
+					<baseValue baseType="float">1</baseValue>
+				</match>
+				<setOutcomeValue identifier="outcome_11">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_11">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<mapResponse identifier="interaction_12"/>
+					<baseValue baseType="float">1</baseValue>
+				</match>
+				<setOutcomeValue identifier="outcome_12">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_12">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<mapResponse identifier="interaction_13"/>
+					<baseValue baseType="float">1</baseValue>
+				</match>
+				<setOutcomeValue identifier="outcome_13">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_13">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<mapResponse identifier="interaction_14"/>
+					<baseValue baseType="float">1</baseValue>
+				</match>
+				<setOutcomeValue identifier="outcome_14">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_14">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<mapResponse identifier="interaction_15"/>
+					<baseValue baseType="float">1</baseValue>
+				</match>
+				<setOutcomeValue identifier="outcome_15">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_15">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<mapResponse identifier="interaction_16"/>
+					<baseValue baseType="float">1</baseValue>
+				</match>
+				<setOutcomeValue identifier="outcome_16">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_16">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<mapResponse identifier="interaction_17"/>
+					<baseValue baseType="float">1</baseValue>
+				</match>
+				<setOutcomeValue identifier="outcome_17">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_17">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<mapResponse identifier="interaction_18"/>
+					<baseValue baseType="float">1</baseValue>
+				</match>
+				<setOutcomeValue identifier="outcome_18">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_18">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<mapResponse identifier="interaction_19"/>
+					<baseValue baseType="float">1</baseValue>
+				</match>
+				<setOutcomeValue identifier="outcome_19">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_19">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+	</responseProcessing>
+</assessmentItem>

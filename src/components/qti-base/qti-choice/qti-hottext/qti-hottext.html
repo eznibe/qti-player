@@ -1,0 +1,12 @@
+<link rel="import" href="../qti-choice.html">
+<!-- The indentation on this component is deliberate to avoid whitespace apeparing -->
+<polymer-element name="qti-hottext" extends="qti-choice">
+	<template>
+		<link rel="stylesheet" href="qti-hottext.css">
+		<span-nowrap>
+            <custom-inlinecheckbox identifier="{{identifier}}" disabled="{{disabled}}" status="{{choice_status}}">
+                <content select="span-label"></content>
+            </custom-inlinecheckbox>
+			<content></content></span-nowrap></template>
+	<script src="qti-hottext.js"></script>
+</polymer-element>

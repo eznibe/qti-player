@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- http://5qx5fs.axshare.com/#p=t038_-_drag_and_drop_to_chat___audio_player -->
+<!-- http://codebeautify.org/xmlviewer/f566c6 -->
+
+<assessmentItem identifier="" adaptive="false" title="" timeDependent="false" xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1">
+	<responseDeclaration identifier="MI1" cardinality="single" baseType="integer" />
+	<responseDeclaration identifier="gapmatch_1" cardinality="multiple" baseType="directedPair">
+		<correctResponse>
+			<value>GT1 G1</value>
+			<value>GT2 G2</value>
+			<value>GT3 G3</value>
+			<value>GT4 G4</value>
+		</correctResponse>
+	</responseDeclaration>
+
+	<outcomeDeclaration identifier="outcome_1" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_2" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_3" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_4" cardinality="single" baseType="identifier"/>
+
+	<itemBody>
+		<rubricBlock view="candidate">
+			<div>Rubric text.</div>
+		</rubricBlock>
+		<infoControl title="hint">
+			<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+		</infoControl>
+		<gapMatchInteraction class="type:layout7" responseIdentifier="gapmatch_1" shuffle="false">
+			<gapText identifier="GT1" matchMax="1">word1</gapText>
+			<gapText identifier="GT2" matchMax="1">word2</gapText>
+			<gapText identifier="GT3" matchMax="1">word3</gapText>
+			<gapText identifier="GT4" matchMax="1">word4</gapText>
+			<div class="type:freetownpane width-70 shadow with-audio">
+				<ul class="type:conversation with-audio container scrollable">
+					<li class="type:conversationitem cuepoint cue-start:0 cue-end:1">
+						<img class="type:avatar" alt="" src="../content/media/avatars/ben.png"/>
+						<p>
+							Veggies es bonus <span class="type:nowrap">
+								<gap identifier="G1" class="inline" />
+								<feedbackInline class="type:correct" outcomeIdentifier="outcome_1" identifier="TRUE" showHide="show">correct</feedbackInline>
+								<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="FALSE" showHide="show">incorrect</feedbackInline>
+							</span> proinde vos postulo essum magis kohlrabi welsh onion.
+						</p>
+					</li>
+					<li class="type:conversationitem alternate cuepoint cue-start:1 cue-end:2">
+						<img class="type:avatar blue" alt="" src="../content/media/avatars/jenny.png"/>
+						<p>
+							Pea horseradish azuki bean lettuce avocado asparagus <span class="type:nowrap">
+								<gap identifier="G2" class="inline" />
+								<feedbackInline class="type:correct" outcomeIdentifier="outcome_2" identifier="TRUE" showHide="show">correct</feedbackInline>
+								<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_2" identifier="FALSE" showHide="show">incorrect</feedbackInline>
+							</span> okra.
+						</p>
+					</li>
+					<li class="type:conversationitem cuepoint cue-start:2 cue-end:3">
+						<img class="type:avatar" alt="" src="../content/media/avatars/ben.png"/>
+						<p>
+							Dandelion <span class="type:nowrap">
+								<gap identifier="G3" class="inline" />
+								<feedbackInline class="type:correct" outcomeIdentifier="outcome_3" identifier="TRUE" showHide="show">correct</feedbackInline>
+								<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_3" identifier="FALSE" showHide="show">incorrect</feedbackInline>
+							</span> cabbage lotus.
+						</p>
+					</li>
+					<li class="type:conversationitem alternate cuepoint cue-start:3 cue-end:4">
+						<img class="type:avatar blue" alt="" src="../content/media/avatars/jenny.png"/>
+						<p>
+							Dandelion <span class="type:nowrap">
+								<gap identifier="G4" class="inline" />
+								<feedbackInline class="type:correct" outcomeIdentifier="outcome_4" identifier="TRUE" showHide="show">correct</feedbackInline>
+								<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_4" identifier="FALSE" showHide="show">incorrect</feedbackInline>
+							</span> zucchini burdock yarrow chickpea dandelion sorrel courgette.
+						</p>
+					</li>
+				</ul>
+				<mediaInteraction class="type:audio relative-audio" responseIdentifier="MI1" autostart="false">
+					<object data="/content/media/audio/placeholder-short.mp3" type="audio/mp3"/>
+				</mediaInteraction>
+			</div>
+		</gapMatchInteraction>
+	</itemBody>
+
+	<responseProcessing>
+		<!--
+			SL:
+
+			Response processing strategy for Gap Match Interactions with feedback per gap:
+			One outcome per feedback per gap, with a condition block as below for each.
+
+		-->
+		<responseCondition>
+			<responseIf>
+			<contains>
+				<variable identifier="gapmatch_1" />
+				<multiple>
+				<baseValue baseType="directedPair">GT1 G1</baseValue>
+				</multiple>
+			</contains>
+			 <setOutcomeValue identifier="outcome_1">
+				 <baseValue baseType="identifier">TRUE</baseValue>
+			 </setOutcomeValue>
+			</responseIf>
+
+			<responseElse>
+			 <setOutcomeValue identifier="outcome_1">
+				 <baseValue baseType="identifier">FALSE</baseValue>
+			 </setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+
+		<responseCondition>
+			<responseIf>
+			<contains>
+				<variable identifier="gapmatch_1" />
+				<multiple>
+				<baseValue baseType="directedPair">GT2 G2</baseValue>
+				</multiple>
+			</contains>
+			 <setOutcomeValue identifier="outcome_2">
+				 <baseValue baseType="identifier">TRUE</baseValue>
+			 </setOutcomeValue>
+			</responseIf>
+
+			<responseElse>
+			 <setOutcomeValue identifier="outcome_2">
+				 <baseValue baseType="identifier">FALSE</baseValue>
+			 </setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+
+		<responseCondition>
+			<responseIf>
+			<contains>
+				<variable identifier="gapmatch_1" />
+				<multiple>
+				<baseValue baseType="directedPair">GT3 G3</baseValue>
+				</multiple>
+			</contains>
+			 <setOutcomeValue identifier="outcome_3">
+				 <baseValue baseType="identifier">TRUE</baseValue>
+			 </setOutcomeValue>
+			</responseIf>
+
+			<responseElse>
+			 <setOutcomeValue identifier="outcome_3">
+				 <baseValue baseType="identifier">FALSE</baseValue>
+			 </setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+
+		<responseCondition>
+			<responseIf>
+			<contains>
+				<variable identifier="gapmatch_1" />
+				<multiple>
+				<baseValue baseType="directedPair">GT4 G4</baseValue>
+				</multiple>
+			</contains>
+			 <setOutcomeValue identifier="outcome_4">
+				 <baseValue baseType="identifier">TRUE</baseValue>
+			 </setOutcomeValue>
+			</responseIf>
+
+			<responseElse>
+			 <setOutcomeValue identifier="outcome_4">
+				 <baseValue baseType="identifier">FALSE</baseValue>
+			 </setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+	</responseProcessing>
+
+</assessmentItem>

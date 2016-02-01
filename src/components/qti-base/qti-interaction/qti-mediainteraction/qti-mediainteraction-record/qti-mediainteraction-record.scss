@@ -1,0 +1,401 @@
+@import "../qti-mediainteraction";
+@import "../../../../common/buttons";
+
+.record {
+	$record-width: 785px;
+	left: 50%;
+	height: 98%;
+	margin-left: -$record-width / 2;
+	position: absolute;
+	width: $record-width;
+
+	&.allow-mic {
+		.icon,
+		.record-button {
+			display: none;
+		}
+		.icon-allow-mic {
+			display: block;
+		}
+	}
+
+	&.no-mic {
+		.icon,
+		.record-button {
+			display: none;
+		}
+		.footer,
+		.icon-no-mic {
+			display: block;
+		}
+	}
+
+	&.recording {
+		#playback,
+		.recording,
+		.icon,
+		.record-button {
+			display: none;
+		}
+		.analyser,
+		.icon-recording,
+		.record-button-stop {
+			display: block;
+		}
+
+	}
+
+	&.playback {
+		.analyser,
+		.icon,
+		.record-button {
+			display: none;
+		}
+		.footer,
+		.recording,
+		.align-audio,
+		.record-button-record-again {
+			display: block;
+		}
+	}
+
+	.header {
+		height: 15%;
+
+		h1 {
+			color: $stray-color-fuscous-gray;
+			font-size: $text-font-size-ex-ex-large;
+			font-weight: normal;
+			margin: 10px 0;
+			text-align: center;
+
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+
+			span {
+				background: $color-earls-green;
+				border-radius: 3px;
+				color: $color-black;
+				padding: 4px 8px;
+			}
+		}
+	}
+
+	.main {
+		height: 70%;
+	}
+
+	.footer {
+		height: 15%;
+
+		.bar {
+			background: $color-white;
+			border-radius: 5px;
+			height: 40px;
+			margin: 10px auto;
+			padding: 5px 8px;
+			width: 520px;
+		}
+
+		p {
+			float: left;
+			line-height: 3rem;
+			margin: 0;
+		}
+
+		.buttons {
+			float: right;
+		}
+	}
+
+	.wrapper {
+		clear: both;
+		height: 120px;
+		margin: 0 0 15px;
+
+		&-record {
+			.vjs-waveform {
+				background-color: $stray-color-fuscous-gray;
+			}
+		}
+	}
+
+	.avatar {
+		float: left;
+		margin: 0 15px 0 0;
+
+		.avatar {
+			height: 120px;
+			width: 120px;
+		}
+	}
+
+	.body {
+		background: linear-gradient(#b5b4af,#535251);
+		float: left;
+		height: 120px;
+		position: relative;
+		width: 650px;
+
+		.vjs-waveform {
+			overflow: hidden;
+
+			wave {
+
+				canvas {
+					border-bottom: 5px solid rgba(0,0,0,0.7);
+					height: 80px !important;
+				}
+
+				wave {
+					background: rgba(255,255,255,0.1);
+					border-bottom: 5px solid $color-bright-sun !important;
+					border-right: 0 !important;
+				}
+			}
+		}
+	}
+
+	.wave-display {
+		height: 75px;
+		left: 0;
+		pointer-events: none;
+		position: absolute;
+		top: 0px;
+		width: 650px;
+	}
+
+	.align-audio {
+		background-color: rgba(0,0,0,0.5);
+		background-position: left 10% center;
+		background-size: 20px;
+		border-radius: 80px;
+		height: 36px;
+		left: 50%;
+		margin-left: -150px;
+		margin-top: -40px;
+		pointer-events: none;
+		position: absolute;
+		top: 50%;
+		width: 160px;
+		z-index: 10;
+
+		&:before {
+			background-image: url($icon-align-left);
+			background-position: left 10% center;
+			background-repeat: no-repeat;
+			background-size: 16px;
+			color: $color-white;
+			content: "Align audio";
+			display: block;
+			font-size: 1.6rem;
+			line-height: 3.6rem;
+			padding: 0 0 0 40px;
+		}
+
+		&:after {
+			background-image: url($icon-align-right);
+			background-position: right 10% center;
+			background-repeat: no-repeat;
+			background-size: 16px;
+			content: "";
+			display: block;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+	}
+
+	.icon {
+		background-image: url($icon-micro);
+		background-repeat: no-repeat;
+		border-radius: 80px;
+		height: 80px;
+		left: 50%;
+		margin-left: -110px;
+		margin-top: -40px;
+		position: absolute;
+		top: 50%;
+		width: 80px;
+
+		&-start {
+			background-color: rgba(0,0,0,0.7);
+			background-image: url($icon-micro);
+			background-position: center;
+			background-size: 35%;
+			cursor: pointer;
+
+			&:hover {
+				background-image: url($icon-micro-hover);
+			}
+		}
+
+		&-allow-mic {
+			background-color: $color-white;
+			background-image: url($icon-micro-black);
+			background-position: left 10% center;
+			background-size: 20px;
+			height: 60px;
+			margin-left: -220px;
+			margin-top: -30px;
+			width: 320px;
+
+			&:before {
+				color: $color-black;
+				content: "Make sure you allow your browser to use the microphone";
+				display: block;
+				font-size: $text-font-size-small;
+				font-weight: 500;
+				line-height: 1.7rem;
+				padding: 14px 20px 15px 65px;
+			}
+		}
+
+		&-no-mic {
+			background-color: $color-white;
+			background-image: url($icon-no-micro-black);
+			background-position: left 10% center;
+			background-size: 20px;
+			height: 60px;
+			margin-left: -220px;
+			margin-top: -30px;
+			width: 320px;
+
+			&:before {
+				color: $color-black;
+				content: "No microphone? \a Say the words out loud.";
+				display: block;
+				font-size: $text-font-size-small;
+				font-weight: 500;
+				line-height: 1.7rem;
+				padding: 14px 20px 15px 65px;
+				white-space: pre;
+			}
+		}
+
+		&-get-ready {
+			background-color: rgba(0,0,0,0.7);
+			background-position: left 10% center;
+			background-size: 20px;
+			height: 60px;
+			margin-left: -210px;
+			margin-top: -30px;
+			width: 280px;
+
+			&:before {
+				color: $color-white;
+				content: "Get ready 3";
+				display: block;
+				font-size: 2.6rem;
+				line-height: 6.4rem;
+				padding: 0 0 0 80px;
+			}
+
+			&-2 {
+				&:before {
+					content: "Get ready 2";
+				}
+			}
+
+			&-1 {
+				&:before {
+					content: "Get ready 1";
+				}
+			}
+		}
+
+		&-recording {
+			background-color: rgba(0,0,0,0.5);
+			background-position: left 10% center;
+			background-size: 20px;
+			height: 60px;
+			margin-left: -210px;
+			margin-top: -30px;
+			width: 280px;
+
+			&:before {
+				color: $color-white;
+				content: "Recording";
+				display: block;
+				font-size: 2.6rem;
+				line-height: 6.4rem;
+				padding: 0 0 0 80px;
+			}
+		}
+	}
+
+	.button-wrapper {
+		margin: 0 0 15px;
+		position: relative;
+	}
+
+	.record-button {
+		text-align: center;
+
+		.button {
+			font-size: 1.25rem;
+			line-height: 1.9rem;
+
+			svg {
+				background-position: center;
+				background-repeat: no-repeat;
+			}
+		}
+
+		&-record {
+			.button {
+				svg {
+					background-image: url($icon-micro);
+				}
+			}
+		}
+
+		&-record-again {
+			.button {
+				svg {
+					background-image: url($icon-micro);
+				}
+			}
+		}
+
+		&-stop {
+			.button {
+				svg {
+					background-image: url($icon-record-stop);
+					background-size: 75%;
+				}
+			}
+		}
+
+		&-no-mic {
+			position: absolute;
+			right: 0;
+			top: 0;
+
+			.button {
+				svg {
+					background-image: url($icon-no-micro);
+				}
+			}
+		}
+	}
+
+	.analyser,
+	.align-audio,
+	.wave-display,
+	.recording,
+	.icon,
+	.icon-start,
+	.record-button,
+	.footer {
+		display: none;
+	}
+
+	.icon-start,
+	.record-button-record,
+	.record-button-no-mic {
+		display: block;
+	}
+}

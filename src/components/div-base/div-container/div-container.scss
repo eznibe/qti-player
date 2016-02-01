@@ -1,0 +1,7 @@
+@import "../div-base";
+@import "../../common/container";
+
+:host-context(.two-up) .container.two-choices{
+	clear: both;
+	padding-top: 0;
+}

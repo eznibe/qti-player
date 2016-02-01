@@ -1,0 +1,35 @@
+@import "../li-base";
+
+.question-item {
+	margin: 0 0 32px 1.3em;
+	padding-left: 0;
+	position: relative;
+	text-align: left;
+
+	&:only-child {
+		display: block;
+		margin-left: 0;
+	}
+}
+
+.question-line {
+	font-weight: $text-font-weight-bold;
+	margin-bottom: 0;
+}
+
+.question-answer {
+	display: block;
+	margin-top: 0;
+}
+
+:host-context(.unordered) .question-item {
+	margin-left: 0;
+}
+
+// .cols{
+
+// 	& > *{
+// 		width: 40%;
+// 		display: inline-block;
+// 	}
+// }

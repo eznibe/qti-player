@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem identifier="" xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1" adaptive="false" title="" timeDependent="false">
+	<responseDeclaration identifier="MI1" cardinality="single" baseType="integer" />
+	<responseDeclaration identifier="interaction_1_1" cardinality="single" baseType="string">
+		<correctResponse>
+			<value>Word</value>
+		</correctResponse>
+		<mapping defaultValue="0">
+			<mapEntry mapKey="Word" mappedValue="1" />
+			<mapEntry mapKey="word" mappedValue="1" />
+		</mapping>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_2_1" cardinality="single" baseType="string">
+		<correctResponse>
+			<value>Word</value>
+		</correctResponse>
+		<mapping defaultValue="0">
+			<mapEntry mapKey="Word" mappedValue="1" />
+			<mapEntry mapKey="word" mappedValue="1" />
+		</mapping>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_4_1" cardinality="single" baseType="string">
+		<correctResponse>
+			<value>Word</value>
+		</correctResponse>
+		<mapping defaultValue="0">
+			<mapEntry mapKey="Word" mappedValue="1" />
+			<mapEntry mapKey="word" mappedValue="1" />
+		</mapping>
+	</responseDeclaration>
+	<outcomeDeclaration identifier="outcome_1_1" cardinality="single" baseType="identifier" />
+	<outcomeDeclaration identifier="outcome_2_1" cardinality="single" baseType="identifier" />
+	<outcomeDeclaration identifier="outcome_4_1" cardinality="single" baseType="identifier" />
+	<itemBody>
+		<rubricBlock view="candidate">
+			<div>Complete the conversation with the polite expressions.</div>
+		</rubricBlock>
+		<infoControl title="hint">
+			<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+		</infoControl>
+		<div class="type:freetownpane width-70 shadow">
+			<ul class="type:conversation container scrollable">
+				<li class="type:conversationitem alternate">
+					<img class="type:avatar" alt="" src="../content/media/avatars/carlos.png" />
+					<p>
+						Veggies es
+						<textEntryInteraction class="text inline reversed" expectedLength="4" responseIdentifier="interaction_1_1" />
+						<feedbackInline class="type:correct" outcomeIdentifier="outcome_1_1" identifier="correct" showHide="show">
+							<span>correct</span>
+						</feedbackInline>
+						<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1_1" identifier="incorrect" showHide="show">
+							<span>incorrect</span>
+						</feedbackInline>
+						bonus proinde vos postulo essum magis welsh onion.
+					</p>
+				</li>
+				<li class="type:conversationitem">
+					<img class="type:avatar blue" alt="" src="../content/media/avatars/ben.png" />
+					<p>
+						Pea horseradish
+						<textEntryInteraction class="text inline reversed" expectedLength="7" responseIdentifier="interaction_2_1" />
+						<feedbackInline class="type:correct" outcomeIdentifier="outcome_2_1" identifier="correct" showHide="show">
+							<span>correct</span>
+						</feedbackInline>
+						<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_2_1" identifier="incorrect" showHide="show">
+							<span>incorrect</span>
+						</feedbackInline>
+						azuki bean lettuce avocado asparagus okra.
+					</p>
+				</li>
+				<li class="type:conversationitem alternate">
+					<img class="type:avatar" alt="" src="../content/media/avatars/carlos.png" />
+					<p>Pea horseradish azuki bean lettuce avocado asparagus okra.</p>
+				</li>
+				<li class="type:conversationitem">
+					<img class="type:avatar blue" alt="" src="../content/media/avatars/ben.png" />
+					<p>
+						Dandelion zucchini burdock yarrow chickpea dandelion sorrel
+						<textEntryInteraction class="text inline reversed" expectedLength="14" responseIdentifier="interaction_4_1" />
+						<feedbackInline class="type:correct" outcomeIdentifier="outcome_4_1" identifier="correct" showHide="show">
+							<span>correct</span>
+						</feedbackInline>
+						<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_4_1" identifier="incorrect" showHide="show">
+							<span>incorrect</span>
+						</feedbackInline>
+						courgette.
+					</p>
+				</li>
+			</ul>
+			<mediaInteraction class="type:audio relative-audio" responseIdentifier="MI1" autostart="false">
+				<object data="/content/media/audio/placeholder-short.mp3" type="audio/mp3" />
+			</mediaInteraction>
+		</div>
+		<div class="type:freetownpane width-30 background-darker">
+			<div class="scrollable">
+				<img src="http://placeimg.com/1600/900/any" alt="" />
+				<div class="type:container padding-16 padding-32-right">
+					<div class="type:wordpool">
+						<h3>Choose the word from below</h3>
+						<ul class="type:wordpoollist">
+							<li class="type:wordpoolitem">Word 1</li>
+							<li class="type:wordpoolitem">Word 2</li>
+							<li class="type:wordpoolitem">Word 3</li>
+							<li class="type:wordpoolitem">Word 4</li>
+							<li class="type:wordpoolitem">Word 5</li>
+							<li class="type:wordpoolitem">Word 6</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</itemBody>
+	<responseProcessing>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<mapResponse identifier="interaction_1_1" />
+					<baseValue baseType="float">1</baseValue>
+				</match>
+				<setOutcomeValue identifier="outcome_1_1">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_1_1">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<mapResponse identifier="interaction_2_1" />
+					<baseValue baseType="float">1</baseValue>
+				</match>
+				<setOutcomeValue identifier="outcome_2_1">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_2_1">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<mapResponse identifier="interaction_4_1" />
+					<baseValue baseType="float">1</baseValue>
+				</match>
+				<setOutcomeValue identifier="outcome_4_1">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_4_1">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+	</responseProcessing>
+</assessmentItem>

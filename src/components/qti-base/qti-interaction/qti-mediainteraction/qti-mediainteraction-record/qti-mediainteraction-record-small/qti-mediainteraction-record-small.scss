@@ -1,0 +1,40 @@
+@import "../qti-mediainteraction-record";
+
+.record {
+
+	&.small {
+		$record-width-small: 555px;
+		margin-left: -$record-width-small / 2 - 30;
+		width: $record-width-small;
+
+		.body {
+			width: 420px;
+		}
+
+		.header {
+			padding-left: 120px;
+		}
+
+		.icon {
+			margin-left: -40px;
+
+			&-recording,
+			&-get-ready {
+				margin-left: -140px;
+			}
+
+			&-no-mic,
+			&-allow-mic {
+				margin-left: -170px;
+			}
+		}
+
+		.align-audio {
+			margin-left: -80px;
+		}
+
+		.record-button {
+			margin-left: 140px;
+		}
+	}
+}

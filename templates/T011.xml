@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem identifier="11" adaptive="false" title="" timeDependent="false" xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1">
+	<responseDeclaration identifier="interaction_1" cardinality="multiple" baseType="identifier">
+		<correctResponse>
+			<value>hottext_1</value>
+			<value>hottext_12</value>
+			<value>hottext_19</value>
+			<value>hottext_21</value>
+			<value>hottext_39</value>
+			<value>hottext_54</value>
+			<value>hottext_61</value>
+		</correctResponse>
+	</responseDeclaration>
+
+	<outcomeDeclaration identifier="outcome_1" cardinality="multiple" baseType="identifier"/>
+
+	<itemBody>
+		<rubricBlock view="candidate">
+			<div>Read the conversation. Then select all the polite expressions that Simon and Luke use.</div>
+		</rubricBlock>
+		<infoControl title="hint">
+			<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+		</infoControl>
+		<div class="type:freetownpane width-70 shadow">
+			<hottextInteraction responseIdentifier="interaction_1" maxChoices="7">
+				<ul class="type:conversation container scrollable">
+					<li class="type:conversationitem">
+						<img class="type:avatar" alt="" src="../content/media/avatars/jan.png"/>
+						<p>
+							<hottext identifier="hottext_1">
+								<span class="type:label">Lorem</span>
+								<feedbackInline class="type:correct in-text" outcomeIdentifier="outcome_1" identifier="hottext_1" showHide="show">
+									<span>correct</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_2">
+								<span class="type:label">ipsum</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_2" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_3">
+								<span class="type:label">dolor</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_3" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_4">
+								<span class="type:label">sit</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_4" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_5">
+								<span class="type:label">amet</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_5" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>,
+							<hottext identifier="hottext_6">
+								<span class="type:label">consectetur</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_6" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_7">
+								<span class="type:label">adipiscing</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_7" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_8">
+								<span class="type:label">elit</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_8" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>.
+							<hottext identifier="hottext_9">
+								<span class="type:label">Nulla</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_9" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_10">
+								<span class="type:label">non</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_10" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_11">
+								<span class="type:label">malesuada</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_11" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_12">
+								<span class="type:label">sapien</span>
+								<feedbackInline class="type:correct in-text" outcomeIdentifier="outcome_1" identifier="hottext_12" showHide="show">
+									<span>correct</span>
+								</feedbackInline>
+							</hottext>.
+							<hottext identifier="hottext_13">
+								<span class="type:label">Donec</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_13" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_14">
+								<span class="type:label">gravida</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_14" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_15">
+								<span class="type:label">accumsan</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_15" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_16">
+								<span class="type:label">diam</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_16" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>,
+							<hottext identifier="hottext_17">
+								<span class="type:label">sed</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_17" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_18">
+								<span class="type:label">semper</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_18" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_19">
+								<span class="type:label">orci</span>
+								<feedbackInline class="type:correct in-text" outcomeIdentifier="outcome_1" identifier="hottext_19" showHide="show">
+									<span>corrrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_20">
+								<span class="type:label">imperdiet</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_20" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_21">
+								<span class="type:label">eu</span>
+								<feedbackInline class="type:correct in-text" outcomeIdentifier="outcome_1" identifier="hottext_21" showHide="show">
+									<span>correct</span>
+								</feedbackInline>
+							</hottext>.
+							<hottext identifier="hottext_22">
+								<span class="type:label">Fusce</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_22" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_23">
+								<span class="type:label">vel</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_23" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_24">
+								<span class="type:label">congue</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_24" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_25">
+								<span class="type:label">nibh</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_25" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>.
+						</p>
+					</li>
+					<li class="type:conversationitem alternate">
+						<img class="type:avatar blue" alt="" src="../content/media/avatars/helen.png"/>
+						<p>
+							<hottext identifier="hottext_26">
+								<span class="type:label">Donec</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_26" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_27">
+								<span class="type:label">sit</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_27" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_28">
+								<span class="type:label">amet</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_28" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_29">
+								<span class="type:label">arcu</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_29" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_30">
+								<span class="type:label">blandit</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_30" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>,
+							<hottext identifier="hottext_31">
+								<span class="type:label">varius</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_31" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_32">
+								<span class="type:label">metus</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_32" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_33">
+								<span class="type:label">efficitur</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_33" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>,
+							<hottext identifier="hottext_34">
+								<span class="type:label">ultricies</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_34" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_35">
+								<span class="type:label">urna</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_35" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>.
+						</p>
+					</li>
+					<li class="type:conversationitem">
+						<img class="type:avatar" alt="" src="../content/media/avatars/jan.png"/>
+						<p>
+							<hottext identifier="hottext_36">
+								<span class="type:label">Etiam</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_36" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_37">
+								<span class="type:label">at</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_37" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_38">
+								<span class="type:label">ligula</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_38" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_39">
+								<span class="type:label">massa</span>
+								<feedbackInline class="type:correct in-text" outcomeIdentifier="outcome_1" identifier="hottext_39" showHide="show">
+									<span>correct</span>
+								</feedbackInline>
+							</hottext>.
+							<hottext identifier="hottext_40">
+								<span class="type:label">Ut</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_40" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_41">
+								<span class="type:label">hendrerit</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_41" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>,
+							<hottext identifier="hottext_42">
+								<span class="type:label">leo</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_42" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_43">
+								<span class="type:label">non</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_43" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_44">
+								<span class="type:label">ultricies</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_44" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_45">
+								<span class="type:label">commodo</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_45" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>,
+							<hottext identifier="hottext_46">
+								<span class="type:label">sem</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_46" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_47">
+								<span class="type:label">lacus</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_47" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_48">
+								<span class="type:label">viverra</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_48" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_49">
+								<span class="type:label">ex</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_49" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>,
+							<hottext identifier="hottext_50">
+								<span class="type:label">at</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_50" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_51">
+								<span class="type:label">euismod</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_51" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_52">
+								<span class="type:label">augue</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_52" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_53">
+								<span class="type:label">sem</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_53" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_54">
+								<span class="type:label">sit</span>
+								<feedbackInline class="type:correct in-text" outcomeIdentifier="outcome_1" identifier="hottext_54" showHide="show">
+									<span>correct</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_55">
+								<span class="type:label">amet</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_55" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_56">
+								<span class="type:label">leo</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_56" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>.
+						</p>
+					</li>
+					<li class="type:conversationitem alternate">
+						<img class="type:avatar blue" alt="" src="../content/media/avatars/helen.png"/>
+						<p>
+							<hottext identifier="hottext_57">
+								<span class="type:label">Phasellus</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_57" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_58">
+								<span class="type:label">ut</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_58" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_59">
+								<span class="type:label">nisi</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_59" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_60">
+								<span class="type:label">sed</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_60" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_61">
+								<span class="type:label">dolor</span>
+								<feedbackInline class="type:correct in-text" outcomeIdentifier="outcome_1" identifier="hottext_61" showHide="show">
+									<span>correct</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_62">
+								<span class="type:label">faucibus</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_62" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_63">
+								<span class="type:label">tincidunt</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_63" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_64">
+								<span class="type:label">a</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_64" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_65">
+								<span class="type:label">quis</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_65" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_66">
+								<span class="type:label">est</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_66" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>.
+							<hottext identifier="hottext_67">
+								<span class="type:label">Aenean</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_67" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_68">
+								<span class="type:label">consectetur</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_68" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_69">
+								<span class="type:label">justo</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_69" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_70">
+								<span class="type:label">nec</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_70" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_71">
+								<span class="type:label">arcu</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_71" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_72">
+								<span class="type:label">imperdiet</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_72" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>,
+							<hottext identifier="hottext_73">
+								<span class="type:label">eget</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_73" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_74">
+								<span class="type:label">tempor</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_74" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_75">
+								<span class="type:label">felis</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_75" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>
+							<hottext identifier="hottext_76">
+								<span class="type:label">efficitur</span>
+								<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="hottext_76" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</hottext>.
+						</p>
+					</li>
+				</ul>
+			</hottextInteraction>
+		</div>
+		<div class="type:freetownpane width-30">
+			<img class="type:cover" src="http://placeimg.com/1600/900/any" alt="" />
+		</div>
+	</itemBody>
+	<responseProcessing>
+		<setOutcomeValue identifier="outcome_1">
+			<variable identifier="interaction_1"></variable>
+		</setOutcomeValue>
+	</responseProcessing>
+</assessmentItem>

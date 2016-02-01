@@ -1,0 +1,9 @@
+@import "../qti-interaction";
+
+img {
+    &.full{
+        display:block;
+        width: 100%;
+        padding: 0 6%;
+    }
+}

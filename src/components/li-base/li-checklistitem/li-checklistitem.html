@@ -1,0 +1,13 @@
+<link rel="import" href="../li-base.html">
+
+<polymer-element name="li-checklistitem" extends="li-base">
+	<template>
+		<link rel="stylesheet" href="li-checklistitem.css">
+		<li class="checklist-item {{lightClasses}}">
+			<input type="checkbox" name="checkbox" id="checkbox" class="visually-hidden">
+			<label for="checkbox" class="checkbox"></label>
+			<label for="checkbox"><content></content></label>
+		</li>
+	</template>
+	<script src="li-checklistitem.js"></script>
+</polymer-element>

@@ -1,0 +1,18 @@
+<link rel="import" href="../qti-gapmatchinteraction.html">
+
+<polymer-element name="qti-gapmatchinteraction-layout2" extends="qti-gapmatchinteraction">
+	<template>
+		<div-freetownpane class="width-30 background-darker">
+			<div class="scrollable">
+				<content select="div-mediacontainer"></content>
+				<ul-selectableslist class="padding-32">
+					<content select="qti-gaptext"></content>
+				</ul-selectableslist>
+			</div>
+		</div-freetownpane>
+		<div-freetownpane class="width-70 shadow">
+			<content select="ul-conversation"></content>
+		</div-freetownpane>
+	</template>
+	<script src="qti-gapmatchinteraction-layout2.js"></script>
+</polymer-element>

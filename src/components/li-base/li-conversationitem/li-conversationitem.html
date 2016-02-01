@@ -1,0 +1,26 @@
+<link rel="import" href="../li-base.html">
+
+<polymer-element name="li-conversationitem" extends="li-base">
+	<template>
+		<link rel="stylesheet" href="li-conversationitem.css">
+		<li class="dialog {{lightClasses}}">
+			<content select="span-dialoglabel"></content>
+			<div class='header'>
+				<content select="img-avatar"></content>
+			</div>
+			<div class='body'>
+				<!-- Use lightClasses to display and update xml -->
+				<div class="quote">
+					<object type="image/svg+xml" data="/svg/icon-speech-marks.svg" class="icon"></object>
+					<content select="div-quote"></content>
+					<object type="image/svg+xml" data="/svg/icon-speech-marks-closed.svg" class="icon"></object>
+				</div>
+				<div class="block">
+					<content select="div-block"></content>
+				</div>
+				<content></content>
+			</div>
+		</li>
+	</template>
+	<script src="li-conversationitem.js"></script>
+</polymer-element>

@@ -1,0 +1,27 @@
+<link rel="import" href="../qti-simplechoice.html">
+
+<polymer-element name="qti-simplechoice-freetownpane" extends="qti-simplechoice">
+	<template>
+        <link rel="stylesheet" href="qti-simplechoice-freetownpane.css">
+        <svg style="display:none;">
+            <symbol id="icon-arrow-right" viewBox="0 0 23.684 37.323">
+                <path d="M22.649,21.349L7.403,36.295c-1.399,1.371-3.686,1.371-5.082,0l-1.273-1.246c-1.396-1.368-1.396-3.612,0-4.98l11.635-11.406
+	L1.047,7.255c-1.396-1.369-1.396-3.612,0-4.979l1.273-1.248c1.397-1.371,3.685-1.371,5.082,0l15.246,14.946
+	c0.75,0.732,1.082,1.719,1.029,2.686C23.731,19.628,23.399,20.614,22.649,21.349"/>
+            </symbol>
+        </svg>
+        <div-freetownpane class="width-50">
+            <div class="selectable fullsize {{lightClasses}}">
+                <input type="radio" name="name_{{identifier}}" id="{{identifier}}" class="visually-hidden">
+                <label for="{{identifier}}" class="selectable target">
+                    <content select="img-cover"></content>
+                    <span class="button label">
+                        <svg class="button-icon"><use xlink:href="#icon-arrow-right" /></svg>
+                        <content select="span-label"></content>
+                    </span>
+                </label>
+            </div>
+        </div-freetownpane> 
+	</template>
+	<script src="qti-simplechoice-freetownpane.js"></script>
+</polymer-element>

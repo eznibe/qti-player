@@ -1,0 +1,15 @@
+
+<link rel="import" href="../div-base.html">
+
+<polymer-element name="div-flashcardface" extends="div-base">
+	<template>
+		<link rel="stylesheet" href="div-flashcardface.css">
+		<div class="flash-card face {{lightClasses}}">
+			<a href="#" on-click="{{turnCard}}" class="trigger">flip card</a>
+			<content />
+		</div>
+	</template>
+	<script src="div-flashcardface.js"></script>
+</polymer-element>
+
+

@@ -1,0 +1,17 @@
+<link rel="import" href="../qti-gapmatchinteraction.html">
+
+<polymer-element name="qti-gapmatchinteraction-layout1" extends="qti-gapmatchinteraction">
+	<template>
+		<!-- Don't link to css or styles are applied twice - light dom aswell as shadow root -->
+		<!-- <link rel="stylesheet" href="qti-gapmatchinteraction-layout1.css"> -->
+		<div-freetownpane class="width-70 shadow">
+			<content select="ul-conversation"></content>
+		</div-freetownpane>
+		<div-freetownpane class="width-30 background-darker">
+			<ul-selectableslist class="padding-32 drag-zone">
+				<content select="qti-gaptext"></content>
+			</ul-selectableslist>
+		</div-freetownpane>
+	</template>
+	<script src="qti-gapmatchinteraction-layout1.js"></script>
+</polymer-element>

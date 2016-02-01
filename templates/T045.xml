@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem identifier="" adaptive="false" title="" timeDependent="false" xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1">
+	<responseDeclaration identifier="interaction_1" cardinality="single" baseType="identifier">
+		<correctResponse>
+			<value>interaction_1_choice_2</value>
+		</correctResponse>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_2" cardinality="multiple" baseType="identifier">
+		<correctResponse>
+			<value>interaction_2_choice_1</value>
+			<value>interaction_2_choice_3</value>
+		</correctResponse>
+	</responseDeclaration>
+	<outcomeDeclaration identifier="outcome_1" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_2" cardinality="multiple" baseType="identifier"/>
+	<itemBody>
+		<rubricBlock view="candidate">
+			<div>Look at the words in yellow and blue. Complete the statements.</div>
+		</rubricBlock>
+		<infoControl title="hint">
+			<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+		</infoControl>
+		<div class="type:freetownpane width-50 shadow background-light">
+			<ul class="type:conversation container scrollable">
+				<li class="type:conversationitem">
+					<img class="type:avatar" alt="" src="../content/media/avatars/ben.png"/>
+					<p>Veggies es bonus proinde vos <span class="type:highlight alt">postulo</span> essum magis kohlrabi welsh onion.</p>
+				</li>
+				<li class="type:conversationitem alternate">
+					<img class="type:avatar blue" alt="" src="../content/media/avatars/jenny.png"/>
+					<p>Veggies <span class="type:highlight alt">Veggies</span>  Veggies Veggies.</p>
+				</li>
+				<li class="type:conversationitem">
+					<img class="type:avatar" alt="" src="../content/media/avatars/ben.png"/>
+					<p>Chinese Mallow kuka, <span class="type:highlight">ahipa</span> gobo chinese artichoke kai-lan corn salad. Radicchio yardlong bean chickweed wild leek polk prussian asparagus, water chestnut gobo.</p>
+				</li>
+				<li class="type:conversationitem alternate">
+					<img class="type:avatar blue" alt="" src="../content/media/avatars/jenny.png"/>
+					<p>Veggies <span class="type:highlight">Veggies</span>  Veggies Veggies.</p>
+				</li>
+				<li class="type:conversationitem alternate">
+					<img class="type:avatar blue" alt="" src="../content/media/avatars/jenny.png"/>
+					<p>Veggies Veggies <span class="type:highlight alt">Veggies</span> Veggies Veggies.</p>
+				</li>
+				<li class="type:conversationitem alternate">
+					<img class="type:avatar blue" alt="" src="../content/media/avatars/jenny.png"/>
+					<p>Veggies <span class="type:highlight">Veggies</span> Veggies Veggies Veggies Veggies Veggies Veggies Veggies Veggies Veggies.</p>
+				</li>
+				<li class="type:conversationitem">
+					<img class="type:avatar" alt="" src="../content/media/avatars/ben.png"/>
+					<p>Chinese Mallow kuka, ahipa gobo <span class="type:highlight alt">chinese</span> artichoke kai-lan corn salad. Radicchio <span class="type:highlight alt">yardlong</span> bean chickweed wild leek polk prussian asparagus, water chestnut gobo.</p>
+				</li>
+			</ul>
+		</div>
+		<div class="type:freetownpane width-50 background-dark">
+			<ol class="type:questionlist padding-16">
+				<li class="type:questionitem">
+					<choiceInteraction class="type:questionlist" responseIdentifier="interaction_1" minChoices="1" maxChoices="1" shuffle="false">
+						<prompt>Question text...</prompt>
+						<simpleChoice class="type:questionlistitem" identifier="interaction_1_choice_1">
+							<span class="type:label">Answer 1</span>
+							<feedbackInline class="type:correct" outcomeIdentifier="outcome_1" identifier="interaction_1_choice_1" showHide="show">
+								<span>correct</span>
+							</feedbackInline>
+						</simpleChoice>
+						<simpleChoice class="type:questionlistitem" identifier="interaction_1_choice_2">
+							<span class="type:label">Answer 2</span>
+							<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="interaction_1_choice_2" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</simpleChoice>
+						<simpleChoice class="type:questionlistitem" identifier="interaction_1_choice_3">
+							<span class="type:label">Answer 3</span>
+							<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="interaction_1_choice_3" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</simpleChoice>
+					</choiceInteraction>
+				</li>
+				<li class="type:questionitem">
+					<choiceInteraction class="type:questionlist" responseIdentifier="interaction_2" minChoices="2" maxChoices="2" shuffle="false">
+						<prompt>Question text...</prompt>
+						<simpleChoice class="type:questionlistitem" identifier="interaction_2_choice_1">
+							<span class="type:label">Answer 1</span>
+							<feedbackInline class="type:correct" outcomeIdentifier="outcome_2" identifier="interaction_2_choice_1" showHide="show">
+								<span>correct</span>
+							</feedbackInline>
+						</simpleChoice>
+						<simpleChoice class="type:questionlistitem" identifier="interaction_2_choice_2">
+							<span class="type:label">Answer 2</span>
+							<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_2" identifier="interaction_2_choice_2" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</simpleChoice>
+						<simpleChoice class="type:questionlistitem" identifier="interaction_2_choice_3">
+							<span class="type:label">Answer 3</span>
+							<feedbackInline class="type:correct" outcomeIdentifier="outcome_2" identifier="interaction_2_choice_3" showHide="show">
+								<span>correct</span>
+							</feedbackInline>
+						</simpleChoice>
+						<simpleChoice class="type:questionlistitem" identifier="interaction_2_choice_4">
+							<span class="type:label">Answer 4</span>
+							<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_2" identifier="interaction_2_choice_4" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</simpleChoice>
+					</choiceInteraction>
+				</li>
+			</ol>
+		</div>
+	</itemBody>
+	<responseProcessing>
+		<setOutcomeValue identifier="outcome_1">
+			<variable identifier="interaction_1"></variable>
+		</setOutcomeValue>
+		<setOutcomeValue identifier="outcome_2">
+			<variable identifier="interaction_2"></variable>
+		</setOutcomeValue>
+	</responseProcessing>
+</assessmentItem>

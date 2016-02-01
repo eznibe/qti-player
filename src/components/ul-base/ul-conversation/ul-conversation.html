@@ -1,0 +1,13 @@
+<link rel="import" href="../ul-base.html">
+
+<polymer-element name="ul-conversation" extends="ul-base">
+	<template>
+		<link rel="stylesheet" href="ul-conversation.css">
+		<div class="relative scrollable">
+			<ul class="conversation {{lightClasses}}">
+				<content></content>
+			</ul>
+		</div>
+	</template>
+	<script src="ul-conversation.js"></script>
+</polymer-element>

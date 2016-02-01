@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- http://5qx5fs.axshare.com/#p=t016_-_large_image_radio_buttons -->
+<!-- http://codebeautify.org/xmlviewer/ade01b -->
+
+<assessmentItem identifier="5" adaptive="false" title="Title" timeDependent="false" xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1">
+	<responseDeclaration identifier="interaction_1" cardinality="single" baseType="identifier">
+		<correctResponse>
+			<value>interaction_1_choice_1</value>
+		</correctResponse>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_2" cardinality="single" baseType="identifier">
+		<correctResponse>
+			<value>interaction_2_choice_1</value>
+		</correctResponse>
+	</responseDeclaration>
+
+	<outcomeDeclaration identifier="outcome_1" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_2" cardinality="single" baseType="identifier"/>
+
+	<itemBody>
+		<rubricBlock view="candidate">
+			<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna?</div>
+		</rubricBlock>
+		<infoControl title="hint">
+			<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+		</infoControl>
+		<div class="type:freetownpane width-50 spill shadow">
+			<div class="type:container full-height">
+				<div class="type:styledbox-timed">
+					<h1 class="type:title">Title here.</h1>
+					<ul class="type:question-list">
+						<li class="type:question-item">
+							<p class="type:question-line">What's your name?</p>
+							<p class="type:question-answer">Hi! My name's Stefania.</p>
+						</li>
+						<li class="type:question-item">
+							<p class="type:question-line">How old are you?</p>
+							<p class="type:question-answer">I'm 104 years old.</p>
+						</li>
+						<li class="type:question-item">
+							<p class="type:question-line">Where are you from?</p>
+							<p class="type:question-answer">I'm from Brighton.</p>
+						</li>
+						<li class="type:question-item">
+							<p class="type:question-line">What do you study?</p>
+							<p class="type:question-answer">I study English at King's Cross.</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="type:freetownpane width-50 background-dark">
+			<ol class="type:questionlist padding-16 scrollable">
+				<li class="type:questionitem">
+					Sed consectetur sit amet?
+					<choiceInteraction class="type:questionlist" responseIdentifier="interaction_1" minChoices="1" maxChoices="1" shuffle="false">
+						<simpleChoice class="type:questionlistitem" identifier="interaction_1_choice_1">
+							<span class="type:label">donec non lorem interdum, sodales</span>
+							<feedbackInline class="type:correct" outcomeIdentifier="outcome_1" identifier="interaction_1_choice_1" showHide="show">
+								<span>correct</span>
+							</feedbackInline>
+						</simpleChoice>
+						<simpleChoice class="type:questionlistitem" identifier="interaction_1_choice_2">
+							<span class="type:label">curabitur euismod lacus</span>
+							<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="interaction_1_choice_2" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</simpleChoice>
+						<simpleChoice class="type:questionlistitem" identifier="interaction_1_choice_3">
+							<span class="type:label">lorem</span>
+							<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="interaction_1_choice_3" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</simpleChoice>
+					</choiceInteraction>
+				</li>
+				<li class="type:questionitem">
+					Cras convallis, <strong>elit sed</strong> mollis mollis?
+					<choiceInteraction class="type:answerlist" responseIdentifier="interaction_2" minChoices="1" maxChoices="1" shuffle="false">
+						<simpleChoice class="type:questionlistitem" identifier="interaction_2_choice_1">
+							<span class="type:label">el pretium nisl maximus leo</span>
+							<feedbackInline class="type:correct" outcomeIdentifier="outcome_2" identifier="interaction_2_choice_1" showHide="show">
+								<span>correct</span>
+							</feedbackInline>
+						</simpleChoice>
+						<simpleChoice class="type:questionlistitem" identifier="interaction_2_choice_2">
+							<span class="type:label">malesuada</span>
+							<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_2" identifier="interaction_2_choice_2" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</simpleChoice>
+					</choiceInteraction>
+				</li>
+			</ol>
+		</div>
+	</itemBody>
+
+	<responseProcessing>
+		<setOutcomeValue identifier="outcome_1">
+			<variable identifier="interaction_1"></variable>
+		</setOutcomeValue>
+		<setOutcomeValue identifier="outcome_2">
+			<variable identifier="interaction_2"></variable>
+		</setOutcomeValue>
+	</responseProcessing>
+</assessmentItem>

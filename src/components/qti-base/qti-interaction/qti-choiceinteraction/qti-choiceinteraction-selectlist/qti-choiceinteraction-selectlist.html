@@ -1,0 +1,15 @@
+
+<link rel="import" href="../qti-choiceinteraction.html">
+
+<polymer-element name="qti-choiceinteraction-selectlist" extends="qti-choiceinteraction">
+	<template>
+		<link rel="stylesheet" href="qti-choiceinteraction-selectlist.css">
+		<!-- <div class="prompt">
+				<content select="qti-prompt" />
+			</div> -->
+		<ul class="selectables-list {{lightClasses}}">
+			<content />
+		</ul>
+	</template>
+	<script src="qti-choiceinteraction-selectlist.js"></script>
+</polymer-element>

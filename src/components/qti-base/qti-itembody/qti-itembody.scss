@@ -1,0 +1,61 @@
+@import "../qti-base";
+@import "../../common/typography";
+@import "../../common/buttons";
+
+.freetown {
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	padding-top: 112px;
+	padding-bottom: 52px;
+	background: $color-freetown-background;
+}
+
+$shell-padding: 16px;
+
+.shell-header {
+	position: relative;
+	z-index: 1;
+	background: rgba($text-color-inverted, 0.9);
+	min-height: 80px;
+	overflow: hidden;
+	padding: 15px $shell-padding 15px $shell-padding*2;
+}
+
+.shell-rubric {
+	font-size: $text-font-size-large;
+	float: left;
+	max-width: 70%;
+	line-height: 1.4;
+}
+
+.shell-footer {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	background: $text-color-inverted;
+	overflow: hidden;
+	padding: 0 $shell-padding;
+	vertical-align: middle;
+}
+
+.shell-footer-button {
+	float: left;
+	margin-left: 5px;
+
+	&:first-child {
+		margin: 0;
+	}
+}
+
+.shell-primary-buttons {
+	float: right;
+	padding: 10px 0 0;
+}
+
+.shell-secondary-buttons {
+	float: left;
+	padding: 12px 0;
+}

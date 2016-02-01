@@ -1,0 +1,50 @@
+$text-color-default: $color-default-text;
+$text-color-inverted: $color-white;
+$text-color-soft: $stray-color-fuscous-gray;
+
+$text-font-stack: 'museo-sans-rounded','Arial', sans-serif;
+
+$text-font-weight-thin: 100;
+$text-font-weight-default: 300;
+$text-font-weight-bold: 500;
+$text-font-weight-boldest: 700;
+
+$text-font-size-ex-small: 1.3rem;
+$text-font-size-small: 1.5rem;
+$text-font-size-default: 1.7rem;
+$text-font-size-large: 1.8rem;
+$text-font-size-ex-large: 2.4rem;
+$text-font-size-ex-ex-large: 3.2rem;
+
+html {
+	font-size: 62.5%;
+	size-adjust: none;
+}
+
+body,
+button,
+input,
+option,
+select,
+textarea {
+	color: $text-color-default;
+	font: $text-font-weight-default $text-font-size-default/1.6 $text-font-stack;
+	font-size: $text-font-size-default;
+}
+
+button,
+input,
+label,
+option,
+select {
+	line-height: 1;
+}
+
+strong,
+b {
+	font-weight: $text-font-weight-bold;
+}
+
+p {
+	margin: 0 0 0.75em 0;
+}

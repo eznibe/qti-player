@@ -1,0 +1,57 @@
+@import "../div-base";
+
+.media {
+	margin: 0 auto;
+	width: 84%;
+
+	.fullscreen & {
+		width: 64%;
+	}
+
+	.two-up & {
+		width: 40%;
+	}
+
+	.container {
+		p {
+			text-align: left;
+		}
+	}
+
+	&.left {
+		float: left;
+		margin: 0 0 0 8%;
+		width: 40%;
+	}
+
+	&.right {
+		float: left;
+		margin: 0 0 0 4%;
+		width: 40%;
+	}
+
+}
+
+:host-context(.fullscreen) .media {
+  width: 64%;
+}
+
+:host-context(.two-up) .media {
+  width: 40%;
+}
+
+// ::content .container p {
+//   text-align: left;
+//   line-height: 1;
+// }
+
+::content p.keyword{
+	font-size: 3.2rem;
+	font-weight: 500;
+	line-height: 1;
+	display: inline-block;
+	padding: 16px 24px;
+	margin: 0 auto;
+	background: white;
+	border-radius: 8px;
+}

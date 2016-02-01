@@ -1,0 +1,33 @@
+@import "../ol-base";
+
+.questions {
+	list-style-position: outside;
+	margin: 0;
+	padding-right: 68px;
+	display: block;
+	float: left;
+	max-width: 100%;
+}
+
+.unordered {
+	list-style: none;
+}
+
+.quiz-option {
+	margin: 0 10px 16px 0;
+}
+
+.audio-button {
+	border-radius: 3px;
+	left: -100px;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+}
+
+:host-context(.media-unit.static) .questions {
+	width: 80%;
+	margin: 0 auto;
+	float: none;
+	padding-right: 0;
+}

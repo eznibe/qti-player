@@ -1,0 +1,21 @@
+<link rel="import" href="../div-base.html">
+
+<polymer-element name="div-quiz" extends="div-base">
+	<template>
+		<link rel="stylesheet" href="div-quiz.css">
+		<div class="quiz {{lightClasses}}">
+			<content></content>
+			<div class="footer">
+				<div class="progress-container">
+					Progress<div class="progress"></div>
+				</div>
+				<div class="option-container">
+					<div class="option">Score <span class="data data-score">0000</span></div>
+					<div class="option">Streak <span class="data data-streak">000</span></div>
+					<div class="option option-time">Time <span class="data data-timer">0:00</span></div>
+				</div>
+			</div>
+		</div>
+	</template>
+	<script src="div-quiz.js"></script>
+</polymer-element>

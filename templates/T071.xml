@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- http://5qx5fs.axshare.com/#p=t016_-_large_image_radio_buttons -->
+<!-- http://codebeautify.org/xmlviewer/ade01b -->
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1" identifier="5" adaptive="false" title="Title" timeDependent="false">
+	<responseDeclaration identifier="interaction_1" cardinality="single" baseType="string">
+		<correctResponse>
+			<value>a</value>
+		</correctResponse>
+		<mapping defaultValue="0">
+			<mapEntry mapKey="a" mappedValue="1" />
+		</mapping>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_2" cardinality="single" baseType="string">
+		<correctResponse>
+			<value>b</value>
+		</correctResponse>
+		<mapping defaultValue="0">
+			<mapEntry mapKey="b" mappedValue="1" />
+		</mapping>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_3" cardinality="single" baseType="string">
+		<correctResponse>
+			<value>c</value>
+		</correctResponse>
+		<mapping defaultValue="0">
+			<mapEntry mapKey="c" mappedValue="1" />
+		</mapping>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_4" cardinality="single" baseType="string">
+		<correctResponse>
+			<value>d</value>
+		</correctResponse>
+		<mapping defaultValue="0">
+			<mapEntry mapKey="d" mappedValue="1" />
+		</mapping>
+	</responseDeclaration>
+	<outcomeDeclaration identifier="outcome_1" cardinality="single" baseType="identifier" />
+	<outcomeDeclaration identifier="outcome_2" cardinality="single" baseType="identifier" />
+	<outcomeDeclaration identifier="outcome_3" cardinality="single" baseType="identifier" />
+	<outcomeDeclaration identifier="outcome_4" cardinality="single" baseType="identifier" />
+	<itemBody>
+		<rubricBlock view="candidate">
+			<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna?</div>
+		</rubricBlock>
+		<infoControl title="hint">
+			<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+		</infoControl>
+		<div class="type:freetownpane width-50 shadow spill">
+			<div class="type:container full-height ">
+				<div class="type:styledbox no-select">
+					<h1 class="type:title">Title here.</h1>
+					<div class="type:statictext">
+						<p>Holisticly deliver mission-critical markets rather than multifunctional methods of empowerment. Energistically parallel task B2B vortals for co-operative platforms. Holisticly supply granular benefits and granular content.</p>
+						<p class="label">Name</p>
+						<span class="type:nowrap ">
+							<textEntryInteraction class="inline reversed" responseIdentifier="interaction_1" expectedLength="20" />
+							<feedbackInline class="type:correct" outcomeIdentifier="outcome_1" identifier="correct" showHide="show">
+								<span>correct</span>
+							</feedbackInline>
+							<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="incorrect" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</span>
+						<p class="label">Age</p>
+						<span class="type:nowrap">
+							<textEntryInteraction class="inline reversed" responseIdentifier="interaction_2" expectedLength="20" />
+							<feedbackInline class="type:correct" outcomeIdentifier="outcome_2" identifier="correct" showHide="show">
+								<span>correct</span>
+							</feedbackInline>
+							<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_2" identifier="incorrect" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</span>
+						<p class="label">What are your interests?</p>
+						<span class="type:nowrap">
+							<textEntryInteraction class="type:textarea min-width reversed" responseIdentifier="interaction_3" expectedLength="4" />
+							<feedbackInline class="type:correct" outcomeIdentifier="outcome_3" identifier="correct" showHide="show">
+								<span>correct</span>
+							</feedbackInline>
+							<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_3" identifier="incorrect" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</span>
+						<p class="label">What is your personality like?</p>
+						<span class="type:nowrap">
+							<textEntryInteraction class="type:textarea min-width reversed" responseIdentifier="interaction_4" expectedLength="4" />
+							<feedbackInline class="type:correct" outcomeIdentifier="outcome_4" identifier="correct" showHide="show">
+								<span>correct</span>
+							</feedbackInline>
+							<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_4" identifier="incorrect" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="type:freetownpane width-50 shadow background-dark">
+			<div class="type:container full-height">
+				<div class="type:styledbox no-select header-reverse">
+					<div class="type:statictext">
+						<p class="label">Name</p>
+						<p>FirstName LastName</p>
+						<p class="label">Age</p>
+						<p>24</p>
+						<p class="label">What are your interests?</p>
+						<p>user input user input user input user input user input user input user input user input user input user input user input user input</p>
+						<p class="label">What is your personality like?</p>
+						<p>user input user input user input user input user input user input user input user input user input user input user input user input</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</itemBody>
+	<responseProcessing>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<mapResponse identifier="interaction_1" />
+					<baseValue baseType="float">1</baseValue>
+				</match>
+				<setOutcomeValue identifier="outcome_1">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_1">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<mapResponse identifier="interaction_2" />
+					<baseValue baseType="float">1</baseValue>
+				</match>
+				<setOutcomeValue identifier="outcome_2">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_2">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<mapResponse identifier="interaction_3" />
+					<baseValue baseType="float">1</baseValue>
+				</match>
+				<setOutcomeValue identifier="outcome_3">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_3">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<mapResponse identifier="interaction_4" />
+					<baseValue baseType="float">1</baseValue>
+				</match>
+				<setOutcomeValue identifier="outcome_4">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_4">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+	</responseProcessing>
+</assessmentItem>

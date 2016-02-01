@@ -1,0 +1,29 @@
+
+<link rel="import" href="../custom-base.html">
+
+<polymer-element name="custom-dropdown" extends="custom-base" attributes="options status disabled">
+	<template>
+		<link rel="stylesheet" href="custom-dropdown.css">
+		<svg style="display:none;">
+			<symbol id="icon-arrow-left" viewBox="0 0 23.684 37.323">
+				<path d="M1.036 21.35l15.246 14.945c1.4 1.37 3.686 1.37 5.082 0l1.273-1.246c1.396-1.37 1.396-3.613 0-4.98L11.002 18.66 22.637 7.255c1.396-1.37 1.396-3.612 0-4.98L21.364 1.03c-1.397-1.37-3.685-1.37-5.082 0L1.036 15.975c-.75.732-1.082 1.72-1.03 2.686-.052.968.28 1.954 1.03 2.69"/>
+			</symbol>
+		</svg>
+		<span-interaction>
+			<div class="{{htmlClasses.dropdown}} {{htmlClasses.selectableInline}} {{htmlClasses.selectable}}">
+				<select id="selectable" class="{{htmlClasses.selectableInline}}" data-mt-selectable
+				name="in__eg-selectable-drop-down-{{identifier}}" id="in__eg-selectable-drop-down-{{identifier}}"
+				on-focus="{{dropdownFocus}}" on-blur="{{dropdownBlur}}" on-change="{{dropdownchange}}" disabled?="{{disabled}}">
+					<option value>{{selectedText}}</option>
+					<template repeat="{{option in options}}">
+						<option value="{{option.value}}">{{option.textContent}}</option>
+					</template>
+				</select>
+				<svg class="{{htmlClasses.icon}} {{htmlClasses.dropDownArrow}}">
+					<use xlink:href="#icon-arrow-left" />
+				</svg>
+			</div>
+		</span-interaction>
+	</template>
+	<script src="custom-dropdown.js"></script>
+</polymer-element>

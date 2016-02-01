@@ -1,0 +1,40 @@
+@import "../span-base";
+
+.interaction {
+	display: inline-block;
+	/* this zero font-size is important in removing unwanted whitespace */
+	font-size: 0;
+}
+
+.block {
+	display: block;
+}
+
+// :host-context(.cols) ::content *{
+// 	// width: 40%;
+// 	// display: inline-block;
+// 	// background: red;
+// 	// padding: 5px;
+// 	// & > *{
+// 	// 	width: 40%;
+// 	// 	display: inline-block;
+// 	// }
+// 	padding: 10px;
+// 	background: red;
+// 	width: 40%;
+// 	display: inline-block;
+// }
+
+:host-context(.well) .interaction{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+:host-context(.txtarea) .interaction {
+	display: block;
+}
+
+:host-context(.block-drop-wrap) .interaction{
+	float: left;
+}

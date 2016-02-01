@@ -1,0 +1,131 @@
+<!-- Polymer code -->
+<script src="../../bower_components/webcomponentsjs/webcomponents.js"></script>
+<link rel="import" href="../../bower_components/core-style/core-style.html">
+
+<!-- events string (to be reviewed) -->
+<script src="eventStrings.js"></script>
+
+<!-- Root CSS -->
+<link rel="import" href="root-css/root-css.html" />
+<core-style ref="rootCSS"></core-style>
+
+<!-- Custom components -->
+<link rel="import" href="custom-base/custom-checkbox/custom-checkbox.html">
+<link rel="import" href="custom-base/custom-checkbox/custom-checkbox-audio/custom-checkbox-audio.html">
+<link rel="import" href="custom-base/custom-inlinecheckbox/custom-inlinecheckbox.html">
+<link rel="import" href="custom-base/custom-dropdown/custom-dropdown.html">
+
+<!-- QTI components -->
+<link rel="import" href="qti-base/qti-assessmentitem/qti-assessmentitem.html">
+<link rel="import" href="qti-base/qti-itembody/qti-itembody.html">
+<link rel="import" href="qti-base/qti-infocontrol/qti-infocontrol.html">
+<link rel="import" href="qti-base/qti-interaction/qti-orderinteraction/qti-orderinteraction.html">
+<link rel="import" href="qti-base/qti-interaction/qti-textentryinteraction/qti-textentryinteraction.html">
+<link rel="import" href="qti-base/qti-interaction/qti-textentryinteraction/qti-textentryinteraction-textarea/qti-textentryinteraction-textarea.html">
+<link rel="import" href="qti-base/qti-interaction/qti-inlinechoiceinteraction/qti-inlinechoiceinteraction.html">
+<link rel="import" href="qti-base/qti-interaction/qti-hottextinteraction/qti-hottextinteraction.html">
+<link rel="import" href="qti-base/qti-interaction/qti-choiceinteraction/qti-choiceinteraction.html">
+<link rel="import" href="qti-base/qti-interaction/qti-choiceinteraction/qti-choiceinteraction-questionlist/qti-choiceinteraction-questionlist.html">
+<link rel="import" href="qti-base/qti-interaction/qti-choiceinteraction/qti-choiceinteraction-answerlist/qti-choiceinteraction-answerlist.html">
+<link rel="import" href="qti-base/qti-interaction/qti-choiceinteraction/qti-choiceinteraction-selectlist/qti-choiceinteraction-selectlist.html">
+<link rel="import" href="qti-base/qti-interaction/qti-choiceinteraction/qti-choiceinteraction-dropdown/qti-choiceinteraction-dropdown.html">
+<link rel="import" href="qti-base/qti-choice/qti-simplechoice/qti-simplechoice.html">
+<link rel="import" href="qti-base/qti-choice/qti-simplechoice/qti-simplechoice-questionlistitem/qti-simplechoice-questionlistitem.html">
+<link rel="import" href="qti-base/qti-choice/qti-simplechoice/qti-simplechoice-answerlistitem/qti-simplechoice-answerlistitem.html">
+<link rel="import" href="qti-base/qti-choice/qti-simplechoice/qti-simplechoice-selectlistitem/qti-simplechoice-selectlistitem.html">
+<link rel="import" href="qti-base/qti-choice/qti-simplechoice/qti-simplechoice-selectlistitem/qti-simplechoice-selectlistitem-audio/qti-simplechoice-selectlistitem-audio.html">
+<link rel="import" href="qti-base/qti-choice/qti-simplechoice/qti-simplechoice-selectlistitem/qti-simplechoice-selectlistitem-image/qti-simplechoice-selectlistitem-image.html">
+<link rel="import" href="qti-base/qti-choice/qti-simplechoice/qti-simplechoice-freetownpane/qti-simplechoice-freetownpane.html">
+<link rel="import" href="qti-base/qti-choice/qti-simplechoice/qti-simplechoice-sortable/qti-simplechoice-sortable.html">
+<link rel="import" href="qti-base/qti-choice/qti-hottext/qti-hottext.html">
+<link rel="import" href="qti-base/qti-choice/qti-associablechoice/qti-associablechoice.html">
+<link rel="import" href="qti-base/qti-choice/qti-associablechoice/qti-associablehotspot/qti-associablehotspot.html">
+<link rel="import" href="qti-base/qti-choice/qti-associablechoice/qti-gap/qti-gap.html">
+<link rel="import" href="qti-base/qti-choice/qti-associablechoice/qti-gapimg/qti-gapimg.html">
+<link rel="import" href="qti-base/qti-choice/qti-associablechoice/qti-gaptext/qti-gaptext.html">
+<link rel="import" href="qti-base/qti-interaction/qti-graphicgapmatchinterction/qti-graphicgapmatchinteraction.html" >
+<link rel="import" href="qti-base/qti-interaction/qti-gapmatchinteraction/qti-gapmatchinteraction.html" >
+<link rel="import" href="qti-base/qti-interaction/qti-gapmatchinteraction/qti-gapmatchinteraction-layout1/qti-gapmatchinteraction-layout1.html" >
+<link rel="import" href="qti-base/qti-interaction/qti-gapmatchinteraction/qti-gapmatchinteraction-layout2/qti-gapmatchinteraction-layout2.html" >
+<link rel="import" href="qti-base/qti-interaction/qti-gapmatchinteraction/qti-gapmatchinteraction-layout3/qti-gapmatchinteraction-layout3.html" >
+<link rel="import" href="qti-base/qti-interaction/qti-gapmatchinteraction/qti-gapmatchinteraction-layout4/qti-gapmatchinteraction-layout4.html" >
+<link rel="import" href="qti-base/qti-interaction/qti-gapmatchinteraction/qti-gapmatchinteraction-layout5/qti-gapmatchinteraction-layout5.html" >
+<link rel="import" href="qti-base/qti-interaction/qti-gapmatchinteraction/qti-gapmatchinteraction-layout6/qti-gapmatchinteraction-layout6.html" >
+<link rel="import" href="qti-base/qti-interaction/qti-gapmatchinteraction/qti-gapmatchinteraction-layout7/qti-gapmatchinteraction-layout7.html" >
+<link rel="import" href="qti-base/qti-interaction/qti-gapmatchinteraction/qti-gapmatchinteraction-layout8/qti-gapmatchinteraction-layout8.html" >
+<link rel="import" href="qti-base/qti-interaction/qti-gapmatchinteraction/qti-gapmatchinteraction-layout9/qti-gapmatchinteraction-layout9.html" >
+<link rel="import" href="qti-base/qti-interaction/qti-gapmatchinteraction/qti-gapmatchinteraction-layout10/qti-gapmatchinteraction-layout10.html" >
+<link rel="import" href="qti-base/qti-feedback/qti-feedbackinline/qti-feedbackinline.html">
+<link rel="import" href="qti-base/qti-feedback/qti-feedbackinline/qti-feedbackinline-correct/qti-feedbackinline-correct.html">
+<link rel="import" href="qti-base/qti-feedback/qti-feedbackinline/qti-feedbackinline-incorrect/qti-feedbackinline-incorrect.html">
+<link rel="import" href="qti-base/qti-interaction/qti-mediainteraction/qti-mediainteraction-audio/qti-mediainteraction-audio.html">
+<link rel="import" href="qti-base/qti-interaction/qti-mediainteraction/qti-mediainteraction-audio/qti-mediainteraction-audio-button/qti-mediainteraction-audio-button.html">
+<link rel="import" href="qti-base/qti-interaction/qti-mediainteraction/qti-mediainteraction-audio/qti-mediainteraction-audio-waveform/qti-mediainteraction-audio-waveform.html">
+<link rel="import" href="qti-base/qti-interaction/qti-mediainteraction/qti-mediainteraction-video/qti-mediainteraction-video.html">
+<link rel="import" href="qti-base/qti-interaction/qti-mediainteraction/qti-mediainteraction-video/qti-mediainteraction-video-full/qti-mediainteraction-video-full.html">
+<link rel="import" href="qti-base/qti-interaction/qti-mediainteraction/qti-mediainteraction-record/qti-mediainteraction-record.html">
+<link rel="import" href="qti-base/qti-interaction/qti-mediainteraction/qti-mediainteraction-record/qti-mediainteraction-record-small/qti-mediainteraction-record-small.html">
+
+<!-- Layout components -->
+<link rel="import" href="div-base/div-graphicmatchaudio/div-graphicmatchaudio.html">
+<link rel="import" href="div-base/div-graphicmatchfull/div-graphicmatchfull.html">
+<link rel="import" href="div-base/div-freetownpane/div-freetownpane.html">
+<link rel="import" href="div-base/div-container/div-container.html">
+<link rel="import" href="div-base/div-styledbox/div-styledbox.html">
+<link rel="import" href="div-base/div-styledbox/div-styledbox-timed/div-styledbox-timed.html">
+<link rel="import" href="div-base/div-blockdropwrap/div-blockdropwrap.html">
+<link rel="import" href="div-base/div-carousel/div-carousel.html">
+<link rel="import" href="div-base/div-carousel/div-carousel-vertical/div-carousel-vertical.html">
+<link rel="import" href="div-base/div-carouselitem/div-carouselitem.html">
+<link rel="import" href="div-base/div-carouselmedia/div-carouselmedia.html">
+<link rel="import" href="div-base/div-questionlistaudiobutton/div-questionlistaudiobutton.html">
+<link rel="import" href="div-base/div-dropzonetitle/div-dropzonetitle.html">
+<link rel="import" href="div-base/div-flashcard/div-flashcard.html">
+<link rel="import" href="div-base/div-flashcardface/div-flashcardface.html">
+<link rel="import" href="div-base/div-mediaunit/div-mediaunit.html">
+<link rel="import" href="div-base/div-mediaunitoverlay/div-mediaunitoverlay.html">
+<link rel="import" href="div-base/div-carousellabel/div-carousellabel.html">
+<link rel="import" href="div-base/div-mediacontainer/div-mediacontainer.html">
+<link rel="import" href="div-base/div-statictext/div-statictext.html">
+<link rel="import" href="div-base/div-quiz/div-quiz.html">
+<link rel="import" href="div-base/div-quiz/div-quiz-card/div-quiz-card.html">
+<link rel="import" href="img-base/img-inline/img-inline.html">
+<link rel="import" href="img-base/img-avatar/img-avatar.html">
+<link rel="import" href="img-base/img-cover/img-cover.html">
+<link rel="import" href="img-base/img-figure/img-figure.html">
+<link rel="import" href="ol-base/ol-questionlist/ol-questionlist.html">
+<link rel="import" href="li-base/li-questionitem/li-questionitem.html">
+<link rel="import" href="ul-base/ul-conversation/ul-conversation.html">
+<link rel="import" href="li-base/li-conversationitem/li-conversationitem.html">
+<link rel="import" href="ul-base/ul-answerlist/ul-answerlist.html">
+<link rel="import" href="li-base/li-answeritem/li-answeritem.html">
+<link rel="import" href="div-base/div-wordpool/div-wordpool.html">
+<link rel="import" href="ul-base/ul-wordpoollist/ul-wordpoollist.html">
+<link rel="import" href="li-base/li-wordpoolitem/li-wordpoolitem.html">
+<link rel="import" href="span-base/span-dialoglabel/span-dialoglabel.html">
+<link rel="import" href="span-base/span-nowrap/span-nowrap.html">
+<link rel="import" href="span-base/span-highlight/span-highlight.html">
+<link rel="import" href="span-base/span-interaction/span-interaction.html">
+<link rel="import" href="ul-base/ul-selectableslist/ul-selectableslist.html">
+<link rel="import" href="li-base/li-selectablesitem/li-selectablesitem.html">
+<link rel="import" href="div-base/div-checklist/div-checklist.html">
+<link rel="import" href="ul-base/ul-checklist/ul-checklist.html">
+<link rel="import" href="li-base/li-checklistitem/li-checklistitem.html">
+
+<!-- RESPONSE PROCESSING -->
+<link rel="import" href="qti-base/qti-responseprocessing/qti-responseprocessing.html">
+<link rel="import" href="qti-base/qti-rule/qti-setoutcomevalue/qti-setoutcomevalue.html">
+<link rel="import" href="qti-base/qti-expression/qti-variable/qti-variable.html">
+<link rel="import" href="qti-base/qti-expression/qti-match/qti-match.html">
+<link rel="import" href="qti-base/qti-expression/qti-multiple/qti-multiple.html">
+<link rel="import" href="qti-base/qti-expression/qti-contains/qti-contains.html">
+<link rel="import" href="qti-base/qti-expression/qti-correct/qti-correct.html">
+<link rel="import" href="qti-base/qti-expression/qti-basevalue/qti-basevalue.html">
+<link rel="import" href="qti-base/qti-rule/qti-responsecondition/qti-responsecondition.html">
+<link rel="import" href="qti-base/qti-responseelse/qti-responseelse.html">
+<link rel="import" href="qti-base/qti-responseelse/qti-responseif/qti-responseif.html">
+<link rel="import" href="qti-base/qti-responseelse/qti-responseif/qti-responseelseif/qti-responseelseif.html">
+<link rel="import" href="qti-base/qti-expression/qti-mapresponse/qti-mapresponse.html">
+<link rel="import" href="qti-base/qti-variabledeclaration/qti-variabledeclaration.html">
+<link rel="import" href="qti-base/qti-variabledeclaration/qti-responsedeclaration/qti-responsedeclaration.html">
+<link rel="import" href="qti-base/qti-variabledeclaration/qti-outcomedeclaration/qti-outcomedeclaration.html">

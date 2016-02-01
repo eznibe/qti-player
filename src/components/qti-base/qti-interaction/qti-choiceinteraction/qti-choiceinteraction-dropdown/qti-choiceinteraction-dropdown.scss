@@ -1,0 +1,20 @@
+@import "../qti-choiceinteraction";
+
+.answer-option {
+	display: inline-block;
+	margin: 10px 10px 0 0;
+
+	&.listed {
+		display: list-item;
+	}
+}
+
+.prompt{
+	font-size: $text-font-size-default;
+}
+
+:host-context(.block-drop-wrap){
+	.prompt{
+		margin-bottom: 5px;
+	}
+}

@@ -1,0 +1,68 @@
+@import "../qti-simplechoice";
+@import "../../../../common/buttons";
+
+.selectable {
+	background: $selectable-default-bg;
+	color: $selectable-default-text;
+	cursor: pointer;
+	display: inline-block;
+	line-height: 1;
+	margin: 0;
+	text-align: left;
+	user-select: none;
+	font-size: $text-font-size-small;
+
+	&:hover,
+	&:focus,
+	&:active {
+		.button {
+			color: #ffec80;
+
+			&__icon {
+				fill: #ffec80;
+				stroke: #ffec80;
+			}
+		}
+	}
+}
+
+
+input[type="radio"]:checked + .target {
+	.button {
+		color: $color-bright-sun;
+
+		&__icon {
+			fill: $color-bright-sun;
+			stroke: $color-bright-sun;
+		}
+
+	}
+}
+
+.fullsize {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.label {
+ 	line-height: 1;
+ 	font-size: $text-font-size-default;
+ 	font-weight: $text-font-weight-bold;
+ 	border-radius: 0;
+ 	color: $color-white;
+ 	background: $color-black;
+ 	position: absolute;
+ 	right: 0;
+ 	bottom: 0;
+ 	padding: 10px;
+ }
+
+.target {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: none !important;
+	cursor: pointer;
+	border: 0;
+}

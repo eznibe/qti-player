@@ -1,0 +1,8 @@
+.DS_Store
+QTI-Polymer.html
+node_modules
+npm-debug.log
+.sass-cache
+*.css
+*.css.map
+build

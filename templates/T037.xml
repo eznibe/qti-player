@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- http://5qx5fs.axshare.com/#p=t037_-_static_chat___dropdowns -->
+<!-- http://codebeautify.org/xmlviewer/d11baf -->
+
+<assessmentItem identifier="" adaptive="false" title="" timeDependent="false" xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1">
+	<responseDeclaration identifier="interaction_1_1" cardinality="single" baseType="identifier">
+		<correctResponse>
+			<value>interaction_1_1_choice_1</value>
+		</correctResponse>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_2_1" cardinality="single" baseType="identifier">
+		<correctResponse>
+			<value>interaction_2_1_choice_1</value>
+		</correctResponse>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_3_1" cardinality="single" baseType="identifier">
+		<correctResponse>
+			<value>interaction_3_1_choice_1</value>
+		</correctResponse>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_4_1" cardinality="single" baseType="identifier">
+		<correctResponse>
+			<value>interaction_4_1_choice_1</value>
+		</correctResponse>
+	</responseDeclaration>
+
+	<outcomeDeclaration identifier="outcome_1_1" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_2_1" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_3_1" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_4_1" cardinality="single" baseType="identifier"/>
+
+	<itemBody>
+		<rubricBlock view="candidate">
+			<div>Look at the words in yellow and blue. Complete the statements.</div>
+		</rubricBlock>
+		<infoControl title="hint">
+			<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+		</infoControl>
+		<div class="type:freetownpane width-50 shadow background-light">
+			<ul class="type:conversation container scrollable">
+				<li class="type:conversationitem">
+					<img class="type:avatar" alt="" src="../content/media/avatars/ben.png"/>
+					<p><span class="type:highlight">Veggies</span> es bonus proinde vos postulo essum magis kohlrabi welsh onion.</p>
+				</li>
+				<li class="type:conversationitem alternate">
+					<img class="type:avatar blue" alt="" src="../content/media/avatars/jenny.png"/>
+					<p>Pea horseradish azuki bean <span class="type:highlight alt">lettuce</span> avocado asparagus okra.</p>
+				</li>
+				<li class="type:conversationitem">
+					<img class="type:avatar" alt="" src="../content/media/avatars/ben.png"/>
+					<p>Soko radicchio bunya nuts gram dulse silver beet parsnip cabbage lotus.</p>
+				</li>
+				<li class="type:conversationitem alternate">
+					<img class="type:avatar blue" alt="" src="../content/media/avatars/jenny.png"/>
+					<p>Pea <span class="type:highlight alt">horseradish azuki</span> <span class="type:highlight alt">bean lettuce a</span>vocado asparagus okra.</p>
+				</li>
+			</ul>
+		</div>
+		<div class="type:freetownpane width-50 background-dark">
+			<ol class="type:questionlist padding-16">
+				<li class="type:questionitem">
+					This is the question with a dropdown at the end <span class="type:nowrap"><inlineChoiceInteraction responseIdentifier="interaction_1_1" shuffle="false">
+					<inlineChoice identifier="interaction_1_1_choice_1">option 1</inlineChoice>
+					<inlineChoice identifier="interaction_1_1_choice_2">option 2</inlineChoice>
+					</inlineChoiceInteraction> <feedbackInline class="type:correct" outcomeIdentifier="outcome_1_1" identifier="correct" showHide="show">
+						<span>correct</span>
+					</feedbackInline> <feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1_1" identifier="incorrect" showHide="show">
+						<span>incorrect</span>
+					</feedbackInline></span>
+				</li>
+				<li class="type:questionitem">
+					This is the question with <span class="type:nowrap"><inlineChoiceInteraction responseIdentifier="interaction_2_1" shuffle="false">
+					<inlineChoice identifier="interaction_2_1_choice_1">option 1</inlineChoice>
+					<inlineChoice identifier="interaction_2_1_choice_2">option 2</inlineChoice>
+					</inlineChoiceInteraction> <feedbackInline class="type:correct" outcomeIdentifier="outcome_2_1" identifier="correct" showHide="show">
+					<span>correct</span>
+					</feedbackInline> <feedbackInline class="type:incorrect" outcomeIdentifier="outcome_2_1" identifier="incorrect" showHide="show">
+					<span>incorrect</span>
+					</feedbackInline></span> not one but two dropdowns <span class="type:nowrap"><inlineChoiceInteraction responseIdentifier="interaction_3_1" shuffle="false">
+					<inlineChoice identifier="interaction_3_1_choice_1">option 1</inlineChoice>
+					<inlineChoice identifier="interaction_3_1_choice_2">option 2</inlineChoice>
+					</inlineChoiceInteraction> <feedbackInline class="type:correct" outcomeIdentifier="outcome_3_1" identifier="correct" showHide="show">
+					<span>correct</span>
+					</feedbackInline> <feedbackInline class="type:incorrect" outcomeIdentifier="outcome_3_1" identifier="incorrect" showHide="show">
+					<span>incorrect</span>
+					</feedbackInline></span> just like that.
+				</li>
+				<li class="type:questionitem">
+					This is the question that has a dropdown on a new line below the question.<span class="type:nowrap"><inlineChoiceInteraction responseIdentifier="interaction_4_1" shuffle="false">
+					<inlineChoice identifier="interaction_4_1_choice_1">option 1</inlineChoice>
+					<inlineChoice identifier="interaction_4_1_choice_2">option 2</inlineChoice>
+					</inlineChoiceInteraction> <feedbackInline class="type:correct" outcomeIdentifier="outcome_4_1" identifier="correct" showHide="show">
+					<span>correct</span>
+					</feedbackInline> <feedbackInline class="type:incorrect" outcomeIdentifier="outcome_4_1" identifier="incorrect" showHide="show">
+					<span>incorrect</span>
+					</feedbackInline></span>
+				</li>
+			</ol>
+		</div>
+	</itemBody>
+
+	<responseProcessing>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<variable identifier="interaction_1_1"/>
+					<correct identifier="interaction_1_1"/>
+				</match>
+				<setOutcomeValue identifier="outcome_1_1">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_1_1">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<variable identifier="interaction_2_1"/>
+					<correct identifier="interaction_2_1"/>
+				</match>
+				<setOutcomeValue identifier="outcome_2_1">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_2_1">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<variable identifier="interaction_3_1"/>
+					<correct identifier="interaction_3_1"/>
+				</match>
+				<setOutcomeValue identifier="outcome_3_1">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_3_1">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<variable identifier="interaction_4_1"/>
+					<correct identifier="interaction_4_1"/>
+				</match>
+				<setOutcomeValue identifier="outcome_4_1">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_4_1">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+	</responseProcessing>
+
+</assessmentItem>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- http://5qx5fs.axshare.com/#p=t028_-_drag_and_drop_reorder -->
+<!-- http://codebeautify.org/xmlviewer/eab3ef -->
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1" identifier="" adaptive="false" title="" timeDependent="false">
+	<responseDeclaration identifier="OI1" cardinality="ordered" baseType="identifier">
+		<correctResponse>
+			<value>C1</value>
+			<value>C2</value>
+			<value>C3</value>
+			<value>C4</value>
+			<value>C5</value>
+			<value>C6</value>
+			<value>C7</value>
+		</correctResponse>
+	</responseDeclaration>
+	<outcomeDeclaration identifier="outcome_1" cardinality="single" baseType="identifier"/>
+	<itemBody>
+		<rubricBlock view="candidate">
+			<div>Reorder the words to have a good time.</div>
+		</rubricBlock>
+		<infoControl title="hint">
+			<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+		</infoControl>
+		<div class="type:freetownpane width-70 shadow container scrollable">
+			<orderInteraction class="inline list" responseIdentifier="OI1" shuffle="false">
+				<simpleChoice class="type:sortable" identifier="C1">There is no entrance on Shoreditch High Street. Turn right onto Redchurch Street</simpleChoice>
+				<simpleChoice class="type:sortable" identifier="C2">There is no entrance on Shoreditch High Street. Turn right onto Redchurch Street</simpleChoice>
+				<simpleChoice class="type:sortable" identifier="C3">There is no entrance on Shoreditch High Street. Turn right onto Redchurch Street</simpleChoice>
+				<simpleChoice class="type:sortable" identifier="C4">There is no entrance on Shoreditch High Street. Turn right onto Redchurch Street</simpleChoice>
+				<simpleChoice class="type:sortable" identifier="C5">There is no entrance on Shoreditch High Street. Turn right onto Redchurch Street</simpleChoice>
+				<simpleChoice class="type:sortable" identifier="C6">There is no entrance on Shoreditch High Street. Turn right onto Redchurch Street</simpleChoice>
+				<simpleChoice class="type:sortable" identifier="C7">There is no entrance on Shoreditch High Street. Turn right onto Redchurch Street</simpleChoice>
+			</orderInteraction>
+			<feedbackInline class="type:correct" outcomeIdentifier="outcome_1" identifier="correct" showHide="show">
+				<span>correct</span>
+			</feedbackInline>
+			<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="incorrect" showHide="show">
+				<span>incorrect</span>
+			</feedbackInline>
+		</div>
+		<div class="type:freetownpane width-30 background-darker">
+			<img class="type:cover" src="http://placeimg.com/600/800/any" alt="" />
+		</div>
+	</itemBody>
+	<responseProcessing>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<variable identifier="OI1"/>
+					<correct identifier="OI1"/>
+				</match>
+			   <setOutcomeValue identifier="outcome_1">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_1">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+	</responseProcessing>
+</assessmentItem>

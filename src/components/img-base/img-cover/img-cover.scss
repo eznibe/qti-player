@@ -1,0 +1,15 @@
+@import "../img-base";
+
+.cover {
+	width: 100%;
+	height: 100%;
+
+	img {
+		position: absolute;
+		opacity: 1;
+	}
+
+	&.hiddenimg {
+		opacity: 0;
+	}
+}

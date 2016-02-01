@@ -1,0 +1,19 @@
+@import "../ul-base";
+
+.word-pool-list {
+	color: $color-default-text;
+	font-size: $text-font-size-default;
+	font-weight: $text-font-weight-bold;
+
+	&:after {
+		content: ".";
+		visibility: hidden;
+		display: block;
+		height: 0;
+		clear: both;
+	}
+}
+
+.light {
+	padding: 0 10px;
+}

@@ -1,0 +1,14 @@
+@import "../div-base";
+
+.dropzone-title {
+	font-size: 2rem;
+	height: 50px;
+	text-align: center;
+
+	.has-audio {
+		position: absolute;
+		border-radius: 3px;
+		overflow: hidden;
+		top: 0;
+	}
+}

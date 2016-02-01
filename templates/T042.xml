@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- http://5qx5fs.axshare.com/#p=t042_-_video___type_in -->
+<!-- http://codebeautify.org/xmlviewer/a91d06 -->
+<assessmentItem identifier="" adaptive="false" title="" timeDependent="false" xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1">
+	<responseDeclaration identifier="MI1" cardinality="single" baseType="integer" />
+	<responseDeclaration identifier="interaction_1" cardinality="single" baseType="identifier">
+		<correctResponse>
+			<value>interaction_1_choice_1</value>
+		</correctResponse>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_2" cardinality="single" baseType="identifier">
+		<correctResponse>
+			<value>interaction_2_choice_1</value>
+		</correctResponse>
+	</responseDeclaration>
+	<outcomeDeclaration identifier="outcome_1" cardinality="single" baseType="identifier" />
+	<outcomeDeclaration identifier="outcome_2" cardinality="single" baseType="identifier" />
+
+
+	<itemBody>
+		<rubricBlock view="candidate">
+			<div>Watch the video again and complete the sentences.</div>
+		</rubricBlock>
+		<infoControl title="hint">
+			<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+		</infoControl>
+		<div class="type:freetownpane width-100 spill shadow">
+			<div class="type:carousel fullscreen horizontal two-up">
+				<div class="type:carouselitem">
+					<div class="type:carousellabel xl">word or phrase</div>
+					<div class="type:carouselmedia left">
+						<mediaInteraction class="type:video" responseIdentifier="MI1" autostart="false">
+							<object data="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4"/>
+						</mediaInteraction>
+					</div>
+					<div class="type:carouselmedia right">
+						<mediaInteraction class="type:video" responseIdentifier="MI1" autostart="false">
+							<object data="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4"/>
+						</mediaInteraction>
+					</div>
+					<div  class="type:container two-choices">
+						<choiceInteraction class="type:selectlist horizontal container" responseIdentifier="interaction_1" minChoices="1" maxChoices="1" shuffle="false">
+							<simpleChoice class="type:selectlistitem inline" identifier="interaction_1_choice_1">
+								<span class="type:label">Nori grape silver beet broccoli</span>
+								<feedbackInline class="type:correct" outcomeIdentifier="outcome_1" identifier="interaction_1_choice_1" showHide="show">
+									<span>correct</span>
+								</feedbackInline>
+							</simpleChoice>
+							<simpleChoice class="type:selectlistitem inline" identifier="interaction_1_choice_2">
+								<span class="type:label">Celery potato scallion desert raisin</span>
+								<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="interaction_1_choice_2" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</simpleChoice>
+						</choiceInteraction>
+					</div>
+
+				</div>
+				<div class="type:carouselitem">
+					<div class="type:carousellabel xl">word or phrase</div>
+					<div class="type:carouselmedia left">
+						<mediaInteraction class="type:video" responseIdentifier="MI1" autostart="false">
+							<object data="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4"/>
+						</mediaInteraction>
+					</div>
+					<div class="type:carouselmedia right">
+						<mediaInteraction class="type:video" responseIdentifier="MI1" autostart="false">
+							<object data="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4"/>
+						</mediaInteraction>
+					</div>
+					<div  class="type:container two-choices">
+						<choiceInteraction class="type:selectlist horizontal container" responseIdentifier="interaction_2" minChoices="1" maxChoices="1" shuffle="false">
+							<simpleChoice class="type:selectlistitem inline" identifier="interaction_2_choice_1">
+								<span class="type:label">Nori grape silver beet broccoli</span>
+								<feedbackInline class="type:correct" outcomeIdentifier="outcome_2" identifier="interaction_2_choice_1" showHide="show">
+									<span>correct</span>
+								</feedbackInline>
+							</simpleChoice>
+							<simpleChoice class="type:selectlistitem inline" identifier="interaction_2_choice_2">
+								<span class="type:label">Celery potato scallion desert raisin</span>
+								<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_2" identifier="interaction_2_choice_2" showHide="show">
+									<span>incorrect</span>
+								</feedbackInline>
+							</simpleChoice>
+						</choiceInteraction>
+					</div>
+				</div>
+			</div>
+		</div>
+	</itemBody>
+
+	<responseProcessing>
+		<setOutcomeValue identifier="outcome_1">
+			<variable identifier="interaction_1" />
+		</setOutcomeValue>
+		<setOutcomeValue identifier="outcome_2">
+			<variable identifier="interaction_2" />
+		</setOutcomeValue>
+	</responseProcessing>
+
+</assessmentItem>

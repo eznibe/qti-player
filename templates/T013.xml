@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- http://5qx5fs.axshare.com/#p=t022_-_roleplay_type_in -->
+<!-- http://codebeautify.org/xmlviewer/860256 -->
+
+<assessmentItem identifier="" adaptive="false" title="" timeDependent="false" xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1">
+	<responseDeclaration identifier="MI1" cardinality="single" baseType="integer" />
+	<responseDeclaration identifier="interaction_1" cardinality="single" baseType="identifier">
+		<correctResponse>
+			<value>interaction_1_choice_1</value>
+		</correctResponse>
+	</responseDeclaration>
+	<outcomeDeclaration identifier="outcome_1" cardinality="single" baseType="identifier"/>
+
+	<itemBody>
+		<rubricBlock view="candidate">
+			<div>Read the words and select the correct definition of cognates.</div>
+		</rubricBlock>
+		<infoControl title="hint">
+			<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+		</infoControl>
+		<div class="type:freetownpane width-50 background-dark">
+			<div class="type:carousel background-lighter horizontal">
+				<div class="type:carouselitem">
+					<div class="type:carouselmedia">
+						<div class="type:mediaunit base xl light">
+							<div class="type:overlay">lorem diam</div>
+							<img src="http://placeimg.com/1600/900/any" alt="" />
+							<mediaInteraction class="type:audio-button large" responseIdentifier="MI1"  autostart="false">
+								<object data="/content/media/audio/placeholder-short.mp3" type="audio/mp3"/>
+							</mediaInteraction>
+						</div>
+					</div>
+				</div>
+				<div class="type:carouselitem">
+					<div class="type:carouselmedia">
+						<div class="type:mediaunit base xl light">
+							<div class="type:overlay">lorem diam</div>
+							<img src="http://placeimg.com/1600/900/any" alt="" />
+							<mediaInteraction class="type:audio-button large" responseIdentifier="MI1"  autostart="false">
+								<object data="/content/media/audio/placeholder-short.mp3" type="audio/mp3"/>
+							</mediaInteraction>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="type:freetownpane width-50 shadow">
+			<ol class="type:questionlist padding-16 scrollable unordered">
+				<li class="type:questionitem">
+					Turpis vulputate egestas
+					<choiceInteraction class="type:questionlist" responseIdentifier="interaction_1" minChoices="1" maxChoices="1" shuffle="false">
+						<simpleChoice class="type:questionlistitem" identifier="interaction_1_choice_1">
+							<span class="type:label">vel sapien dapibus, cursus elit</span>
+							<feedbackInline class="type:correct" outcomeIdentifier="outcome_1" identifier="interaction_1_choice_1" showHide="show">
+								<span>correct</span>
+							</feedbackInline>
+						</simpleChoice>
+						<simpleChoice class="type:questionlistitem" identifier="interaction_1_choice_2">
+							<span class="type:label">elementum quis</span>
+							<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="interaction_1_choice_2" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</simpleChoice>
+						<simpleChoice class="type:questionlistitem" identifier="interaction_1_choice_3">
+							<span class="type:label">curabitur</span>
+							<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="interaction_1_choice_3" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</simpleChoice>
+						<simpleChoice class="type:questionlistitem" identifier="interaction_1_choice_4">
+							<span class="type:label">ermentum velit</span>
+							<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="interaction_1_choice_4" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</simpleChoice>
+					</choiceInteraction>
+				</li>
+			</ol>
+		</div>
+	</itemBody>
+
+	<responseProcessing>
+		<setOutcomeValue identifier="outcome_1">
+			<variable identifier="interaction_1"></variable>
+		</setOutcomeValue>
+	</responseProcessing>
+
+</assessmentItem>

@@ -1,0 +1,14 @@
+@import "../qti-simplechoice";
+
+.answer-option {
+	display: inline-block;
+	margin: 10px 10px 0 0;
+}
+
+.listed {
+	display: list-item;
+}
+
+:host-context(.in-quiz) .answer-option {
+	margin: 0 10px 16px 0;
+}

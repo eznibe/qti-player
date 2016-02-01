@@ -1,0 +1,19 @@
+<link rel="import" href="../qti-mediainteraction.html">
+
+<polymer-element name="qti-mediainteraction-video" extends="qti-mediainteraction" style="width:100%">
+	<template>
+		<style>
+			:host {
+				display: block;
+				width: 100%;
+			}
+		</style>
+		<link rel="stylesheet" href="qti-mediainteraction-video.css">
+		<video class="{{mainClass}} contain-media video-js vjs-mindtree-skin" poster="{{poster}}" width="auto" height="auto">
+			<source src="{{data}}" type="{{type}}" />
+		</video>
+	</template>
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="//vjs.zencdn.net/4.10/video.js"></script>
+	<script src="qti-mediainteraction-video.js"></script>
+</polymer-element>

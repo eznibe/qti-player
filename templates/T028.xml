@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- http://5qx5fs.axshare.com/#p=t028_-_drag_and_drop_reorder -->
+<!-- http://codebeautify.org/xmlviewer/eab3ef -->
+
+<assessmentItem identifier="" adaptive="false" title="" timeDependent="false" xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1">
+	<responseDeclaration identifier="OI1" cardinality="ordered" baseType="identifier">
+		<correctResponse>
+			<value>C1</value>
+			<value>C2</value>
+			<value>C3</value>
+			<value>C4</value>
+			<value>C5</value>
+			<value>C6</value>
+			<value>C7</value>
+		</correctResponse>
+	</responseDeclaration>
+	<responseDeclaration identifier="OI2" cardinality="ordered" baseType="identifier">
+		<correctResponse>
+			<value>C8</value>
+			<value>C9</value>
+			<value>C10</value>
+			<value>C11</value>
+			<value>C12</value>
+			<value>C13</value>
+			<value>C14</value>
+		</correctResponse>
+	</responseDeclaration>
+	<responseDeclaration identifier="OI3" cardinality="ordered" baseType="identifier">
+		<correctResponse>
+			<value>C15</value>
+			<value>C16</value>
+			<value>C17</value>
+			<value>C18</value>
+			<value>C19</value>
+			<value>C20</value>
+			<value>C21</value>
+		</correctResponse>
+	</responseDeclaration>
+	<responseDeclaration identifier="OI4" cardinality="ordered" baseType="identifier">
+		<correctResponse>
+			<value>C22</value>
+			<value>C23</value>
+			<value>C24</value>
+			<value>C25</value>
+			<value>C26</value>
+			<value>C27</value>
+			<value>C28</value>
+		</correctResponse>
+	</responseDeclaration>
+	<responseDeclaration identifier="OI5" cardinality="ordered" baseType="identifier">
+		<correctResponse>
+			<value>C29</value>
+			<value>C30</value>
+			<value>C31</value>
+			<value>C32</value>
+			<value>C33</value>
+			<value>C34</value>
+			<value>C35</value>
+		</correctResponse>
+	</responseDeclaration>
+	<responseDeclaration identifier="OI6" cardinality="ordered" baseType="identifier">
+		<correctResponse>
+			<value>C36</value>
+			<value>C37</value>
+			<value>C38</value>
+			<value>C39</value>
+			<value>C40</value>
+			<value>C41</value>
+			<value>C42</value>
+		</correctResponse>
+	</responseDeclaration>
+	<responseDeclaration identifier="OI7" cardinality="ordered" baseType="identifier">
+		<correctResponse>
+			<value>C43</value>
+			<value>C44</value>
+			<value>C45</value>
+			<value>C46</value>
+			<value>C47</value>
+			<value>C48</value>
+			<value>C49</value>
+		</correctResponse>
+	</responseDeclaration>
+
+
+	<outcomeDeclaration identifier="outcome_1" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_2" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_3" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_4" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_5" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_6" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_7" cardinality="single" baseType="identifier"/>
+
+	<itemBody>
+		<rubricBlock view="candidate">
+			<div>Reorder the words to have a good time.</div>
+		</rubricBlock>
+		<infoControl title="hint">
+			<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+		</infoControl>
+		<div class="type:freetownpane width-100 shadow">
+			<ol class="type:questionlist container scrollable">
+				<li class="type:questionitem">
+					<orderInteraction class="inline list" responseIdentifier="OI1" shuffle="false">
+						<simpleChoice class="type:sortable" identifier="C1">Draggable1</simpleChoice>
+						<simpleChoice class="type:sortable" identifier="C2">Draggable2</simpleChoice>
+						<simpleChoice class="type:sortable" identifier="C3">Draggable3</simpleChoice>
+						<simpleChoice class="type:sortable" identifier="C4">Draggable4</simpleChoice>
+						<simpleChoice class="type:sortable" identifier="C5">Draggable5</simpleChoice>
+						<simpleChoice class="type:sortable" identifier="C6">Draggable6</simpleChoice>
+						<simpleChoice class="type:sortable" identifier="C7">Draggable7</simpleChoice>
+					</orderInteraction>
+					<feedbackInline class="type:correct" outcomeIdentifier="outcome_1" identifier="correct" showHide="show">
+						<span>correct</span>
+					</feedbackInline> <feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="incorrect" showHide="show">
+						<span>incorrect</span>
+					</feedbackInline>
+				</li>
+				<li class="type:questionitem">
+					<orderInteraction class="inline list" responseIdentifier="OI2" shuffle="false">
+						<simpleChoice class="type:sortable" identifier="C8">Draggable1</simpleChoice>
+						<simpleChoice class="type:sortable" identifier="C9">Draggable2</simpleChoice>
+						<simpleChoice class="type:sortable" identifier="C10">Draggable3</simpleChoice>
+						<simpleChoice class="type:sortable" identifier="C11">Draggable4</simpleChoice>
+						<simpleChoice class="type:sortable" identifier="C12">Draggable5</simpleChoice>
+						<simpleChoice class="type:sortable" identifier="C13">Draggable6</simpleChoice>
+						<simpleChoice class="type:sortable" identifier="C14">Draggable7</simpleChoice>
+					</orderInteraction>
+					<feedbackInline class="type:correct" outcomeIdentifier="outcome_2" identifier="correct" showHide="show">
+						<span>correct</span>
+					</feedbackInline> <feedbackInline class="type:incorrect" outcomeIdentifier="outcome_2" identifier="incorrect" showHide="show">
+						<span>incorrect</span>
+					</feedbackInline>
+				</li>
+				<li class="type:questionitem">
+					<orderInteraction class="inline list" responseIdentifier="OI3" shuffle="false">
+						<simpleChoice class="type:sortable" identifier="C15">Draggable1</simpleChoice>
+						<simpleChoice class="type:sortable" identifier="C16">Draggable2</simpleChoice>
+						<simpleChoice class="type:sortable" identifier="C17">Draggable3</simpleChoice>
+						<simpleChoice class="type:sortable" identifier="C18">Draggable4</simpleChoice>
+						<simpleChoice class="type:sortable" identifier="C19">Draggable5</simpleChoice>
+						<simpleChoice class="type:sortable" identifier="C20">Draggable6</simpleChoice>
+						<simpleChoice class="type:sortable" identifier="C21">Draggable7</simpleChoice>
+					</orderInteraction>
+					<feedbackInline class="type:correct" outcomeIdentifier="outcome_3" identifier="correct" showHide="show">
+						<span>correct</span>
+					</feedbackInline> <feedbackInline class="type:incorrect" outcomeIdentifier="outcome_3" identifier="incorrect" showHide="show">
+						<span>incorrect</span>
+					</feedbackInline>
+				</li>
+				<li class="type:questionitem">
+					<orderInteraction class="inline list" responseIdentifier="OI4" shuffle="false">
+						<simpleChoice class="type:sortable" identifier="C22">Draggable1</simpleChoice>
+						<simpleChoice class="type:sortable" identifier="C23">Draggable2</simpleChoice>
+						<simpleChoice class="type:sortable" identifier="C24">Draggable3</simpleChoice>
+						<simpleChoice class="type:sortable" identifier="C25">Draggable4</simpleChoice>
+						<simpleChoice class="type:sortable" identifier="C26">Draggable5</simpleChoice>
+						<simpleChoice class="type:sortable" identifier="C27">Draggable6</simpleChoice>
+						<simpleChoice class="type:sortable" identifier="C28">Draggable7</simpleChoice>
+					</orderInteraction>
+					<feedbackInline class="type:correct" outcomeIdentifier="outcome_4" identifier="correct" showHide="show">
+						<span>correct</span>
+					</feedbackInline> <feedbackInline class="type:incorrect" outcomeIdentifier="outcome_4" identifier="incorrect" showHide="show">
+						<span>incorrect</span>
+					</feedbackInline>
+				</li>
+				<li class="type:questionitem">
+					<orderInteraction class="inline list" responseIdentifier="OI5" shuffle="false">
+						<simpleChoice class="type:sortable" identifier="C29">Draggable1</simpleChoice>
+						<simpleChoice class="type:sortable" identifier="C30">Draggable2</simpleChoice>
+						<simpleChoice class="type:sortable" identifier="C31">Draggable3</simpleChoice>
+						<simpleChoice class="type:sortable" identifier="C32">Draggable4</simpleChoice>
+						<simpleChoice class="type:sortable" identifier="C33">Draggable5</simpleChoice>
+						<simpleChoice class="type:sortable" identifier="C34">Draggable6</simpleChoice>
+						<simpleChoice class="type:sortable" identifier="C35">Draggable7</simpleChoice>
+					</orderInteraction>
+					<feedbackInline class="type:correct" outcomeIdentifier="outcome_5" identifier="correct" showHide="show">
+						<span>correct</span>
+					</feedbackInline> <feedbackInline class="type:incorrect" outcomeIdentifier="outcome_5" identifier="incorrect" showHide="show">
+						<span>incorrect</span>
+					</feedbackInline>
+				</li>
+				<li class="type:questionitem">
+					<orderInteraction class="inline list" responseIdentifier="OI6" shuffle="false">
+						<simpleChoice class="type:sortable" identifier="C36">Draggable1</simpleChoice>
+						<simpleChoice class="type:sortable" identifier="C37">Draggable2</simpleChoice>
+						<simpleChoice class="type:sortable" identifier="C38">Draggable3</simpleChoice>
+						<simpleChoice class="type:sortable" identifier="C39">Draggable4</simpleChoice>
+						<simpleChoice class="type:sortable" identifier="C40">Draggable5</simpleChoice>
+						<simpleChoice class="type:sortable" identifier="C41">Draggable6</simpleChoice>
+						<simpleChoice class="type:sortable" identifier="C42">Draggable7</simpleChoice>
+					</orderInteraction>
+					<feedbackInline class="type:correct" outcomeIdentifier="outcome_6" identifier="correct" showHide="show">
+						<span>correct</span>
+					</feedbackInline> <feedbackInline class="type:incorrect" outcomeIdentifier="outcome_6" identifier="incorrect" showHide="show">
+						<span>incorrect</span>
+					</feedbackInline>
+				</li>
+				<li class="type:questionitem">
+					<orderInteraction class="inline list" responseIdentifier="OI7" shuffle="false">
+						<simpleChoice class="type:sortable" identifier="C43">Draggable1</simpleChoice>
+						<simpleChoice class="type:sortable" identifier="C44">Draggable2</simpleChoice>
+						<simpleChoice class="type:sortable" identifier="C45">Draggable3</simpleChoice>
+						<simpleChoice class="type:sortable" identifier="C46">Draggable4</simpleChoice>
+						<simpleChoice class="type:sortable" identifier="C47">Draggable5</simpleChoice>
+						<simpleChoice class="type:sortable" identifier="C48">Draggable6</simpleChoice>
+						<simpleChoice class="type:sortable" identifier="C49">Draggable7</simpleChoice>
+					</orderInteraction>
+					<feedbackInline class="type:correct" outcomeIdentifier="outcome_7" identifier="correct" showHide="show">
+						<span>correct</span>
+					</feedbackInline> <feedbackInline class="type:incorrect" outcomeIdentifier="outcome_7" identifier="incorrect" showHide="show">
+						<span>incorrect</span>
+					</feedbackInline>
+				</li>
+			</ol>
+		</div>
+	</itemBody>
+
+	<responseProcessing>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<variable identifier="OI1"/>
+					<correct identifier="OI1"/>
+				</match>
+			   <setOutcomeValue identifier="outcome_1">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_1">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+
+		<responseCondition>
+			<responseIf>
+				<match>
+					<variable identifier="OI2"/>
+					<correct identifier="OI2"/>
+				</match>
+			   <setOutcomeValue identifier="outcome_2">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_2">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+
+		<responseCondition>
+			<responseIf>
+				<match>
+					<variable identifier="OI3"/>
+					<correct identifier="OI3"/>
+				</match>
+			   <setOutcomeValue identifier="outcome_3">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_3">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+
+		<responseCondition>
+			<responseIf>
+				<match>
+					<variable identifier="OI4"/>
+					<correct identifier="OI4"/>
+				</match>
+			   <setOutcomeValue identifier="outcome_4">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_4">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+
+		<responseCondition>
+			<responseIf>
+				<match>
+					<variable identifier="OI5"/>
+					<correct identifier="OI5"/>
+				</match>
+			   <setOutcomeValue identifier="outcome_5">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_5">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+
+		<responseCondition>
+			<responseIf>
+				<match>
+					<variable identifier="OI6"/>
+					<correct identifier="OI6"/>
+				</match>
+			   <setOutcomeValue identifier="outcome_6">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_6">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+
+		<responseCondition>
+			<responseIf>
+				<match>
+					<variable identifier="OI7"/>
+					<correct identifier="OI7"/>
+				</match>
+			   <setOutcomeValue identifier="outcome_7">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_7">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+	</responseProcessing>
+
+</assessmentItem>

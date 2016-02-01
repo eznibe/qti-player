@@ -1,0 +1,19 @@
+<link rel="import" href="../qti-gapmatchinteraction.html">
+
+<polymer-element name="qti-gapmatchinteraction-layout5" extends="qti-gapmatchinteraction">
+	<template>
+        <div-freetownpane class="width-100 scrollable" >
+            <div-freetownpane class="width-100 inner with-footer shadow" >
+                <content select="div-carousel"></content>
+            </div-freetownpane>
+            <div-freetownpane class="width-100 inner background-darker bottom footer" >
+                <div class="drag-target__elements">
+                    <ul-selectableslist class="horizontal container">
+                        <content select="qti-gaptext"></content>
+                    </ul-selectableslist>
+                </div>
+            </div-freetownpane>
+        </div-freetownpane>
+	</template>
+	<script src="qti-gapmatchinteraction-layout5.js"></script>
+</polymer-element>

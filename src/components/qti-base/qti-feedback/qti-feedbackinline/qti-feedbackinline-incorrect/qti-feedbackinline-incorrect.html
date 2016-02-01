@@ -1,0 +1,18 @@
+<link rel="import" href="../qti-feedbackinline.html">
+
+<polymer-element name="qti-feedbackinline-incorrect" extends="qti-feedbackinline">
+	<template>
+		<link rel="stylesheet" href="qti-feedbackinline-incorrect.css">
+		<svg style="display:none">
+			<symbol id="icon-incorrect" viewBox="0 0 25.304 25.302">
+				<path fill="#fff" d="M24.682 20.17c.83.827.83 2.175 0 3.006l-1.508 1.505c-.83.83-2.172.83-3.006 0l-7.517-7.517-7.517 7.518c-.83.83-2.178.83-3.008 0L.62 23.177c-.83-.83-.83-2.18 0-3.006l7.52-7.52L.623 5.134c-.83-.83-.83-2.18 0-3.008L2.127.622c.83-.83 2.178-.83 3.008 0l7.518 7.518L20.17.622c.83-.83 2.176-.83 3.006 0l1.508 1.505c.83.827.83 2.176 0 3.006l-7.52 7.518 7.518 7.52z"/>
+			</symbol>
+		</svg>
+		<span class="feedback {{lightClasses}} {{show_status}}">
+			<svg class="icon incorrect">
+				<use xlink:href="#icon-incorrect" />
+			</svg>
+		</span>
+	</template>
+	<script src="qti-feedbackinline-incorrect.js"></script>
+</polymer-element>

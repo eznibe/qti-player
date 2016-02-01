@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem identifier="11" adaptive="false" title="" timeDependent="false" xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1">
+  <responseDeclaration identifier="interaction_1" cardinality="multiple" baseType="identifier">
+    <correctResponse>
+      <value>hottext_1</value>
+      <value>hottext_5</value>
+	  <value>hottext_10</value>
+      <value>hottext_12</value>
+	  <value>hottext_18</value>
+      <value>hottext_19</value>
+    </correctResponse>
+  </responseDeclaration>
+
+  <outcomeDeclaration identifier="outcome_1" cardinality="multiple" baseType="identifier"/>
+
+  <itemBody class="T011">
+    <rubricBlock view="candidate">
+      <div>Read the conversation. Select all the polite expressions that Simon and Luke use.</div>
+    </rubricBlock>
+    <infoControl title="hint">
+      <div>Polite language often comes at the beginning or end of sentences.</div>
+    </infoControl>
+    <div class="type:freetownpane width-70 shadow">
+      <hottextInteraction responseIdentifier="interaction_1" maxChoices="2">
+        <ul class="type:conversation">
+          <li class="type:conversationitem">
+            <img class="type:avatar" alt="" src="../content/media/27.png"/>
+            <p>
+              <hottext identifier="hottext_1">
+                <span class="type:label">Excuse me,</span>
+                <feedbackInline class="type:correct" outcomeIdentifier="outcome_1" identifier="hottext_1" showHide="show">
+                  <span>correct</span>
+                </feedbackInline>
+              </hottext> <hottext identifier="hottext_2">
+                <span class="type:label">I’m here for the English classes.</span>
+                <feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="hottext_2" showHide="show">
+                  <span>incorrect</span>
+                </feedbackInline>
+             </hottext>
+            </p>
+          </li>
+          <li class="type:conversationitem alternate">
+            <img class="type:avatar blue" alt="" src="../content/media/28.png"/>
+            <p>
+              <hottext identifier="hottext_3">
+                <span class="type:label">OK.</span>
+                <feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="hottext_3" showHide="show">
+                  <span>incorrect</span>
+                </feedbackInline>
+              </hottext> <hottext identifier="hottext_4">
+                <span class="type:label">Can I get some personal information,</span>
+                <feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="hottext_4" showHide="show">
+                  <span>incorrect</span>
+                </feedbackInline>
+              </hottext> <hottext identifier="hottext_5">
+                <span class="type:label">please?</span>
+                <feedbackInline class="type:correct" outcomeIdentifier="outcome_1" identifier="hottext_5" showHide="show">
+                  <span>correct</span>
+                </feedbackInline>
+              </hottext>
+            </p>
+          </li>
+          <li class="type:conversationitem">
+            <img class="type:avatar" alt="" src="../content/media/27.png"/>
+            <p>
+              <hottext identifier="hottext_6">
+                <span class="type:label">Sure.</span>
+                <feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="hottext_6" showHide="show">
+                  <span>incorrect</span>
+                </feedbackInline>
+              </hottext>
+            </p>
+          </li>
+		   <li class="type:conversationitem alternate">
+            <img class="type:avatar blue" alt="" src="../content/media/28.png"/>
+            <p>
+              <hottext identifier="hottext_7">
+                <span class="type:label">What’s your name?</span>
+                <feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="hottext_7" showHide="show">
+                  <span>incorrect</span>
+                </feedbackInline>
+              </hottext>
+            </p>
+          </li>
+		  <li class="type:conversationitem">
+            <img class="type:avatar" alt="" src="../content/media/27.png"/>
+            <p>
+              <hottext identifier="hottext_8">
+                <span class="type:label">It's Simon Whitfield.</span>
+                <feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="hottext_8" showHide="show">
+                  <span>incorrect</span>
+                </feedbackInline>
+              </hottext>
+            </p>
+          </li>
+		  <li class="type:conversationitem alternate">
+            <img class="type:avatar blue" alt="" src="../content/media/28.png"/>
+            <p>
+              <hottext identifier="hottext_9">
+                <span class="type:label">Can you spell your surname,</span>
+                <feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="hottext_9" showHide="show">
+                  <span>incorrect</span>
+                </feedbackInline>
+              </hottext> <hottext identifier="hottext_10">
+                <span class="type:label">please?</span>
+                <feedbackInline class="type:correct" outcomeIdentifier="outcome_1" identifier="hottext_10" showHide="show">
+                  <span>correct</span>
+                </feedbackInline>
+              </hottext>
+            </p>
+          </li>
+		   <li class="type:conversationitem">
+            <img class="type:avatar" alt="" src="../content/media/27.png"/>
+            <p>
+              <hottext identifier="hottext_11">
+                <span class="type:label">It's W-H-I-T-F-I-E-L-D.</span>
+                <feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="hottext_11" showHide="show">
+                  <span>incorrect</span>
+                </feedbackInline>
+              </hottext>
+            </p>
+          </li>
+		  <li class="type:conversationitem alternate">
+            <img class="type:avatar blue" alt="" src="../content/media/28.png"/>
+            <p>
+              <hottext identifier="hottext_12">
+                <span class="type:label">Thanks.</span>
+                <feedbackInline class="type:correct" outcomeIdentifier="outcome_1" identifier="hottext_12" showHide="show">
+                  <span>correct</span>
+                </feedbackInline>
+              </hottext> <hottext identifier="hottext_13">
+                <span class="type:label">Now,</span>
+                <feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="hottext_13" showHide="show">
+                  <span>incorrect</span>
+                </feedbackInline>
+              </hottext> <hottext identifier="hottext_14">
+                <span class="type:label">what's your email address?</span>
+                <feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="hottext_14" showHide="show">
+                  <span>incorrect</span>
+                </feedbackInline>
+              </hottext>
+            </p>
+          </li>
+		  <li class="type:conversationitem">
+            <img class="type:avatar" alt="" src="../content/media/27.png"/>
+            <p>
+              <hottext identifier="hottext_15">
+                <span class="type:label">It's simonw@mail.com.</span>
+                <feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="hottext_15" showHide="show">
+                  <span>incorrect</span>
+                </feedbackInline>
+              </hottext>
+            </p>
+          </li>
+		  <li class="type:conversationitem alternate">
+            <img class="type:avatar blue" alt="" src="../content/media/28.png"/>
+            <p>
+              <hottext identifier="hottext_16">
+                <span class="type:label">And your phone number?</span>
+                <feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="hottext_16" showHide="show">
+                  <span>incorrect</span>
+                </feedbackInline>
+              </hottext>
+            </p>
+          </li>
+		   <li class="type:conversationitem">
+            <img class="type:avatar" alt="" src="../content/media/27.png"/>
+            <p>
+              <hottext identifier="hottext_17">
+                <span class="type:label">It's 04 141 278 454.</span>
+                <feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="hottext_17" showHide="show">
+                  <span>incorrect</span>
+                </feedbackInline>
+              </hottext>
+            </p>
+          </li>
+		  <li class="type:conversationitem alternate">
+            <img class="type:avatar blue" alt="" src="../content/media/28.png"/>
+            <p>
+              <hottext identifier="hottext_18">
+                <span class="type:label">Thank you very much.</span>
+                <feedbackInline class="type:correct" outcomeIdentifier="outcome_1" identifier="hottext_18" showHide="show">
+                  <span>correct</span>
+                </feedbackInline>
+              </hottext>
+            </p>
+          </li>
+		  <li class="type:conversationitem">
+            <img class="type:avatar" alt="" src="../content/media/27.png"/>
+            <p>
+              <hottext identifier="hottext_19">
+                <span class="type:label">You're welcome.</span>
+                <feedbackInline class="type:correct" outcomeIdentifier="outcome_1" identifier="hottext_19" showHide="show">
+                  <span>correct</span>
+                </feedbackInline>
+              </hottext>
+            </p>
+          </li>
+        </ul>
+      </hottextInteraction>
+    </div>
+    <div class="type:freetownpane width-30">
+      <img class="type:cover" src="../content/media/8.jpg" alt="" />
+    </div>
+  </itemBody>
+  <responseProcessing>
+    <setOutcomeValue identifier="outcome_1">
+      <variable identifier="interaction_1"></variable>
+    </setOutcomeValue>
+  </responseProcessing>
+</assessmentItem>

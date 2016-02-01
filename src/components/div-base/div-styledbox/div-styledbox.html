@@ -1,0 +1,17 @@
+<link rel="import" href="../div-base.html">
+
+<polymer-element name="div-styledbox" extends="div-base">
+	<template>
+		<link rel="stylesheet" href="div-styledbox.css">
+		<div class="styled-box {{lightClasses}}">
+			<div class="header">
+				<content select="h1-title"></content>
+			</div>
+			<content select="svg-icon"></content>
+			<div class="body">
+				<content></content>
+			</div>
+		</div>
+	</template>
+	<script src="div-styledbox.js"></script>
+</polymer-element>

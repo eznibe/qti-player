@@ -1,0 +1,18 @@
+<link rel="import" href="../qti-feedbackinline.html">
+
+<polymer-element name="qti-feedbackinline-correct" extends="qti-feedbackinline">
+	<template>
+		<link rel="stylesheet" href="qti-feedbackinline-correct.css">
+		<svg style="display:none">
+			<symbol id="icon-correct" viewBox="0 0 26.663 25.873">
+				<path fill="#fff" d="M.563 17.1c-.694-.614-.757-1.67-.136-2.363l2.237-2.49c.62-.688 1.682-.748 2.37-.134l5.255 4.673L20.61.843c.463-.805 1.49-1.08 2.296-.62l2.912 1.666c.804.46 1.084 1.48.624 2.28L13.886 23.563c-.017.022-.035.036-.047.056l-1.08 1.674c-.873.873-2.43.744-3.473-.29L.563 17.102z"/>
+			</symbol>
+		</svg>
+		<span class="feedback {{lightClasses}} {{show_status}}">
+			<svg class="icon correct">
+				<use xlink:href="#icon-correct" />
+			</svg>
+		</span>
+	</template>
+	<script src="qti-feedbackinline-correct.js"></script>
+</polymer-element>

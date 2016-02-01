@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem identifier="" adaptive="false" title="" timeDependent="false" xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1">
+	<responseDeclaration identifier="interaction_1" cardinality="single" baseType="string">
+		<correctResponse>
+			<value>a</value>
+		</correctResponse>
+		<mapping defaultValue="0">
+			<mapEntry mapKey="a" mappedValue="1" />
+		</mapping>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_2" cardinality="single" baseType="string">
+		<correctResponse>
+			<value>b</value>
+		</correctResponse>
+		<mapping defaultValue="0">
+			<mapEntry mapKey="b" mappedValue="1" />
+		</mapping>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_3" cardinality="single" baseType="string">
+		<correctResponse>
+			<value>c</value>
+		</correctResponse>
+		<mapping defaultValue="0">
+			<mapEntry mapKey="c" mappedValue="1" />
+		</mapping>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_4" cardinality="single" baseType="string">
+		<correctResponse>
+			<value>d</value>
+		</correctResponse>
+		<mapping defaultValue="0">
+			<mapEntry mapKey="d" mappedValue="1" />
+		</mapping>
+	</responseDeclaration>
+	<outcomeDeclaration identifier="outcome_1" cardinality="single" baseType="identifier" />
+	<outcomeDeclaration identifier="outcome_2" cardinality="single" baseType="identifier" />
+	<outcomeDeclaration identifier="outcome_3" cardinality="single" baseType="identifier" />
+	<outcomeDeclaration identifier="outcome_4" cardinality="single" baseType="identifier" />
+	<itemBody>
+		<rubricBlock view="candidate">
+			<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna?</div>
+		</rubricBlock>
+		<infoControl title="hint">
+			<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+		</infoControl>
+		<div class="type:freetownpane width-70 shadow">
+			<ul class="type:conversation scrollable container">
+				<li class="type:conversationitem">
+					<img class="type:avatar" alt="" src="../content/media/avatars/yeen.png"/>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id lectus vitae elit facilisis varius a vitae nunc. Ut aliquet velit ex, a dictum ipsum dapibus eget.
+					</p>
+				</li>
+				<li class="type:conversationitem alternate with-block">
+					<img class="type:avatar blue" alt="" src="../content/media/avatars/mario.png"/>
+					<div class="type:block">
+						<textEntryInteraction class="type:textarea full-width reversed" responseIdentifier="interaction_1" expectedLength="4" />
+						<feedbackInline class="type:correct" outcomeIdentifier="outcome_1" identifier="correct" showHide="show">
+						<span>correct</span>
+						</feedbackInline>
+						<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="incorrect" showHide="show">
+						<span>incorrect</span>
+						</feedbackInline>
+					</div>
+				</li>
+				<li class="type:conversationitem">
+					<img class="type:avatar" alt="" src="../content/media/avatars/yeen.png"/>
+					<p>
+						Proin vel fringilla purus. Cras eleifend hendrerit augue ac commodo..
+					</p>
+				</li>
+				<li class="type:conversationitem alternate with-block">
+					<img class="type:avatar blue" alt="" src="../content/media/avatars/mario.png"/>
+					<div class="type:block">
+						<textEntryInteraction class="type:textarea full-width reversed" responseIdentifier="interaction_2" expectedLength="4" />
+						<feedbackInline class="type:correct" outcomeIdentifier="outcome_2" identifier="correct" showHide="show">
+						<span>correct</span>
+						</feedbackInline>
+						<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_2" identifier="incorrect" showHide="show">
+						<span>incorrect</span>
+						</feedbackInline>
+					</div>
+				</li>
+				<li class="type:conversationitem">
+					<img class="type:avatar" alt="" src="../content/media/avatars/yeen.png"/>
+					<p>
+						Suspendisse lobortis ex magna, ac ultricies mi sodales at. Vivamus finibus diam eget lectus consequat gravida. Curabitur interdum mi eu dapibus euismod. Vestibulum facilisis tellus eleifend tempor placerat. Ut blandit non nisl vitae suscipit. Mauris lobortis tortor sit amet mi facilisis fermentum. In eget euismod leo, id volutpat quam.
+					</p>
+				</li>
+				<li class="type:conversationitem alternate with-block">
+					<img class="type:avatar blue" alt="" src="../content/media/avatars/mario.png"/>
+					<div class="type:block">
+						<textEntryInteraction class="type:textarea full-width reversed" responseIdentifier="interaction_3" expectedLength="4" />
+						<feedbackInline class="type:correct" outcomeIdentifier="outcome_3" identifier="correct" showHide="show">
+						<span>correct</span>
+						</feedbackInline>
+						<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_3" identifier="incorrect" showHide="show">
+						<span>incorrect</span>
+						</feedbackInline>
+					</div>
+				</li>
+				<li class="type:conversationitem">
+					<img class="type:avatar" alt="" src="../content/media/avatars/yeen.png"/>
+					<p>
+						Proin vel fringilla purus. Cras eleifend hendrerit augue ac commodo..
+					</p>
+				</li>
+				<li class="type:conversationitem alternate with-block">
+					<img class="type:avatar blue" alt="" src="../content/media/avatars/mario.png"/>
+					<div class="type:block">
+						<textEntryInteraction class="type:textarea full-width reversed" responseIdentifier="interaction_4" expectedLength="4" />
+						<feedbackInline class="type:correct" outcomeIdentifier="outcome_4" identifier="correct" showHide="show">
+						<span>correct</span>
+						</feedbackInline>
+						<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_4" identifier="incorrect" showHide="show">
+						<span>incorrect</span>
+						</feedbackInline>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="type:freetownpane width-30 background-dark">
+			<img class="type:cover" src="http://placeimg.com/1600/900/any" alt="" />
+		</div>
+	</itemBody>
+	<responseProcessing>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<mapResponse identifier="interaction_1" />
+					<baseValue baseType="float">1</baseValue>
+				</match>
+				<setOutcomeValue identifier="outcome_1">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_1">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<mapResponse identifier="interaction_2" />
+					<baseValue baseType="float">1</baseValue>
+				</match>
+				<setOutcomeValue identifier="outcome_2">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_2">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<mapResponse identifier="interaction_3" />
+					<baseValue baseType="float">1</baseValue>
+				</match>
+				<setOutcomeValue identifier="outcome_3">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_3">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<mapResponse identifier="interaction_4" />
+					<baseValue baseType="float">1</baseValue>
+				</match>
+				<setOutcomeValue identifier="outcome_4">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_4">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+	</responseProcessing>
+</assessmentItem>

@@ -1,0 +1,11 @@
+<link rel="import" href="../qti-associablechoice.html">
+
+<polymer-element name="qti-associablehotspot" extends="qti-associablechoice">
+	<template>
+		<link rel="stylesheet" href="qti-associablehotspot.css">
+        <span-nowrap style="position:absolute; top:{{topPosition}}px; left:{{leftPosition}}px;">
+            <span class="drop-zone {{lightClasses}}" style="{{extraStyle}}"></span>
+        </span-nowrap>
+	</template>
+	<script src="qti-associablehotspot.js"></script>
+</polymer-element>

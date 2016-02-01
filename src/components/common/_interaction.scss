@@ -1,0 +1,175 @@
+.interaction {
+	display: inline-block;
+	font-size: 0;
+}
+
+// State: Default appearance
+span-interaction[status=empty] {
+
+    // disabled hot text selectables (retain 'normal' style)
+    input[type="radio"]:disabled + .inline,
+    input[type="checkbox"]:disabled + .inline {
+        cursor: default;
+    }
+}
+
+// State: User input
+span-interaction[status=user] {
+
+    .text-input,
+    .form__input {
+        box-shadow: inset 0 2px 0 $color-bright-sun;
+        background: $color-tusk;
+        border: 0;
+    }
+
+    .selectable {
+        @include selectable-selected;
+    }
+
+    // hot text
+    input[type="radio"] + .inline,
+    input[type="checkbox"] + .inline {
+        @include selectable-selected;
+    }
+
+    // dropzone
+    .drop-zone {
+        @include interacted-dropzone;
+    }
+
+    // draggables
+    .token {
+        @include selectable-selected;
+        border: 1px solid $selectable-selected-bg;
+
+        &:hover,
+        &:focus {
+            background-color: $color-sweet-corn;
+            border: 1px dashed $stray-color-tbc;
+        }
+    }
+}
+
+// State: Feedback displayed
+span-interaction[status=feedback] {
+    .text-input,
+    .form__input {
+        box-shadow: inset 0 2px 0 $color-bright-sun;
+        background: $color-tusk;
+        border: 0;
+    }
+
+    // hot text and selectables
+    .selectable:disabled,
+    input[type="radio"]:checked + .selectable,
+    input[type="checkbox"]:checked + .selectable {
+        @include selectable-selected;
+        // background: transparent;
+        // color: $selectable-default-border;
+    }
+
+    // drop downs
+    .drop-down {
+        box-shadow: none;
+        @include selectable-selected;
+
+        .icon {
+            display: none;
+        }
+    }
+
+    // dropzone
+    .drop-zone {
+        &.dropped{
+            @include interacted-dropzone;
+            min-width: 0 !important;
+        }
+
+        &.dropped.drawer{
+            padding: 4px;
+        }
+    }
+
+
+    // draggables
+    .token {
+        @include selectable-selected;
+        border: 1px solid $selectable-selected-bg;
+    }
+}
+
+// State: Modal (displays correct answer)
+span-interaction[status=expected] {
+    .text-input,
+    .form__input {
+        box-shadow: inset 0 2px 0 $color-atlantis;
+        background: $color-chrome-white;
+        border: 0;
+    }
+
+    .selectable,
+    .selectable:disabled,
+    input[type="radio"]:disabled + .selectable,
+    input[type="checkbox"]:disabled + .selectable {
+        @include interaction-model;
+    }
+
+    // hot text
+    input[type="radio"] + .inline,
+    input[type="checkbox"] + .inline  {
+        @include interaction-model;
+    }
+
+    // drop downs
+    .drop-down {
+        @include interaction-model;
+        box-shadow: none;
+
+        .icon {
+            display: none;
+        }
+    }
+
+    // dropzone
+    .drop-zone {
+        @include interacted-dropzone;
+    }
+
+    // draggables
+    .token,
+    .token:hover {
+        @include interaction-model;
+        border-style: solid;
+    }
+}
+
+
+span-interaction{
+    // dropzone
+    .drop-zone {
+		font-size: $text-font-size-default;
+	}
+
+	// hot text
+    input[type="radio"] + .inline,
+    input[type="checkbox"] + .inline {
+        background: transparent;
+        border: 0;
+    }
+
+	// generic disabled inputs styles (in feedback/expected)
+    .text-input:disabled,
+	.form__input:disabled,
+	.selectable:disabled,
+	input[type="radio"]:disabled + .selectable,
+	[data-disabled] {
+		user-select: none;
+		cursor: default;
+
+		.token {
+			user-select: none;
+			cursor: default;
+		}
+	}
+}

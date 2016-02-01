@@ -1,0 +1,18 @@
+
+<link rel="import" href="../qti-simplechoice.html">
+
+<polymer-element name="qti-simplechoice-questionlistitem" extends="qti-simplechoice">
+	<template>
+		<link rel="stylesheet" href="qti-simplechoice-questionlistitem.css">
+		<li class="answer-option {{lightClasses}}">
+			<span-nowrap>
+                <custom-checkbox identifier="{{identifier}}" class="{{lightClasses}}" disabled="{{disabled}}" status="{{choice_status}}">
+                    <content select="span-label"></content>
+                </custom-checkbox>
+
+				<content></content>
+			</span-nowrap>
+		</li>
+	</template>
+	<script src="qti-simplechoice-questionlistitem.js"></script>
+</polymer-element>

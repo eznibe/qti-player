@@ -1,0 +1,10 @@
+<link rel="import" href="../qti-interaction.html">
+<polymer-element name="qti-inlinechoiceinteraction" extends="qti-interaction">
+	<template>
+		<link rel="stylesheet" href="qti-inlinechoiceinteraction.css">
+        <custom-dropdown class="inline" disabled?="{{disabled}}" options="{{options}}" identifier="{{responseIdentifier}}" status="{{interaction_status}}" >
+            <content></content>
+        </custom-dropdown>
+	</template>
+	<script src="qti-inlinechoiceinteraction.js"></script>
+</polymer-element>

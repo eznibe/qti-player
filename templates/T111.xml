@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem identifier="" xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1" adaptive="false" title="Title" timeDependent="false">
+	<responseDeclaration identifier="gapmatch_1" cardinality="multiple" baseType="directedPair">
+		<correctResponse>
+			<value>GT1 G1</value>
+			<value>GT2 G2</value>
+			<value>GT3 G3</value>
+			<value>GT4 G4</value>
+		</correctResponse>
+	</responseDeclaration>
+	<outcomeDeclaration identifier="outcome_1" cardinality="single" baseType="identifier" />
+	<outcomeDeclaration identifier="outcome_2" cardinality="single" baseType="identifier" />
+	<outcomeDeclaration identifier="outcome_3" cardinality="single" baseType="identifier" />
+	<outcomeDeclaration identifier="outcome_4" cardinality="single" baseType="identifier" />
+	<itemBody>
+		<rubricBlock view="candidate">
+			<div>rubric</div>
+		</rubricBlock>
+		<infoControl title="hint">
+			<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+		</infoControl>
+		<div class="type:freetownpane shadow spill width-100">
+			<div class="type:carousel fullscreen">
+				<div class="type:carouselitem scrollable">
+					<div class="type:carouselmedia">
+						<div class="type:mediaunit static dialog">
+							<gapMatchInteraction class="type:layout8" responseIdentifier="gapmatch_1" shuffle="false">
+								<gapText identifier="GT1" matchMax="1">word1</gapText>
+								<gapText identifier="GT2" matchMax="1">word2</gapText>
+								<gapText identifier="GT3" matchMax="1">word3</gapText>
+								<gapText identifier="GT4" matchMax="1">word4</gapText>
+								<div class="type:mediaunit static base">
+									<div class="type:container scrollable">
+										<ol class="type:questionlist unordered">
+											<li class="type:questionitem">
+												Veggies es bonus
+												<span class="type:nowrap">
+													<gap identifier="G1" class="inline dark" />
+													<feedbackInline class="type:correct" outcomeIdentifier="outcome_1" identifier="TRUE" showHide="show">correct</feedbackInline>
+													<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="FALSE" showHide="show">incorrect</feedbackInline>
+												</span>
+												proinde vos postulo essum magis kohlrabi welsh onion.
+											</li>
+											<li class="type:questionitem">
+												Pea horseradish azuki bean lettuce avocado asparagus
+												<span class="type:nowrap">
+													<gap identifier="G2" class="inline dark" />
+													<feedbackInline class="type:correct" outcomeIdentifier="outcome_2" identifier="TRUE" showHide="show">correct</feedbackInline>
+													<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_2" identifier="FALSE" showHide="show">incorrect</feedbackInline>
+												</span>
+												okra.
+											</li>
+											<li class="type:questionitem">
+												Soko radicchio bunya nuts gram dulse silver beet parsnip
+												<span class="type:nowrap">
+													<gap identifier="G3" class="inline dark" />
+													<feedbackInline class="type:correct" outcomeIdentifier="outcome_3" identifier="TRUE" showHide="show">correct</feedbackInline>
+													<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_3" identifier="FALSE" showHide="show">incorrect</feedbackInline>
+													cabbage lotus.
+												</span>
+											</li>
+											<li class="type:questionitem">
+												Dandelion
+												<span class="type:nowrap">
+													<gap identifier="G4" class="inline dark" />
+													<feedbackInline class="type:correct" outcomeIdentifier="outcome_4" identifier="TRUE" showHide="show">correct</feedbackInline>
+													<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_4" identifier="FALSE" showHide="show">incorrect</feedbackInline>
+												</span>
+												zucchini burdock yarrow chickpea dandelion sorrel courgette.
+											</li>
+										</ol>
+									</div>
+								</div>
+							</gapMatchInteraction>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</itemBody>
+	<responseProcessing>
+		<responseCondition>
+			<responseIf>
+				<contains>
+					<variable identifier="gapmatch_1" />
+					<multiple>
+						<baseValue baseType="directedPair">GT1 G1</baseValue>
+					</multiple>
+				</contains>
+				<setOutcomeValue identifier="outcome_1">
+					<baseValue baseType="identifier">TRUE</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_1">
+					<baseValue baseType="identifier">FALSE</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+		<responseCondition>
+			<responseIf>
+				<contains>
+					<variable identifier="gapmatch_1" />
+					<multiple>
+						<baseValue baseType="directedPair">GT2 G2</baseValue>
+					</multiple>
+				</contains>
+				<setOutcomeValue identifier="outcome_2">
+					<baseValue baseType="identifier">TRUE</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_2">
+					<baseValue baseType="identifier">FALSE</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+		<responseCondition>
+			<responseIf>
+				<contains>
+					<variable identifier="gapmatch_1" />
+					<multiple>
+						<baseValue baseType="directedPair">GT3 G3</baseValue>
+					</multiple>
+				</contains>
+				<setOutcomeValue identifier="outcome_3">
+					<baseValue baseType="identifier">TRUE</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_3">
+					<baseValue baseType="identifier">FALSE</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+		<responseCondition>
+			<responseIf>
+				<contains>
+					<variable identifier="gapmatch_1" />
+					<multiple>
+						<baseValue baseType="directedPair">GT4 G4</baseValue>
+					</multiple>
+				</contains>
+				<setOutcomeValue identifier="outcome_4">
+					<baseValue baseType="identifier">TRUE</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_4">
+					<baseValue baseType="identifier">FALSE</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+	</responseProcessing>
+</assessmentItem>

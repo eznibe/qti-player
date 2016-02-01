@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1" identifier="" adaptive="false" title="" timeDependent="false">
+	<itemBody>
+		<rubricBlock view="candidate">
+			<div>Reorder the words to have a good time.</div>
+		</rubricBlock>
+		<infoControl title="hint">
+			<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+		</infoControl>
+		<div class="type:freetownpane width-100 shadow container">
+			<div class="type:quiz">
+				<div class="type:quiz-card with-columns">
+					<div class="type:header">Which phrase matches this picture? (based on 019)</div>
+					<div class="type:content-left">
+						<p>
+							A. Veggies es <span class="type:nowrap"><inlineChoiceInteraction responseIdentifier="interaction_1_1" shuffle="false">
+							<inlineChoice identifier="interaction_1_1_choice_1">option 1</inlineChoice>
+							<inlineChoice identifier="interaction_1_1_choice_2">option 2</inlineChoice>
+							</inlineChoiceInteraction> <feedbackInline class="type:correct" outcomeIdentifier="outcome_1_1" identifier="correct" showHide="show">
+							<span>correct</span>
+							</feedbackInline> <feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1_1" identifier="incorrect" showHide="show">
+							<span>incorrect</span>
+							</feedbackInline></span> bonus proinde vos postulo essum magis welsh onion.
+						</p>
+						<p>
+							B. Pea horseradish <span class="type:nowrap"><inlineChoiceInteraction responseIdentifier="interaction_2_1" shuffle="false">
+							<inlineChoice identifier="interaction_2_1_choice_1">option 1</inlineChoice>
+							<inlineChoice identifier="interaction_2_1_choice_2">option 2</inlineChoice>
+							</inlineChoiceInteraction> <feedbackInline class="type:correct" outcomeIdentifier="outcome_2_1" identifier="correct" showHide="show">
+							<span>correct</span>
+							</feedbackInline> <feedbackInline class="type:incorrect" outcomeIdentifier="outcome_2_1" identifier="incorrect" showHide="show">
+							<span>incorrect</span>
+							</feedbackInline></span> azuki bean lettuce avocado asparagus okra.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</itemBody>
+</assessmentItem>

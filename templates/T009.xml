@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- http://5qx5fs.axshare.com/#p=t010_-_video___type_in -->
+<!-- http://codebeautify.org/xmlviewer/a91d06 -->
+
+<assessmentItem identifier="" adaptive="false" title="" timeDependent="false" xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1">
+	<responseDeclaration identifier="interaction_1" cardinality="single" baseType="identifier">
+		<correctResponse>
+			<value>interaction_1_choice_1</value>
+		</correctResponse>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_2" cardinality="single" baseType="identifier">
+		<correctResponse>
+			<value>interaction_2_choice_1</value>
+		</correctResponse>
+	</responseDeclaration>
+
+	<responseDeclaration identifier="MI1" cardinality="single" baseType="integer" />
+
+	<outcomeDeclaration identifier="outcome_1" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_2" cardinality="single" baseType="identifier"/>
+
+	<itemBody>
+		<rubricBlock view="candidate">
+			<div>Watch the video again and complete the sentences.</div>
+		</rubricBlock>
+		<infoControl title="hint">
+			<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+		</infoControl>
+		<div class="type:freetownpane width-60 background-darker">
+			<mediaInteraction class="type:video" responseIdentifier="MI1" autostart="false">
+				<object data="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4"/>
+			</mediaInteraction>
+		</div>
+		<div class="type:freetownpane width-40 shadow">
+			<ol class="type:questionlist padding-16 scrollable">
+				<li class="type:questionitem">
+					Quisque nec turpis...
+					<choiceInteraction class="type:questionlist" responseIdentifier="interaction_1" minChoices="1" maxChoices="1" shuffle="false">
+						<simpleChoice class="type:questionlistitem" identifier="interaction_1_choice_1">
+							<span class="type:label">viverra</span>
+							<feedbackInline class="type:correct" outcomeIdentifier="outcome_1" identifier="interaction_1_choice_1" showHide="show">
+								<span>correct</span>
+							</feedbackInline>
+						</simpleChoice>
+						<simpleChoice class="type:questionlistitem" identifier="interaction_1_choice_2">
+							<span class="type:label">adipiscing</span>
+							<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="interaction_1_choice_2" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</simpleChoice>
+						<simpleChoice class="type:questionlistitem" identifier="interaction_1_choice_3">
+							<span class="type:label">facilisis</span>
+							<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="interaction_1_choice_3" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</simpleChoice>
+						<simpleChoice class="type:questionlistitem" identifier="interaction_1_choice_4">
+							<span class="type:label">rutrum</span>
+							<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="interaction_1_choice_4" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</simpleChoice>
+						<simpleChoice class="type:questionlistitem" identifier="interaction_1_choice_5">
+							<span class="type:label">ultricies</span>
+							<feedbackInline class="type:correct" outcomeIdentifier="outcome_1" identifier="interaction_1_choice_5" showHide="show">
+								<span>correct</span>
+							</feedbackInline>
+						</simpleChoice>
+						<simpleChoice class="type:questionlistitem" identifier="interaction_1_choice_6">
+							<span class="type:label">tempor</span>
+							<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="interaction_1_choice_6" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</simpleChoice>
+						<simpleChoice class="type:questionlistitem" identifier="interaction_1_choice_7">
+							<span class="type:label">iaculis</span>
+							<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="interaction_1_choice_7" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</simpleChoice>
+						<simpleChoice class="type:questionlistitem" identifier="interaction_1_choice_8">
+							<span class="type:label">ultrices</span>
+							<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="interaction_1_choice_8" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</simpleChoice>
+					</choiceInteraction>
+				</li>
+				<li class="type:questionitem">
+					Donec non lorem interdum, sodales...
+					<choiceInteraction class="type:questionlist" responseIdentifier="interaction_2" minChoices="1" maxChoices="1" shuffle="false">
+						<simpleChoice class="type:questionlistitem" identifier="interaction_2_choice_1">
+							<span class="type:label">lorem</span>
+							<feedbackInline class="type:correct" outcomeIdentifier="outcome_2" identifier="interaction_2_choice_1" showHide="show">
+								<span>correct</span>
+							</feedbackInline>
+						</simpleChoice>
+						<simpleChoice class="type:questionlistitem" identifier="interaction_2_choice_2">
+							<span class="type:label">nisl</span>
+							<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_2" identifier="interaction_2_choice_2" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</simpleChoice>
+						<simpleChoice class="type:questionlistitem" identifier="interaction_2_choice_3">
+							<span class="type:label">lacinia</span>
+							<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_2" identifier="interaction_2_choice_3" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</simpleChoice>
+					</choiceInteraction>
+				</li>
+			</ol>
+		</div>
+	</itemBody>
+
+	<responseProcessing>
+		<setOutcomeValue identifier="outcome_1">
+			<variable identifier="interaction_1"></variable>
+		</setOutcomeValue>
+		<setOutcomeValue identifier="outcome_2">
+			<variable identifier="interaction_2"></variable>
+		</setOutcomeValue>
+	</responseProcessing>
+</assessmentItem>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem identifier="" adaptive="false" title="" timeDependent="false" xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1">
+	<responseDeclaration identifier="interaction_1" cardinality="single" baseType="identifier">
+		<correctResponse>
+			<value>interaction_1_choice_2</value>
+		</correctResponse>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_2" cardinality="multiple" baseType="identifier">
+		<correctResponse>
+			<value>interaction_2_choice_1</value>
+			<value>interaction_2_choice_3</value>
+		</correctResponse>
+	</responseDeclaration>
+	<outcomeDeclaration identifier="outcome_1" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_2" cardinality="multiple" baseType="identifier"/>
+	<itemBody>
+		<rubricBlock view="candidate">
+			<div>Complete the conversation with the polite expressions.</div>
+		</rubricBlock>
+		<infoControl title="hint">
+			<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+		</infoControl>
+		<div class="type:freetownpane width-50 shadow scrollable">
+			<div class="type:container scrollable">
+				<div class="type:statictext">
+					<img class="type:figure" src="http://placeimg.com/335/210/any" alt="" />
+					<p>We can <strong>use</strong> a, <strong>an</strong> or <strong>the</strong> before a singular noun.</p>
+					<p>Use an before singular nouns that begin with a vowel (a, e, i, o and u, <strong>for example</strong>, an emergency, an actor). Use a before singular nouns that begin with consonants (b, c, d, m, r, w, for example, <strong>a restaurant</strong>, a waiter). We can use no <span class="type:highlight">(zero) article</span> or the before plural nouns.</p>
+					<p><span class="type:highlight alt">Tempus habitant</span> dolor neque ornare non vehicula velit sollicitudin, cursus suspendisse potenti blandit quam sociosqu ad nam orci, venenatis accumsan lectus libero ullamcorper praesent vestibulum non semper pulvinar cras interdum id enim at.</p>
+					<p>Ipsum interdum netus vel pharetra tellus senectus integer aenean donec, egestas per ac id auctor pulvinar fermentum quam ullamcorper lacus placerat ullamcorper tortor interdum scelerisque aliquam sagittis cursus fusce pharetra scelerisque vestibulum.</p>
+				</div>
+			</div>
+		</div>
+		<div class="type:freetownpane width-50 background-dark">
+			<ol class="type:questionlist padding-16">
+				<li class="type:questionitem">
+					<choiceInteraction class="type:questionlist" responseIdentifier="interaction_1" minChoices="1" maxChoices="1" shuffle="false">
+						<prompt>Question text...</prompt>
+						<simpleChoice class="type:questionlistitem" identifier="interaction_1_choice_1">
+							<span class="type:label">Answer 1</span>
+							<feedbackInline class="type:correct" outcomeIdentifier="outcome_1" identifier="interaction_1_choice_1" showHide="show">
+								<span>correct</span>
+							</feedbackInline>
+						</simpleChoice>
+						<simpleChoice class="type:questionlistitem" identifier="interaction_1_choice_2">
+							<span class="type:label">Answer 2</span>
+							<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="interaction_1_choice_2" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</simpleChoice>
+						<simpleChoice class="type:questionlistitem" identifier="interaction_1_choice_3">
+							<span class="type:label">Answer 3</span>
+							<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="interaction_1_choice_3" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</simpleChoice>
+					</choiceInteraction>
+				</li>
+				<li class="type:questionitem">
+					<choiceInteraction class="type:questionlist" responseIdentifier="interaction_2" minChoices="2" maxChoices="2" shuffle="false">
+						<prompt>Question text...</prompt>
+						<simpleChoice class="type:questionlistitem" identifier="interaction_2_choice_1">
+							<span class="type:label">Answer 1</span>
+							<feedbackInline class="type:correct" outcomeIdentifier="outcome_2" identifier="interaction_2_choice_1" showHide="show">
+								<span>correct</span>
+							</feedbackInline>
+						</simpleChoice>
+						<simpleChoice class="type:questionlistitem" identifier="interaction_2_choice_2">
+							<span class="type:label">Answer 2</span>
+							<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_2" identifier="interaction_2_choice_2" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</simpleChoice>
+						<simpleChoice class="type:questionlistitem" identifier="interaction_2_choice_3">
+							<span class="type:label">Answer 3</span>
+							<feedbackInline class="type:correct" outcomeIdentifier="outcome_2" identifier="interaction_2_choice_3" showHide="show">
+								<span>correct</span>
+							</feedbackInline>
+						</simpleChoice>
+						<simpleChoice class="type:questionlistitem" identifier="interaction_2_choice_4">
+							<span class="type:label">Answer 4</span>
+							<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_2" identifier="interaction_2_choice_4" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</simpleChoice>
+					</choiceInteraction>
+				</li>
+			</ol>
+		</div>
+	</itemBody>
+	<responseProcessing>
+		<setOutcomeValue identifier="outcome_1">
+			<variable identifier="interaction_1"></variable>
+		</setOutcomeValue>
+		<setOutcomeValue identifier="outcome_2">
+			<variable identifier="interaction_2"></variable>
+		</setOutcomeValue>
+	</responseProcessing>
+</assessmentItem>

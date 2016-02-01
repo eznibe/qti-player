@@ -1,0 +1,56 @@
+/* TEAM */
+
+	CAMPBELL, Jay
+	Developer
+	bit.ly/jaycampbell
+	jay@pyramidium.co.uk
+	London, UK
+
+	CLARKE, Conorde
+	Designer
+	conorde@mac.com
+	Bromley, UK
+
+	GOLDFARB, Isaac
+	Developer
+	izik.gold@gmail.com
+	Twyford, UK
+
+	ERICSSON, Klas
+	Developer
+	klas.ericsson@gmail.com
+
+	KAVANAGH, John
+	Front-End Developer
+	johnkavanagh.co.uk
+	@johnkavanagh
+	London, UK
+
+	LANG, Samu
+	Techincal Director
+	bit.ly/langsamu
+	London, UK
+
+	MULLAFIROZE, Malcolm
+	Developer
+	ardalon@live.co.uk
+	London, UK
+
+	PERRY, Mark
+	Project Co-ordinator
+	markstephenperry@gmail.com
+	3 Cups Corner, UK
+
+	ROJAS, Nicky
+	Multimedia Producer
+	nicky.rojas.pictures@gmail.com
+	London, UK
+
+	TAVENER, Ewan
+	Developer
+	ewantavener@gmail.com
+	London, UK
+
+/* THANKS */
+
+/* SITE */

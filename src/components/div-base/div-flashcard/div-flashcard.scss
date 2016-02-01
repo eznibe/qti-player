@@ -1,0 +1,33 @@
+@import "../div-base";
+
+.flash-card {
+	position: relative;
+	overflow: visible;
+	perspective: 1000px;
+}
+
+
+.canvas {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: 1s;
+	transform-style: preserve-3d;
+
+	&.flipped {
+		transform: rotateX(180deg);
+	}
+}
+
+.media-container{
+	display: block;
+	padding-bottom: 56.25%;
+	text-align: center;
+	position: relative;
+}
+
+
+
+
+

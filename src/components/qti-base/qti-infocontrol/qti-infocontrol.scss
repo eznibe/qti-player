@@ -1,0 +1,44 @@
+@import "../qti-base";
+@import "../../common/buttons";
+
+.shell-hint {
+	position: absolute;
+	right: 16px;
+	top: 47px;
+	z-index: 10;
+	height: 34px;
+	overflow: visible;
+}
+
+.button-hint {
+	float: right;
+}
+
+
+.hint-body {
+	opacity: 0;
+	transition: all 600ms ease-in-out;
+	position: relative;
+	right: -10px;
+	top: -200%;
+	width: 365px;
+	padding: 20px 75px 20px 20px;
+	border: 1px solid #CCCBC7;
+	border-radius: 4px;
+	background: $color-white;
+	font-size: $text-font-size-small;
+	line-height: 1.35;
+	color: #63615B;
+	visibility: hidden;
+
+	& > *:last-child {
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+
+	.hint-open & {
+		visibility: visible;
+		top: -10px;
+		opacity: 1;
+	}
+}

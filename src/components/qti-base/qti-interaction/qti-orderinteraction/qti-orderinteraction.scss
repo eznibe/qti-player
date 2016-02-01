@@ -1,0 +1,99 @@
+@import "../qti-interaction";
+@import "../../../common/typography";
+
+.sortable {
+	font-size: 0;
+	display: inline-block;
+
+	.token {
+		display: inline-block;
+		border-style: dashed;
+		background-color: white;
+		border: 1px dashed $selectable-drag-border;
+		border-radius: 3px;
+		cursor: move;
+		user-select: none;
+		padding: 7px 9px 6px 9px;
+		font-size: $text-font-size-small;
+		line-height: 1;
+		transition: padding 0.3s ease;
+		font-size: initial;
+
+		&:hover {
+			background-color: $color-sweet-corn;
+		}
+
+		&.inline {
+			padding-top: 4px;
+			padding-bottom: 3px;
+		}
+
+		&.correct {
+			border-style: solid;
+		}
+
+		&.empty {
+			border: 1px solid $color-westar;
+			background: $color-westar;
+			min-width: 144px
+		}
+
+		&.audio{
+			padding: 8px 10px 8px 44px;
+			position: relative;
+
+			.audio {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 32px;
+				height: 32px;
+				background: #fff;
+				border-radius: 3px 0 0 3px;
+				overflow: hidden;
+
+				.vjs-control-bar {
+					top: 0;
+				}
+
+				.vjs-play-control {
+					width: 32px;
+					height: 32px;
+				}
+			}
+		}
+	}
+}
+
+.drag-target {
+
+	.img {
+		display: block;
+		width: 100%;
+		padding: 0 6%;
+	}
+
+	.elements {
+		padding: 0 10%;
+
+		&.dark {
+			background-color: $color-cotton-seed;
+		}
+	}
+
+	&.inline {
+		padding: 3px;
+		border-radius: 5px;
+		background: rgba($color-scrollbar-thumb, 0.4);
+		display: inline-block;
+		width: 96%;
+	}
+
+	&.active {
+		background: rgba($color-bright-sun, 0.2);
+	}
+
+	&.list {
+		top: 10px;
+	}
+}

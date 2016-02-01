@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1" identifier="" adaptive="false" title="" timeDependent="false">
+	<itemBody>
+		<rubricBlock view="candidate">
+			<div>Reorder the words to have a good time.</div>
+		</rubricBlock>
+		<infoControl title="hint">
+			<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+		</infoControl>
+		<div class="type:freetownpane width-100 shadow container">
+			<div class="type:quiz">
+				<div class="type:quiz-card with-columns">
+					<div class="type:header">Which phrase matches this picture?</div>
+					<div class="type:content-left">
+						<img src="http://placeimg.com/819/461/nature/1/" class="full-image" alt="" />
+					</div>
+					<div class="type:content-right">
+						<choiceInteraction class="type:questionlist in-quiz" responseIdentifier="interaction_1" maxChoices="4" shuffle="false">
+							<simpleChoice class="type:questionlistitem" identifier="interaction_1_choice_1">
+								<span class="type:label">Option, word or phrase</span>
+							</simpleChoice>
+							<simpleChoice class="type:questionlistitem" identifier="interaction_1_choice_2">
+								<span class="type:label">Option, word or phrase</span>
+							</simpleChoice>
+							<simpleChoice class="type:questionlistitem" identifier="interaction_1_choice_3">
+								<span class="type:label">Option, word or phrase</span>
+							</simpleChoice>
+							<simpleChoice class="type:questionlistitem" identifier="interaction_1_choice_4">
+								<span class="type:label">Option, word or phrase</span>
+							</simpleChoice>
+						</choiceInteraction>
+					</div>
+				</div>
+			</div>
+		</div>
+	</itemBody>
+</assessmentItem>

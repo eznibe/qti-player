@@ -1,0 +1,40 @@
+@import "../qti-simplechoice";
+
+.list-item {
+	float: left;
+	margin: 0 16px 16px 0;
+}
+
+.inline{
+	display: inline-block;
+	float: none;
+}
+
+.block {
+	clear: left;
+	margin-bottom: 0.75em;
+}
+
+.drag-margin {
+	margin: 0 4px 8px 0;
+}
+
+.line-height {
+	line-height: 30px;
+}
+
+.full {
+	width: 100%;
+}
+
+:host-context(.two-choices) .list-item {
+	float: left;
+	margin: 0;
+	width: 50%;
+	text-align: center;
+}
+
+.in-quiz{
+	width: 23%;
+	margin: 0 1%;
+}

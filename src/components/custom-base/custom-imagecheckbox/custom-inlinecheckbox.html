@@ -1,0 +1,16 @@
+
+<link rel="import" href="../custom-base.html">
+
+<polymer-element name="custom-inlinecheckbox" extends="custom-base" attributes="identifier disabled status">
+	<template>
+		<!-- <core-style ref="defaultCSS"></core-style> -->
+		<link rel="stylesheet" href="custom-inlinecheckbox.css">
+		<span-interaction>
+			<input id="in__eg-selectable-inline-{{identifier}}" on-change="{{checkboxClicked}}" disabled?="{{disabled}}" type="checkbox"  name="eg-selectable-inline-{{identifier}}" class="visually-hidden" >
+			<label for="in__eg-selectable-inline-{{identifier}}" class="selectable selectable--inline">
+				<content></content>
+			</label>
+		</span-interaction>
+	</template>
+	<script src="custom-inlinecheckbox.js"></script>
+</polymer-element>

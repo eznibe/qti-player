@@ -1,0 +1,11 @@
+<link rel="import" href="../qti-interaction.html">
+
+<polymer-element name="qti-textentryinteraction" extends="qti-interaction" attributes="expectedLength">
+	<template>
+		<link rel="stylesheet" href="qti-textentryinteraction.css">
+		<span-interaction>
+			<input on-keyup="{{textChanged}}" on-change="{{textChanged}}" type="text" class="text-input {{lightClasses}}" size="{{expectedLength}}" maxLength="{{expectedLength}}" disabled?="{{disabled}}">
+		</span-interaction>
+	</template>
+	<script src="qti-textentryinteraction.js"></script>
+</polymer-element>

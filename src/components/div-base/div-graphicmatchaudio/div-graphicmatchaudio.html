@@ -1,0 +1,21 @@
+<link rel="import" href="../div-base.html">
+
+<polymer-element name="div-graphicmatchaudio" extends="div-base">
+	<template>
+		<link rel="stylesheet" href="div-graphicmatchaudio.css">
+        <div-carouselmedia>
+            <div-mediaunit class="base">
+                <div-mediacontainer>
+                    <content select="qti-graphicGapMatchInteraction"></content>
+                </div-mediacontainer>
+                <div-overlay-audio>
+                    <content select="qti-mediaInteraction-audio"></content>
+                </div-overlay-audio>
+            </div-mediaunit>
+        </div-carouselmedia>
+        <ul-selectableslist class="horizontal container">
+            <content select="qti-gapimg"></content>
+        </ul-selectableslist>
+	</template>
+	<script src="div-graphicmatchaudio.js"></script>
+</polymer-element>

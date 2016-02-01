@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- http://5qx5fs.axshare.com/#p=t026_-_carousel__flash_card -->
+<!-- http://codebeautify.org/xmlviewer/831a22 -->
+<assessmentItem identifier="" adaptive="false" title="" timeDependent="false" xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1">
+	<responseDeclaration identifier="MI1" cardinality="single" baseType="integer"/>
+	<responseDeclaration identifier="MI2" cardinality="single" baseType="integer" />
+	<itemBody>
+		<rubricBlock view="candidate">
+			<div>Rubric</div>
+		</rubricBlock>
+		<infoControl title="hint">
+			<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+		</infoControl>
+		<div class="type:freetownpane shadow spill width-100 background-pattern-dark">
+			<div class="type:carousel fullscreen">
+				<div class="type:carouselitem">
+					<div class="type:carouselmedia">
+						<div class="type:flashcard">
+							<div class="type:flashcardface front">
+								<div class="type:mediaunit flashcard">
+									<p class="question">Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet 1?</p>
+									<mediaInteraction class="type:audio progress" responseIdentifier="MI1" autostart="false">
+										<object data="/content/media/audio/placeholder-short.mp3" type="audio/mp3"/>
+									</mediaInteraction>
+								</div>
+							</div>
+							<div class="type:flashcardface back">
+								<img src="http://placeimg.com/1600/900/any" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="type:carouselitem">
+					<div class="type:carouselmedia">
+						<div class="type:flashcard">
+							<div class="type:flashcardface front">
+								<div class="type:mediaunit flashcard">
+									<p class="question">Lorem ipsum dolor sit amet 2?</p>
+									<mediaInteraction class="type:audio progress" responseIdentifier="MI2" autostart="false">
+										<object data="/content/media/audio/placeholder-short.mp3" type="audio/mp3"/>
+									</mediaInteraction>
+								</div>
+							</div>
+							<div class="type:flashcardface back">
+								<img src="http://placeimg.com/1600/900/any" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</itemBody>
+</assessmentItem>

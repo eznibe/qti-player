@@ -1,0 +1,30 @@
+<link rel="import" href="../div-quiz.html">
+
+<polymer-element name="div-quiz-card" extends="div-quiz">
+	<template>
+		<link rel="stylesheet" href="div-quiz-card.css">
+		<div class="quiz-card {{lightClasses}}">
+			<div class="container">
+				<div class="header">
+					<content select="div-header"></content>
+				</div>
+				<div class="quiz-timer">
+					<svg class="timer" viewBox="0 0 34 34">
+						<circle class="circle" cx="15" cy="17" r="15.9" transform="rotate(-90 16 16)"></circle>
+					</svg>
+					<div class="number"></div>
+				</div>
+				<div class="body">
+					<div class="left">
+						<content select="div-content-left"></content>
+					</div>
+					<div class="right">
+						<content select="div-content-right"></content>
+					</div>
+					<content></content>
+				</div>
+			</div>
+		</div>
+	</template>
+	<script src="div-quiz-card.js"></script>
+</polymer-element>

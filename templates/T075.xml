@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem identifier="" xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1" adaptive="false" title="" timeDependent="false">
+	<responseDeclaration identifier="MI1" cardinality="single" baseType="integer"/>
+	<responseDeclaration identifier="MI2" cardinality="single" baseType="integer"/>
+	<itemBody>
+		<rubricBlock view="candidate">
+			<div>Rubric</div>
+		</rubricBlock>
+		<infoControl title="hint">
+			<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+		</infoControl>
+		<div class="type:freetownpane shadow spill width-100">
+			<div class="type:carousel fullscreen horizontal">
+				<div class="type:carouselitem">
+					<div class="type:carouselmedia">
+						<mediaInteraction responseIdentifier="MI1"  class="type:video" autostart="false">
+							<object data="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4" />
+						</mediaInteraction>
+						<div class="type:container token-panel">
+							<p class="keyword">/prəˌnʌnsɪˈeɪʃ(ə)n/</p>
+						</div>
+					</div>
+				</div>
+				<div class="type:carouselitem">
+					<div class="type:carouselmedia">
+						<mediaInteraction responseIdentifier="MI2" class="type:video" autostart="false">
+							<object data="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4" />
+						</mediaInteraction>
+						<div class="type:container token-panel">
+							<p class="keyword">/prəˌnʌnsɪˈeɪʃ(ə)n/</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</itemBody>
+
+</assessmentItem>

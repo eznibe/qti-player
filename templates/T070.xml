@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem identifier="70" adaptive="false" title="" timeDependent="false" xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1">
+	<responseDeclaration identifier="interaction_1" cardinality="single" baseType="identifier">
+		<correctResponse>
+			<value>interaction_1_hottext_2</value>
+		</correctResponse>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_2" cardinality="single" baseType="identifier">
+		<correctResponse>
+			<value>interaction_2_hottext_9</value>
+		</correctResponse>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_3" cardinality="single" baseType="identifier">
+		<correctResponse>
+			<value>interaction_3_hottext_8</value>
+		</correctResponse>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_4" cardinality="single" baseType="identifier">
+		<correctResponse>
+			<value>interaction_4_hottext_3</value>
+		</correctResponse>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_5" cardinality="single" baseType="identifier">
+		<correctResponse>
+			<value>interaction_5_hottext_10</value>
+		</correctResponse>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_6" cardinality="single" baseType="identifier">
+		<correctResponse>
+			<value>interaction_6_hottext_5</value>
+		</correctResponse>
+	</responseDeclaration>
+
+	<outcomeDeclaration identifier="outcome_1" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_2" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_3" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_4" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_5" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_6" cardinality="single" baseType="identifier"/>
+
+	<itemBody class="T070">
+		<rubricBlock view="candidate">
+			<div>Look at the picture and select the correct answers.</div>
+		</rubricBlock>
+		<infoControl title="hint">
+			<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+		</infoControl>
+		<div class="type:freetownpane width-70 shadow">
+			<ol class="type:questionlist container scrollable">
+				<li class="type:questionitem">
+					<hottextInteraction responseIdentifier="interaction_1" maxChoices="1">
+						<p><hottext identifier="interaction_1_hottext_1">
+							<span class="type:label">Lorem</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="interaction_1_hottext_1" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_1_hottext_2">
+							<span class="type:label">ipsum</span>
+							<feedbackInline class="type:correct in-text" outcomeIdentifier="outcome_1" identifier="interaction_1_hottext_2" showHide="show">
+								<span>correct</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_1_hottext_3">
+							<span class="type:label">dolor</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="interaction_1_hottext_3" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_1_hottext_4">
+							<span class="type:label">sit</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="interaction_1_hottext_4" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_1_hottext_5">
+							<span class="type:label">amet</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="interaction_1_hottext_5" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>,
+						<hottext identifier="interaction_1_hottext_6">
+							<span class="type:label">consectetur</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="interaction_1_hottext_6" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_1_hottext_7">
+							<span class="type:label">adipiscing</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="interaction_1_hottext_7" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_1_hottext_8">
+							<span class="type:label">elit</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_1" identifier="interaction_1_hottext_8" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>.</p>
+					</hottextInteraction>
+				</li>
+				<li class="type:questionitem">
+					<hottextInteraction responseIdentifier="interaction_2" maxChoices="1" >
+						<p><hottext identifier="interaction_2_hottext_1">
+							<span class="type:label">Fusce</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_2" identifier="interaction_2_hottext_1" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_2_hottext_2">
+							<span class="type:label">vitae</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_2" identifier="interaction_2_hottext_2" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_2_hottext_3">
+							<span class="type:label">vulputate</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_2" identifier="interaction_2_hottext_3" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_2_hottext_4">
+							<span class="type:label">quam</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_2" identifier="interaction_2_hottext_4" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>.
+						<hottext identifier="interaction_2_hottext_5">
+							<span class="type:label">Donec</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_2" identifier="interaction_2_hottext_5" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_2_hottext_6">
+							<span class="type:label">sed</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_2" identifier="interaction_2_hottext_6" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_2_hottext_7">
+							<span class="type:label">orci</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_2" identifier="interaction_2_hottext_7" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_2_hottext_8">
+							<span class="type:label">nec</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_2" identifier="interaction_2_hottext_8" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_2_hottext_9">
+							<span class="type:label">libero</span>
+							<feedbackInline class="type:correct in-text" outcomeIdentifier="outcome_2" identifier="interaction_2_hottext_9" showHide="show">
+								<span>correct</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_2_hottext_10">
+							<span class="type:label">porttitor</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_2" identifier="interaction_2_hottext_10" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_2_hottext_11">
+							<span class="type:label">molestie</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_2" identifier="interaction_2_hottext_11" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>.
+						<hottext identifier="interaction_2_hottext_12">
+							<span class="type:label">Vivamus</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_2" identifier="interaction_2_hottext_12" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>.</p>
+					</hottextInteraction>
+				</li>
+				<li class="type:questionitem">
+					<hottextInteraction responseIdentifier="interaction_3" maxChoices="1">
+						<p><hottext identifier="interaction_3_hottext_1">
+							<span class="type:label">Quisque</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_3" identifier="interaction_3_hottext_1" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_3_hottext_2">
+							<span class="type:label">sagittis</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_3" identifier="interaction_3_hottext_2" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_3_hottext_3">
+							<span class="type:label">mattis</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_3" identifier="interaction_3_hottext_3" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_3_hottext_4">
+							<span class="type:label">sagittis</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_3" identifier="interaction_3_hottext_4" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>.
+						<hottext identifier="interaction_3_hottext_5">
+							<span class="type:label">Nullam</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_3" identifier="interaction_3_hottext_5" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_3_hottext_6">
+							<span class="type:label">risus</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_3" identifier="interaction_3_hottext_6" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_3_hottext_7">
+							<span class="type:label">nulla</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_3" identifier="interaction_3_hottext_7" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>,
+						<hottext identifier="interaction_3_hottext_8">
+							<span class="type:label">condimentum</span>
+							<feedbackInline class="type:correct in-text" outcomeIdentifier="outcome_3" identifier="interaction_3_hottext_8" showHide="show">
+								<span>correct</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_3_hottext_9">
+							<span class="type:label">non</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_3" identifier="interaction_3_hottext_9" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_3_hottext_10">
+							<span class="type:label">odio</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_3" identifier="interaction_3_hottext_10" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_3_hottext_11">
+							<span class="type:label">nec</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_3" identifier="interaction_3_hottext_11" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>,
+						<hottext identifier="interaction_3_hottext_12">
+							<span class="type:label">vestibulum</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_3" identifier="interaction_3_hottext_12" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_3_hottext_13">
+							<span class="type:label">pulvinar</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_3" identifier="interaction_3_hottext_13" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_3_hottext_14">
+							<span class="type:label">metus</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_3" identifier="interaction_3_hottext_14" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>.
+						<hottext identifier="interaction_3_hottext_15">
+							<span class="type:label">Phasellus</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_3" identifier="interaction_3_hottext_15" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_3_hottext_16">
+							<span class="type:label">sed</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_3" identifier="interaction_3_hottext_16" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_3_hottext_17">
+							<span class="type:label">arcu</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_3" identifier="interaction_3_hottext_17" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_3_hottext_18">
+							<span class="type:label">nec</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_3" identifier="interaction_3_hottext_18" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_3_hottext_19">
+							<span class="type:label">ipsum</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_3" identifier="interaction_3_hottext_19" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>.</p>
+					</hottextInteraction>
+				</li>
+				<li class="type:questionitem">
+					<hottextInteraction responseIdentifier="interaction_4" maxChoices="1">
+						<p><hottext identifier="interaction_4_hottext_1">
+							<span class="type:label">Nulla</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_4" identifier="interaction_4_hottext_1" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_4_hottext_2">
+							<span class="type:label">ut</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_4" identifier="interaction_4_hottext_2" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_4_hottext_3">
+							<span class="type:label">sem</span>
+							<feedbackInline class="type:correct in-text" outcomeIdentifier="outcome_4" identifier="interaction_4_hottext_3" showHide="show">
+								<span>correct</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_4_hottext_4">
+							<span class="type:label">non</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_4" identifier="interaction_4_hottext_4" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_4_hottext_5">
+							<span class="type:label">dolor</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_4" identifier="interaction_4_hottext_5" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_4_hottext_6">
+							<span class="type:label">laoreet</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_4" identifier="interaction_4_hottext_6" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_4_hottext_7">
+							<span class="type:label">fermentum</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_4" identifier="interaction_4_hottext_7" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_4_hottext_8">
+							<span class="type:label">quis</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_4" identifier="interaction_4_hottext_8" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>.</p>
+					</hottextInteraction>
+				</li>
+				<li class="type:questionitem">
+					<hottextInteraction responseIdentifier="interaction_5" maxChoices="1">
+						<p><hottext identifier="interaction_5_hottext_1">
+							<span class="type:label">Nulla</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_5" identifier="interaction_5_hottext_1" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_5_hottext_2">
+							<span class="type:label">eget</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_5" identifier="interaction_5_hottext_2" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_5_hottext_3">
+							<span class="type:label">mi</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_5" identifier="interaction_5_hottext_3" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_5_hottext_4">
+							<span class="type:label">lectus</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_5" identifier="interaction_5_hottext_4" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>.
+						<hottext identifier="interaction_5_hottext_5">
+							<span class="type:label">Donec</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_5" identifier="interaction_5_hottext_5" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_5_hottext_6">
+							<span class="type:label">viverra</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_5" identifier="interaction_5_hottext_6" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_5_hottext_7">
+							<span class="type:label">malesuada</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_5" identifier="interaction_5_hottext_7" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_5_hottext_8">
+							<span class="type:label">pulvinar</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_5" identifier="interaction_5_hottext_8" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>.
+						<hottext identifier="interaction_5_hottext_9">
+							<span class="type:label">Ut</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_5" identifier="interaction_5_hottext_9" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_5_hottext_10">
+							<span class="type:label">non</span>
+							<feedbackInline class="type:correct in-text" outcomeIdentifier="outcome_5" identifier="interaction_5_hottext_10" showHide="show">
+								<span>correct</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_5_hottext_11">
+							<span class="type:label">mi</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_5" identifier="interaction_5_hottext_11" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_5_hottext_12">
+							<span class="type:label">luctus</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_5" identifier="interaction_5_hottext_12" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>,
+						<hottext identifier="interaction_5_hottext_13">
+							<span class="type:label">semper</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_5" identifier="interaction_5_hottext_13" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_5_hottext_14">
+							<span class="type:label">odio</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_5" identifier="interaction_5_hottext_14" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>.</p>
+					</hottextInteraction>
+				</li>
+				<li class="type:questionitem">
+					<hottextInteraction responseIdentifier="interaction_6" maxChoices="1">
+						<p><hottext identifier="interaction_6_hottext_1">
+							<span class="type:label">Cras</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_6" identifier="interaction_6_hottext_1" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_6_hottext_2">
+							<span class="type:label">volutpat</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_6" identifier="interaction_6_hottext_2" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_6_hottext_3">
+							<span class="type:label">diam</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_6" identifier="interaction_6_hottext_3" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_6_hottext_4">
+							<span class="type:label">ullamcorper</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_6" identifier="interaction_6_hottext_4" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_6_hottext_5">
+							<span class="type:label">ultrices</span>
+							<feedbackInline class="type:correct in-text" outcomeIdentifier="outcome_6" identifier="interaction_6_hottext_5" showHide="show">
+								<span>correct</span>
+							</feedbackInline>
+						</hottext>
+						<hottext identifier="interaction_6_hottext_6">
+							<span class="type:label">sodales</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_6" identifier="interaction_6_hottext_6" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>.
+						<hottext identifier="interaction_6_hottext_7">
+							<span class="type:label">Pellentesque</span>
+							<feedbackInline class="type:incorrect in-text" outcomeIdentifier="outcome_6" identifier="interaction_6_hottext_7" showHide="show">
+								<span>incorrect</span>
+							</feedbackInline>
+						</hottext>.</p>
+					</hottextInteraction>
+				</li>
+			</ol>
+		</div>
+
+		<div class="type:freetownpane width-30 background-dark">
+			<img class="type:cover" src="http://placeimg.com/600/800/any" alt=""/>
+		</div>
+	</itemBody>
+	<responseProcessing>
+		<setOutcomeValue identifier="outcome_1">
+			<variable identifier="interaction_1"></variable>
+		</setOutcomeValue>
+		<setOutcomeValue identifier="outcome_2">
+			<variable identifier="interaction_2"></variable>
+		</setOutcomeValue>
+		<setOutcomeValue identifier="outcome_3">
+			<variable identifier="interaction_3"></variable>
+		</setOutcomeValue>
+		<setOutcomeValue identifier="outcome_4">
+			<variable identifier="interaction_4"></variable>
+		</setOutcomeValue>
+		<setOutcomeValue identifier="outcome_5">
+			<variable identifier="interaction_5"></variable>
+		</setOutcomeValue>
+		<setOutcomeValue identifier="outcome_6">
+			<variable identifier="interaction_6"></variable>
+		</setOutcomeValue>
+	</responseProcessing>
+</assessmentItem>

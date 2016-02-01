@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- http://5qx5fs.axshare.com/#p=t022_-_roleplay_type_in -->
+<!-- http://codebeautify.org/xmlviewer/b668df -->
+
+<assessmentItem identifier="" adaptive="false" title="" timeDependent="false" xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1">
+	<responseDeclaration identifier="interaction_1" cardinality="single" baseType="string">
+		<correctResponse>
+			<value>a</value>
+		</correctResponse>
+		<mapping defaultValue="0">
+			<mapEntry mapKey="a" mappedValue="1"/>
+		</mapping>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_2" cardinality="single" baseType="string">
+		<correctResponse>
+			<value>b</value>
+		</correctResponse>
+		<mapping defaultValue="0">
+			<mapEntry mapKey="b" mappedValue="1"/>
+		</mapping>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_3" cardinality="single" baseType="string">
+		<correctResponse>
+			<value>c</value>
+		</correctResponse>
+		<mapping defaultValue="0">
+			<mapEntry mapKey="c" mappedValue="1"/>
+		</mapping>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_4" cardinality="single" baseType="string">
+		<correctResponse>
+			<value>d</value>
+		</correctResponse>
+		<mapping defaultValue="0">
+			<mapEntry mapKey="d" mappedValue="1"/>
+		</mapping>
+	</responseDeclaration>
+	<responseDeclaration identifier="interaction_5" cardinality="single" baseType="string">
+		<correctResponse>
+			<value>e</value>
+		</correctResponse>
+		<mapping defaultValue="0">
+			<mapEntry mapKey="e" mappedValue="1"/>
+		</mapping>
+	</responseDeclaration>
+
+	<outcomeDeclaration identifier="outcome_1" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_2" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_3" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_4" cardinality="single" baseType="identifier"/>
+	<outcomeDeclaration identifier="outcome_5" cardinality="single" baseType="identifier"/>
+
+	<itemBody>
+		<rubricBlock view="candidate">
+			<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna?</div>
+		</rubricBlock>
+		<infoControl title="hint">
+			<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+		</infoControl>
+		<div class="type:freetownpane width-50 shadow">
+			<div class="type:container padding-16-right full-height">
+				<div class="type:styledbox">
+					<h1 class="type:title">Title here.</h1>
+					<div>
+						<img class="type:avatar blue" alt="" src="../content/media/avatars/sarah.png"/>
+					</div>
+					<ol class="type:questionlist unordered">
+						<li class="type:questionitem">
+							<p class="type:line">What's your name?</p>
+							<p class="type:answer">Hi! My name's Stefania.</p>
+						</li>
+						<li class="type:questionitem">
+							<p class="type:line">How old are you?</p>
+							<p class="type:answer">I'm 104 years old.</p>
+						</li>
+						<li class="type:questionitem">
+							<p class="type:line">Where are you from?</p>
+							<p class="type:answer">I'm from Brighton.</p>
+						</li>
+						<li class="type:questionitem">
+							<p class="type:line">What do you study?</p>
+							<p class="type:answer">I study English at King's Cross.</p>
+						</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+
+		<div class="type:freetownpane width-50 shadow">
+			<div class="type:container padding-16-left full-height">
+				<div class="type:styledbox">
+					<h1 class="type:title">Themed title here</h1>
+					<div>
+						<img class="type:avatar purple" alt="" src="../content/media/avatars/fergus.png"/>
+					</div>
+					<ol class="type:questionlist unordered">
+						<li class="type:questionitem">
+							<p class="type:line">What's your name?</p>
+							<p class="type:answers">
+								Hi! My name's
+								<span class="type:nowrap">
+									<textEntryInteraction responseIdentifier="interaction_1" expectedLength="14" class="inline reversed"/>
+									<feedbackInline class="type:correct" outcomeIdentifier="outcome_1" identifier="correct" showHide="show">
+										<span>correct</span>
+									</feedbackInline>
+									<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_1" identifier="incorrect" showHide="show">
+										<span>incorrect</span>
+									</feedbackInline>
+								</span>.
+							</p>
+						</li>
+						<li class="type:questionitem">
+							<p class="type:line">How old are you?</p>
+							<p class="type:answers">
+								I'm
+								<span class="type:nowrap">
+									<textEntryInteraction responseIdentifier="interaction_2" expectedLength="2" class="inline reversed"/>
+									<feedbackInline class="type:correct" outcomeIdentifier="outcome_2" identifier="correct" showHide="show">
+										<span>correct</span>
+									</feedbackInline>
+									<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_2" identifier="incorrect" showHide="show">
+										<span>incorrect</span>
+									</feedbackInline>
+								</span>
+								years old.
+							</p>
+						</li>
+						<li class="type:questionitem">
+							<p class="type:line">Where are you from?</p>
+							<p class="type:answers">
+								I'm from
+								<span class="type:nowrap">
+									<textEntryInteraction responseIdentifier="interaction_3" expectedLength="12" class="inline reversed"/>
+									<feedbackInline class="type:correct" outcomeIdentifier="outcome_3" identifier="correct" showHide="show">
+										<span>correct</span>
+									</feedbackInline>
+									<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_3" identifier="incorrect" showHide="show">
+										<span>incorrect</span>
+									</feedbackInline>
+								</span>.
+							</p>
+						</li>
+						<li class="type:questionitem">
+							<p class="type:line">What do you study?</p>
+							<p class="type:answers">
+								I study
+								<span class="type:nowrap">
+									<textEntryInteraction responseIdentifier="interaction_4" expectedLength="8" class="inline reversed"/>
+									<feedbackInline class="type:correct" outcomeIdentifier="outcome_4" identifier="correct" showHide="show">
+										<span>correct</span>
+									</feedbackInline>
+									<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_4" identifier="incorrect" showHide="show">
+										<span>incorrect</span>
+									</feedbackInline>
+								</span>
+								at
+								<span class="type:nowrap">
+									<textEntryInteraction responseIdentifier="interaction_5" expectedLength="11" class="inline reversed"/>
+									<feedbackInline class="type:correct" outcomeIdentifier="outcome_5" identifier="correct" showHide="show">
+										<span>correct</span>
+									</feedbackInline>
+									<feedbackInline class="type:incorrect" outcomeIdentifier="outcome_5" identifier="incorrect" showHide="show">
+										<span>incorrect</span>
+									</feedbackInline>
+								</span>.
+							</p>
+						</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</itemBody>
+	<responseProcessing>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<mapResponse identifier="interaction_1"/>
+					<baseValue baseType="float">1</baseValue>
+				</match>
+				<setOutcomeValue identifier="outcome_1">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_1">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<mapResponse identifier="interaction_2"/>
+					<baseValue baseType="float">1</baseValue>
+				</match>
+				<setOutcomeValue identifier="outcome_2">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_2">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<mapResponse identifier="interaction_3"/>
+					<baseValue baseType="float">1</baseValue>
+				</match>
+				<setOutcomeValue identifier="outcome_3">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_3">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<mapResponse identifier="interaction_4"/>
+					<baseValue baseType="float">1</baseValue>
+				</match>
+				<setOutcomeValue identifier="outcome_4">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_4">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<mapResponse identifier="interaction_5"/>
+					<baseValue baseType="float">1</baseValue>
+				</match>
+				<setOutcomeValue identifier="outcome_5">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="outcome_5">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+	</responseProcessing>
+</assessmentItem>

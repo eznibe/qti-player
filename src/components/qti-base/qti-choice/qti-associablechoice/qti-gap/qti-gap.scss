@@ -1,0 +1,121 @@
+@import "../qti-associablechoice";
+
+.drop-zone {
+	position: relative;
+	display: inline-block;
+	min-width: 144px;
+	border: 1px dashed $stray-color-tbc;
+	border-radius: 3px;
+	background-color: #EDECEA;
+	transition: background-color 0.25s ease, min-width 0.25s ease;
+
+	&:after {
+		content: "\0000a0";
+	}
+}
+
+.dark,
+.dark:hover,
+.dark:focus {
+	background-color: $color-light-quill;
+}
+
+.contrast,
+.contrast:hover,
+.contrast:focus {
+	background-color: rgba($color-black, 0.5);
+	border-color: $color-bright-sun;
+}
+
+.full {
+	//todo: style me
+}
+
+.drawer,
+.drawer:hover,
+.drawer:focus,
+.drawer:active {
+	background-color: rgba($color-black, 0.5);
+	min-height: 39px;
+}
+
+.sentence {
+	min-width: 400px !important;
+
+	.draggable + .draggable {
+		margin-left: 4px;
+	}
+}
+
+.active {
+	background-color: rgba($color-bright-sun, 0.2);
+}
+
+.drag-over {
+	background-color: rgba($color-bright-sun, 0.6);
+}
+
+.inline {
+	display: inline-block;
+	padding: 3px 0 2px 0;
+	font-size: $text-font-size-default;
+	line-height: 1;
+	vertical-align: baseline;
+	transition: min-width 0.3s ease, background-color 0.10s ease;
+
+	&.drop-zone-dropped {
+		border: none;
+	}
+}
+
+.well {
+	height: calc(100% - 50px);
+	width: 100%;
+	text-align: center;
+	padding: 16px 0 16px 16px;
+}
+
+.white-border,
+.white-border:hover,
+.white-border:focus,
+.white-border:active {
+	background-color: rgba($color-quill-gray, 0.5);
+	border-color: $color-white;
+	display: block;
+
+	&.static {
+		margin-left: 10px;
+	}
+
+	&.sortable {
+		padding: 9px;
+	}
+}
+
+.dropped {
+	border: 1px dashed $selectable-selected-bg;
+	padding: 0;
+	min-width: 0;
+	font-size: 0;
+
+	&.contrast{
+		padding: 3px;
+	}
+
+	&:after {
+		content: "";
+	}
+}
+
+.title {
+	font-size: 2rem;
+	height: 50px;
+	text-align: center;
+
+	&.audio-button {
+		position: absolute;
+		border-radius: 3px;
+		overflow: hidden;
+		top: 0;
+	}
+}

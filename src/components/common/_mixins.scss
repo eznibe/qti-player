@@ -1,0 +1,41 @@
+@mixin background-color-with-alpha ($color, $alpha) {
+	$rgba: rgba(red($color), green($color), blue($color), $alpha);
+	background-color: $color;
+	background-color: $rgba;
+}
+
+@mixin selectable-selected () {
+	background: $selectable-selected-bg;
+	border-color: $color-oslo-gray;
+	color: $color-black;
+
+	&:hover,
+	&:focus {
+		background: $selectable-selected-bg;
+	}
+}
+
+@mixin selectable-model () {
+	@include interaction-model;
+}
+
+@mixin interaction-model () {
+	background: $feedback-bubble-color-correct-bg;
+	border: 1px solid $feedback-bubble-color-correct-border;
+	color: $text-color-default;
+	cursor: default;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background: $feedback-bubble-color-correct-bg;
+	}
+}
+
+@mixin interacted-dropzone () {
+	padding: 0;
+	border: 0;
+	min-width: 0;
+	font-size: 0;
+	background: none;
+}
