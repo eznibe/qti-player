@@ -19,8 +19,8 @@ https://www.imsglobal.org/question/qtiv2p2/QTIv2p2-ASI-InformationModelv1p0/imsq
 --
 
 ## Solution - Polymer ##
--- Using the shadowDOM
--- Create OO Javascript components that inherit other components. This means we could have an inheritance similar to the QTI specification.
+* Using the shadowDOM
+* Create OO Javascript components that inherit other components. This means we could have an inheritance similar to the QTI specification.
 
 ## Examples ##
 Templates (T001 to T117) - Just change the link and refresh.
