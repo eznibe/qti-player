@@ -13,9 +13,10 @@ https://www.imsglobal.org/question/qtiv2p2/QTIv2p2-ASI-InformationModelv1p0/imsq
 ## Research ##
 Before we started actual production we need to find the correct technical solution. We explored the following technologies:
 * OO Javascript - a custom framework converting XML to HTML manually.
-* AngularJS - attaching directives to xml nodes.
+* AngularJS - attaching directives to xml nodes (https://github.com/etavener/qti-player-angular/)
 * XSLT - manipulating XML
 * Polymer - Using the shadowDOM to render the XML as HTML web components.
+
 
 ## Challenges ##
 During the research phase we faced the following challenges:
