@@ -1,6 +1,6 @@
 var QtiAssessmentItem = (function () {
     function QtiAssessmentItem() {}
-    
+
     QtiAssessmentItem.prototype.created = function () {
         this.super();
         //set the properties
@@ -16,11 +16,11 @@ var QtiAssessmentItem = (function () {
         this.addEventListener(Events.OUTCOME_CHANGED, this.outcomeChanged);
         this.addEventListener(Events.SAVE_RESPONSE, this.saveResponses);
     };
-    
+
     QtiAssessmentItem.prototype.domReady = function () {
         this.variables = [];
     };
-    
+
     QtiAssessmentItem.prototype.detached = function () {
         this.super();
         //remove events listeners.
@@ -32,21 +32,21 @@ var QtiAssessmentItem = (function () {
         this.removeEventListener(Events.OUTCOME_CHANGED, this.outcomeChanged);
         this.removeEventListener(Events.SAVE_RESPONSE, this.saveResponses);
     }
-    
+
     //a feedback element has fired an event to register.
     QtiAssessmentItem.prototype.registerFeedbackElement = function (e) {
         e.stopPropagation();
         if (!this.feedbackElements) this.feedbackElements = [];
         this.feedbackElements.push(e.detail);
     };
-    
+
     //an interactive element has fired an event to register.
     QtiAssessmentItem.prototype.registerInteractionElement = function (e) {
         e.stopPropagation();
         if (!this.interactionElements) this.interactionElements = [];
         this.interactionElements.push(e.detail);
     };
-    
+
     //an interactive element has fired an event to register.
     QtiAssessmentItem.prototype.registerStatusElement = function (e) {
         e.stopPropagation();
@@ -54,11 +54,11 @@ var QtiAssessmentItem = (function () {
         this.statusElements.push(e.detail);
     };
 
-    
+
 //QtiAssessmentItem.prototype.showAnswers = function (e) {
     //TO BE ADDED: SHOW ANSWERS - FOR EACH INTERACTION SHOW/HIGHLIGHT THE CORRECT ANSWERS.....
 //};
-    
+
     QtiAssessmentItem.prototype.updateStatusInteractions = function (value) {
         if(this.statusElements)
         {
@@ -74,12 +74,21 @@ var QtiAssessmentItem = (function () {
             //set the outcomes based on the responses.
             var responseProcessor = this.querySelector('qti-responseprocessing');
             if(responseProcessor) responseProcessor.process();
+
+            var result  = this.variables.map(function(variable) {
+              if (variable instanceof ResponseVariable) {
+                return variable.candidateResponse;
+              } else {
+                return variable;
+              }
+            });
+            console.log('Responses:',result);
             
             this.updateStatusInteractions('feedback');
             this.disableActivity(true);
         }
     };
-    
+
     //check all interactions contain valid responses
     QtiAssessmentItem.prototype.validateResponses = function () {
         var result = true;
@@ -92,7 +101,7 @@ var QtiAssessmentItem = (function () {
         }
         return result;
     };
-    
+
     QtiAssessmentItem.prototype.disableActivity = function (value) {
         if(this.interactionElements) {
         //loop through each interaction and call the validate method.
@@ -102,7 +111,7 @@ var QtiAssessmentItem = (function () {
             }
         }
     }
-    
+
     //interaction has fired an event to save response.
     QtiAssessmentItem.prototype.saveResponses = function (event) {
         this.setResponseValue(event.detail.responseIdentifier, event.detail.responses);
@@ -119,7 +128,7 @@ var QtiAssessmentItem = (function () {
             }
         }
 	};
-    
+
 
     //Variable functions for getting and storing variables.
     QtiAssessmentItem.prototype.getVariable = function (identifier) {
@@ -162,7 +171,7 @@ var QtiAssessmentItem = (function () {
     QtiAssessmentItem.prototype.setResponseValue = function (identifier, value) {
         this.getResponse(identifier).setResponse(value);
     };
-    
+
     return QtiAssessmentItem;
 })();
 
