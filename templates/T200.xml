@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1" identifier="" adaptive="false" title="" timeDependent="false">
+	<responseDeclaration identifier="RESPONSE" cardinality="ordered" baseType="identifier">
+		<correctResponse>
+			<value>DriverC</value>
+			<value>DriverA</value>
+			<value>DriverB</value>
+		</correctResponse>
+	</responseDeclaration>
+	<outcomeDeclaration identifier="SCORE" cardinality="single" baseType="identifier"/>
+	<itemBody>
+		<rubricBlock view="candidate">
+			<div>The following F1 drivers finished on the podium in the first ever Grand Prix of
+				Bahrain. Can you rearrange them into the correct finishing order?</div>
+		</rubricBlock>
+		<infoControl title="hint">
+			<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+		</infoControl>
+		<!-- <div class="type:freetownpane width-70 shadow container scrollable"> -->
+			<orderInteraction class="inline list" responseIdentifier="RESPONSE" shuffle="false">
+				<simpleChoice class="type:sortable" identifier="DriverA">Rubens Barrichello</simpleChoice>
+				<simpleChoice class="type:sortable" identifier="DriverB">Jenson Button</simpleChoice>
+				<simpleChoice class="type:sortable" identifier="DriverC" fixed="true">Michael Schumacher</simpleChoice>
+			</orderInteraction>
+		<!-- </div> -->
+	</itemBody>
+	<responseProcessing>
+		<responseCondition>
+			<responseIf>
+				<match>
+					<variable identifier="RESPONSE"/>
+					<correct identifier="RESPONSE"/>
+				</match>
+			   <setOutcomeValue identifier="SCORE">
+					<baseValue baseType="identifier">correct</baseValue>
+				</setOutcomeValue>
+			</responseIf>
+			<responseElse>
+				<setOutcomeValue identifier="SCORE">
+					<baseValue baseType="identifier">incorrect</baseValue>
+				</setOutcomeValue>
+			</responseElse>
+		</responseCondition>
+	</responseProcessing>
+</assessmentItem>
